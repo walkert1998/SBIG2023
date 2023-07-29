@@ -24,6 +24,7 @@ public class InventoryManager : MonoBehaviour, ISaveable
     // public PlayerControlScheme controls;
     InputAction toggleInventory;
     public Item testItem;
+    public PlayerInput playerInput;
 
     public static int movingItem = 0;
 
@@ -55,7 +56,7 @@ public class InventoryManager : MonoBehaviour, ISaveable
 
     private void OnEnable()
     {
-        toggleInventory = InputManager.Instance.GetControlsList()["Inventory"];
+        toggleInventory = playerInput.actions.FindAction("Inventory");
         toggleInventory.performed += ToggleInventory;
         toggleInventory.Enable();
     }
