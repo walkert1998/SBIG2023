@@ -75,6 +75,9 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
+        [Tooltip("For preventing player from moving when in notes or dialogue")]
+        public bool CanMove = true;
+
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
@@ -192,6 +195,10 @@ namespace StarterAssets
 
         private void CameraRotation()
         {
+            if (!CanMove)
+            {
+                return;
+            }
             // if there is an input and camera position is not fixed
             if (_input.look.sqrMagnitude >= _threshold && !LockCameraPosition)
             {
@@ -213,6 +220,10 @@ namespace StarterAssets
 
         private void Move()
         {
+            if (!CanMove)
+            {
+                return;
+            }
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -346,6 +357,11 @@ namespace StarterAssets
             {
                 _verticalVelocity += Gravity * Time.deltaTime;
             }
+        }
+
+        public void LockMovement(bool value)
+        {
+            CanMove = value;
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
