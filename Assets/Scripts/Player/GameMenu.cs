@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.DualShock;
@@ -64,7 +65,11 @@ public class GameMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        InventoryManager.HideNotePad_Static();
         pauseMenuUI.SetActive(true);
+        controller.GetComponent<ThirdPersonController>().LockMovement(false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // menuDropdown.SetActive(true);
         PlayerInteraction.LockInteraction();
         Time.timeScale = 0.0f;
@@ -81,6 +86,12 @@ public class GameMenu : MonoBehaviour
         Time.timeScale = 1.0f;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
         gamePaused = false;
+        if (!InventoryManager.IsNotePadOpen_Static())
+        {
+            controller.GetComponent<ThirdPersonController>().LockMovement(true);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 
     public void OpenControls()

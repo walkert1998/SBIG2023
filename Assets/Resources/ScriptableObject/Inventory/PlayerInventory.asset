@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items: []
   size:
-    x: 5
+    x: 6
     y: 5
   references:
     version: 2

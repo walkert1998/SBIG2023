@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,7 @@ public class PickUp : MonoBehaviour, IInteractable
     void Start ()
     {
         world_item = gameObject;
-        playerInventory = Resources.Load<ScriptableObject>("ScriptableObjects/Inventory/PlayerInventory") as Inventory;
+        playerInventory = Resources.Load<ScriptableObject>("ScriptableObject/Inventory/PlayerInventory") as Inventory;
         PickUpItemsManager.AddPickUpToList(this);
     }
 
@@ -48,6 +49,7 @@ public class PickUp : MonoBehaviour, IInteractable
             if (added)
             {
                 world_item.SetActive(false);
+                PlayerInteraction.SetPrompt("");
             }
         }
         else
@@ -74,10 +76,12 @@ public class PickUp : MonoBehaviour, IInteractable
         if (quantity > 1)
         {
             // Tooltip.DisplayToolTip_Static(pickup_name + " (x" + quantity + ")");
+            PlayerInteraction.SetPrompt("Pick up " + item.itemName);
         }
         else
         {
             // Tooltip.DisplayToolTip_Static(pickup_name);
+            PlayerInteraction.SetPrompt("Pick up " + quantity + " " + item.itemName);
         }
         // Debug.Log(pickup_name);
         focused = true;
@@ -85,9 +89,25 @@ public class PickUp : MonoBehaviour, IInteractable
 
     public void UnFocus()
     {
-        //PlayerInteraction.SetPrompt("");
+        PlayerInteraction.SetPrompt("");
         // Tooltip.HideToolTip_Static();
         focused = false;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<PlayerInteraction>())
+        {
+            other.GetComponent<PlayerInteraction>().SetFocusObject(this);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<PlayerInteraction>())
+        {
+            other.GetComponent<PlayerInteraction>().SetFocusObject(null);
+        }
     }
 
     //private void OnMouseEnter()

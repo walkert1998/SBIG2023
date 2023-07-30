@@ -228,7 +228,17 @@ public class InventoryManager : MonoBehaviour, ISaveable
         instance.HideInventory();
     }
 
+    public static void HideNotePad_Static()
+    {
+        instance.HideNotePad();
+    }
+
     public static bool IsInventoryOpen_Static()
+    {
+        return instance.IsInventoryOpen();
+    }
+
+    public static bool IsNotePadOpen_Static()
     {
         return instance.IsInventoryOpen();
     }

@@ -249,17 +249,17 @@ public class InventoryView : MonoSOObserver
         itemClicks.onLeft.AddListener(
             () =>
             {
-                if (movingItem == null)
-                {
-                    Debug.Log("Attempting to move");
-                    SelectedSlot.SetSelectedSlot_Static(gridSlots[storedItem.position.x, storedItem.position.y]);
-                    if (beginMoveSound != null)
-                    {
-                        source.PlayOneShot(beginMoveSound);
-                    }
-                    MoveItem(itemView, storedItem);
-                }
-                //DisplayItemInfo(storedItem);
+                // if (movingItem == null)
+                // {
+                //     Debug.Log("Attempting to move");
+                //     SelectedSlot.SetSelectedSlot_Static(gridSlots[storedItem.position.x, storedItem.position.y]);
+                //     if (beginMoveSound != null)
+                //     {
+                //         source.PlayOneShot(beginMoveSound);
+                //     }
+                //     MoveItem(itemView, storedItem);
+                // }
+                DisplayItemInfo(storedItem);
             }
         );
         itemClicks.onRight.AddListener(
@@ -318,7 +318,7 @@ public class InventoryView : MonoSOObserver
         movingObject.transform.SetAsLastSibling();
         gridObj.transform.Find("QuantityText").gameObject.SetActive(false);
         // gridObj.transform.Find("ItemHighlight").gameObject.SetActive(false);
-        gridObj.transform.Find("EquippedIcon").gameObject.SetActive(false);
+        // gridObj.transform.Find("EquippedIcon").gameObject.SetActive(false);
         // gridObj.transform.Find("HotkeyNumber").gameObject.SetActive(false);
         Canvas addedCanvas = movingObject.AddComponent<Canvas>();
         addedCanvas.overrideSorting = true;
