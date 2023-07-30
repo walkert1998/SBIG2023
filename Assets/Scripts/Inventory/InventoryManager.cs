@@ -11,18 +11,17 @@ using UnityEngine.SceneManagement;
 public class InventoryManager : MonoBehaviour, ISaveable
 {
     private static InventoryManager instance;
-    public bool inventoryOpen;
+    public bool notePadOpen;
     public static bool persistInventory = true;
     [SerializeField]
     private InventoryView playerInventory;
     public Inventory inventory;
     public ThirdPersonController playerController;
-    public GameObject playerInventoryPanel;
-    public GameObject containerInventoryPanel;
-    public TMP_Text containerNameText;
     public GameObject movingObject;
     // public PlayerControlScheme controls;
     InputAction toggleInventory;
+    InputAction toggleNotePad;
+    InputAction toggleSuspects;
     public Item testItem;
     public PlayerInput playerInput;
 
@@ -59,21 +58,29 @@ public class InventoryManager : MonoBehaviour, ISaveable
         toggleInventory = playerInput.actions.FindAction("Inventory");
         toggleInventory.performed += ToggleInventory;
         toggleInventory.Enable();
+        toggleSuspects = playerInput.actions.FindAction("Suspects");
+        toggleSuspects.performed += ToggleSuspects;
+        toggleSuspects.Enable();
+        toggleNotePad = playerInput.actions.FindAction("NotePad");
+        toggleNotePad.performed += ToggleNotePad;
+        toggleNotePad.Enable();
     }
     private void OnDisable()
     {
         toggleInventory.Disable();
+        toggleSuspects.Disable();
+        toggleNotePad.Disable();
     }
 
     private void ToggleInventory(InputAction.CallbackContext obj)
     {
         if (playerController != null)
         {
-            if (inventoryOpen)
+            if (notePadOpen)
             {
                 HideInventory();
             }
-            else
+            else if (playerController.CanMove)
             {
                 // playerInventory.inventory.AddItem(testItem, 1);
                 ShowInventory();
@@ -83,7 +90,7 @@ public class InventoryManager : MonoBehaviour, ISaveable
 
     public static void ToggleInventory_Static()
     {
-        if (instance.inventoryOpen)
+        if (instance.notePadOpen)
         {
             instance.HideInventory();
         }
@@ -94,17 +101,42 @@ public class InventoryManager : MonoBehaviour, ISaveable
         }
     }
 
+    private void ToggleSuspects(InputAction.CallbackContext context)
+    {
+        if (notePadOpen)
+        {
+            HideSuspects();
+        }
+        else if (playerController.CanMove)
+        {
+            ShowSuspects();
+        }
+    }
+
+    private void ToggleNotePad(InputAction.CallbackContext context)
+    {
+        if (notePadOpen)
+        {
+            HideNotePad();
+        }
+        else if (playerController.CanMove)
+        {
+            ShowNotePad();
+        }
+    }
+
     private void ShowInventory()
     {
         //DynamicCursor.ChangeCursor_Static(CursorType.None);
         // playerInventoryPanel.SetActive(true);
-        // CharacterPanel.ShowInventoryTab();
+        CharacterPanel.ShowInventoryTab();
+        playerController.LockMovement(false);
         playerInventory.OpenView();
-        inventoryOpen = true;
+        notePadOpen = true;
         // playerController.SetLookLock(false);
         //playerController.SetMoveLock(false);
-        // Cursor.lockState = CursorLockMode.None;
-        // Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // PlayerInteraction.LockInteraction();
         // TimeControl.ChangeTimeScale(0.25f);
         //phone.GetComponent<WeaponSway>().enabled = false;
@@ -117,14 +149,14 @@ public class InventoryManager : MonoBehaviour, ISaveable
     private void HideInventory()
     {
         //DynamicCursor.ChangeCursor_Static(CursorType.Target);
-        // CharacterPanel.HideCharacterPanel();
+        CharacterPanel.HideCharacterPanel();
         // playerInventoryPanel.SetActive(false);
         playerInventory.CloseView();
-        inventoryOpen = false;
+        notePadOpen = false;
         // playerController.SetLookLock(true);
         //playerController.SetMoveLock(true);
-        // Cursor.lockState = CursorLockMode.Locked;
-        // Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         // PlayerInteraction.UnlockInteraction();
         // TimeControl.RevertTimeScale();
         //firstPersonController.GetMouseLook().SetCursorLock(true);
@@ -132,11 +164,53 @@ public class InventoryManager : MonoBehaviour, ISaveable
         //firstPersonController.m_CanMove = true;
         //firstPersonController.m_CanLook = true;
         //phone.GetComponent<WeaponSway>().enabled = true;
+        playerController.LockMovement(true);
+    }
+
+    private void ShowNotePad()
+    {
+        CharacterPanel.ShowLastTab();
+        playerController.LockMovement(false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        // playerInventory.OpenView();
+        notePadOpen = true;
+    }
+
+    private void HideNotePad()
+    {
+        CharacterPanel.HideCharacterPanel();
+        notePadOpen = false;
+        Tooltip.HideToolTip_Static();
+        playerController.LockMovement(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void ShowSuspects()
+    {
+        CharacterPanel.ShowSuspectsTab();
+        playerController.LockMovement(false);
+        playerInventory.CloseView();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        // playerInventory.OpenView();
+        notePadOpen = true;
+    }
+
+    private void HideSuspects()
+    {
+        CharacterPanel.HideCharacterPanel();
+        notePadOpen = false;
+        Tooltip.HideToolTip_Static();
+        playerController.LockMovement(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private bool IsInventoryOpen()
     {
-        return inventoryOpen;
+        return notePadOpen;
     }
 
     private InventoryView GetInventoryView()
@@ -173,7 +247,7 @@ public class InventoryManager : MonoBehaviour, ISaveable
     {
         return new SaveData
         {
-            inventoryOpen = inventoryOpen,
+            inventoryOpen = notePadOpen,
             inventory = playerInventory.inventory
         };
     }
@@ -262,8 +336,8 @@ public class InventoryManager : MonoBehaviour, ISaveable
             }
         }
         playerInventory.Notify();
-        inventoryOpen = saveData.inventoryOpen;
-        if (inventoryOpen)
+        notePadOpen = saveData.inventoryOpen;
+        if (notePadOpen)
         {
             ShowInventory();
         }
