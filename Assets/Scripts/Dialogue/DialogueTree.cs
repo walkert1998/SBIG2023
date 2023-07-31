@@ -48,7 +48,10 @@ public class DialogueTree
                             newOptionEffect.effectType = optionEffectSaveData.effectType;
                             newOptionEffect.faction = optionEffectSaveData.faction;
                             newOptionEffect.intValue = optionEffectSaveData.intValue;
-                            newOptionEffect.item =  Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == optionEffectSaveData.itemBaseID).First();
+                            if (optionEffectSaveData.itemBaseID != null)
+                            {
+                                newOptionEffect.item =  Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == optionEffectSaveData.itemBaseID).First();
+                            }
                             newOption.optionEffects.Add(newOptionEffect);
                         }
                     }

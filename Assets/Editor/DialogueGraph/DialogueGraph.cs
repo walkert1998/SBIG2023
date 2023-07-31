@@ -122,7 +122,10 @@ public class DialogueGraph : EditorWindow
                             effectSaveData.effectType = effect.effectType;
                             effectSaveData.faction = effect.faction;
                             effectSaveData.intValue = effect.intValue;
-                            effectSaveData.itemBaseID = effect.item.baseItemID;
+                            if (effect.item != null)
+                            {
+                                effectSaveData.itemBaseID = effect.item.baseItemID;
+                            }
                             optionSaveData.optionEffects.Add(effectSaveData);
                         }
                     }

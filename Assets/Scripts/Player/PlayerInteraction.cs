@@ -88,6 +88,11 @@ public class PlayerInteraction : MonoBehaviour
     //     }
     // }
 
+    public static void SetFocusObject_Static(IInteractable interactable)
+    {
+        instance.SetFocusObject(interactable);
+    }
+
     public void SetFocusObject(IInteractable newObject)
     {
         if (focusedObject == null)

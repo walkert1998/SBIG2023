@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueScreen : MonoBehaviour
 {
+    public static DialogueScreen instance;
     private DialogueTree tree;
     public GameObject dialogueScreenUI;
     public TMP_Text npcName;
@@ -13,15 +15,18 @@ public class DialogueScreen : MonoBehaviour
     public GameObject optionPrefab;
     public Transform optionsList;
     public AudioSource[] characterAudioSources;
+    public CharacterInstance[] characters;
     AudioSource characterSource;
     private int selectedOption = -2;
     public NPCConversation conversation;
     public float expressionTime;
     public Inventory playerInventory;
+    public ThirdPersonController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         dialogueScreenUI.SetActive(false);
         characterSource = new AudioSource();
         // StartConversation(conversation);
@@ -35,6 +40,7 @@ public class DialogueScreen : MonoBehaviour
     {
         tree = newTree;
         expressionTime = 0;
+        selectedOption = -2;
         StartCoroutine(Run());
     }
 
@@ -47,7 +53,10 @@ public class DialogueScreen : MonoBehaviour
         {
             Debug.Log(nodeIndex);
             DisplayNode(nodeIndex);
-            selectedOption = -2;
+            if (selectedOption != -1)
+            {
+                selectedOption = -2;
+            }
             while (selectedOption == -2)
             {
                 if (nodeIndex == -1)
@@ -59,10 +68,17 @@ public class DialogueScreen : MonoBehaviour
             }
             nodeIndex = selectedOption;
         }
-        characterSource.Stop();
+        if (characterSource != null)
+        {
+            characterSource.Stop();
+        }
         ClearOptionsList();
         Debug.Log("Hiding UI");
         dialogueScreenUI.SetActive(false);
+        CameraSwitcher.SwitchToPlayerCamera();
+        playerController.LockMovement(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void DisplayNode(int index)
@@ -72,9 +88,30 @@ public class DialogueScreen : MonoBehaviour
         npcName.text = node.characterSpeaking;
         ClearOptionsList();
         optionsList.gameObject.SetActive(false);
+        foreach (CharacterInstance character in characters)
+        {
+            if (character.activeConversation.characterName == node.characterSpeaking)
+            {
+                CameraSwitcher.SwitchCameraTo(character.vCam);
+            }
+        }
         if (node.dialogueAudioFileName != string.Empty && node.dialogueAudioFileName != null)
         {
             StartCoroutine(PlayDialogueLine(node));
+        }
+        else if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
+        {
+            PopulateOptionsList(node);
+            optionsList.gameObject.SetActive(true);
+        }
+        else if (node.dialogueOptions == null || node.dialogueOptions.Count <= 0)
+        {
+            selectedOption = node.destinationNodeIndex;
+            if (node.destinationNodeIndex > 0)
+            {
+                selectedOption--;
+            }
+            Debug.Log(selectedOption);
         }
     }
 
@@ -86,11 +123,11 @@ public class DialogueScreen : MonoBehaviour
         float eventTimer = 0;
         List<DialogueEvent> dialogueEvents;
         bool hasEvents = (node.dialogueEvents != null && node.dialogueEvents.Count > 0);
-        foreach (AudioSource source in characterAudioSources)
+        foreach (CharacterInstance character in characters)
         {
-            if (source.transform.root.name == node.characterSpeaking)
+            if (character.transform.root.name == node.characterSpeaking)
             {
-                characterSource = source;
+                characterSource = character.source;
             }
         }
         characterSource.Stop();
@@ -141,6 +178,9 @@ public class DialogueScreen : MonoBehaviour
         {
             yield return new WaitForSeconds(voiceLine.length);
         }
+        
+        Debug.Log(node.dialogueOptions);
+
         if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
         {
             PopulateOptionsList(node);
@@ -180,22 +220,25 @@ public class DialogueScreen : MonoBehaviour
         button.GetComponent<Button>().onClick.AddListener(
         delegate
         {
-            foreach (DialogueOptionEffect effect in option.optionEffects)
+            if (option.optionEffects != null)
             {
-                switch (effect.effectType)
+                foreach (DialogueOptionEffect effect in option.optionEffects)
                 {
-                    case DialogueOptionEffectType.ChangeFactionStanding:
-                        FactionSystemManager.ChangeFactionOpinion(effect.faction, Factions.Player, effect.intValue);
-                    break;
-                    case DialogueOptionEffectType.AddItem:
-                        Debug.Log(effect.item.baseItemID);
-                        playerInventory.AddItem(effect.item, effect.intValue);
-                    break;
-                    case DialogueOptionEffectType.RemoveItem:
-                        playerInventory.RemoveItemQuantity(effect.item, effect.intValue);
-                    break;
-                    default:
-                    break;
+                    switch (effect.effectType)
+                    {
+                        case DialogueOptionEffectType.ChangeFactionStanding:
+                            FactionSystemManager.ChangeFactionOpinion(effect.faction, Factions.Player, effect.intValue);
+                        break;
+                        case DialogueOptionEffectType.AddItem:
+                            Debug.Log(effect.item.baseItemID);
+                            playerInventory.AddItem(effect.item, effect.intValue);
+                        break;
+                        case DialogueOptionEffectType.RemoveItem:
+                            playerInventory.RemoveItemQuantity(effect.item, effect.intValue);
+                        break;
+                        default:
+                        break;
+                    }
                 }
             }
         });
@@ -274,8 +317,18 @@ public class DialogueScreen : MonoBehaviour
         }
     }
 
+    public static void StartConversation_Static(NPCConversation newConversation)
+    {
+        instance.StartConversation(newConversation);
+    }
+
     public void StartConversation(NPCConversation conversation)
     {
+        Debug.Log("running tree");
+        PlayerInteraction.SetPrompt(System.String.Empty);
+        playerController.LockMovement(false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + conversation.characterName + "/" + conversation.dialogueTreePath);
         Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);

@@ -45,7 +45,7 @@ public class PointOfInterest : MonoBehaviour, IInteractable
     {
         if (other.GetComponent<PlayerInteraction>())
         {
-            other.GetComponent<PlayerInteraction>().SetFocusObject(this);
+            PlayerInteraction.SetFocusObject_Static(this);
         }
     }
 
@@ -53,7 +53,7 @@ public class PointOfInterest : MonoBehaviour, IInteractable
     {
         if (other.GetComponent<PlayerInteraction>())
         {
-            other.GetComponent<PlayerInteraction>().SetFocusObject(null);
+            PlayerInteraction.SetFocusObject_Static(null);
         }
     }
 

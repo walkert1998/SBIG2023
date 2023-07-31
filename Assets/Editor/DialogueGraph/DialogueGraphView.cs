@@ -129,7 +129,7 @@ public class DialogueGraphView : GraphView
                 nodeAudio.value = Resources.Load<AudioClip>("Voiceover/" + graphNode.dialogueNode.characterSpeaking + "/" + graphNode.dialogueNode.dialogueAudioFileName);
                 graphNode.dialogueNode.dialogueAudio = (AudioClip)nodeAudio.value;
                 texture.sprite = PaintWaveformSpectrum(graphNode.dialogueNode.dialogueAudio, 1, 300, 50, Color.yellow);
-                Debug.Log(graphNode.dialogueNode);
+                Debug.Log(graphNode.dialogueNode.dialogueAudioFileName);
                 audioLength.text = "Audio File Length: " + graphNode.dialogueNode.dialogueAudio.length;
             }
         }

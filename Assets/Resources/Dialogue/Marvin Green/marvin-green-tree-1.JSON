@@ -1,0 +1,87 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "graphPosition": {
+        "x": 250.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 2,
+          "dialogueOptionText": "Nod back.",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 3,
+          "dialogueOptionText": "Attempt to break the ice.",
+          "optionRequirements": null,
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 1,
+              "intValue": -5,
+              "itemBaseID": null
+            }
+          ]
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "graphPosition": {
+        "x": 1271.0,
+        "y": 134.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "who-let-the-dogs-out",
+      "graphPosition": {
+        "x": 1271.0,
+        "y": 384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "graphPosition": {
+        "x": 1692.0,
+        "y": 384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.5,
+          "invoked": 0
+        }
+      ]
+    }
+  ]
+}

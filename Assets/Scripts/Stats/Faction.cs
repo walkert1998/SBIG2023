@@ -5,8 +5,7 @@ using UnityEngine;
 public enum Factions
 {
     Player,
-    Wild,
-    Bandit
+    MarvinGreen
 }
 
 [System.Serializable]

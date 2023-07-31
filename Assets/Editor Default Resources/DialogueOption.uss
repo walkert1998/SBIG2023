@@ -1,0 +1,16 @@
+.dialogue-option
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.option-pre-req-dropdown
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogue-option-pre-req
+{
+    background-color: #1C2025;
+}
