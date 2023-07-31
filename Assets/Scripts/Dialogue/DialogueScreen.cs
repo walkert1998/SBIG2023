@@ -22,6 +22,7 @@ public class DialogueScreen : MonoBehaviour
     public float expressionTime;
     public Inventory playerInventory;
     public ThirdPersonController playerController;
+    public Camera monologueCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -88,11 +89,20 @@ public class DialogueScreen : MonoBehaviour
         npcName.text = node.characterSpeaking;
         ClearOptionsList();
         optionsList.gameObject.SetActive(false);
-        foreach (CharacterInstance character in characters)
+        if (node.characterSpeaking == "Internal Monologue")
         {
-            if (character.activeConversation.characterName == node.characterSpeaking)
+            monologueCamera.gameObject.SetActive(true);
+            npcName.text = "Hugh Mann";
+        }
+        else
+        {
+            monologueCamera.gameObject.SetActive(false);
+            foreach (CharacterInstance character in characters)
             {
-                CameraSwitcher.SwitchCameraTo(character.vCam);
+                if (character.activeConversation.characterName == node.characterSpeaking)
+                {
+                    CameraSwitcher.SwitchCameraTo(character.vCam);
+                }
             }
         }
         if (node.dialogueAudioFileName != string.Empty && node.dialogueAudioFileName != null)

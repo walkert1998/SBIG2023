@@ -4,7 +4,7 @@
     {
       "nodeIndex": 1,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "dialogueText": "He nods at you in greeting.",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
       "graphPosition": {
@@ -19,7 +19,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 3,
+          "destinationNodeIndex": 5,
           "dialogueOptionText": "Attempt to break the ice.",
           "optionRequirements": null,
           "optionEffects": [
@@ -48,14 +48,27 @@
       "dialogueEvents": null
     },
     {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 3,
+      "dialogueText": "I knew from my research, the the African-American community suffered greatly at the hands of law enforcement. I would have to convince Marvin, that I was not the enemy...",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "african-americans-suffered-greatly-from-law-enforcement",
+      "graphPosition": {
+        "x": 1271.0,
+        "y": 389.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
       "nodeIndex": 3,
       "destinationNodeIndex": 4,
-      "dialogueText": null,
+      "dialogueText": "Who let the dogs out, am I right?",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": "who-let-the-dogs-out",
       "graphPosition": {
-        "x": 1271.0,
-        "y": 384.0
+        "x": 1911.0,
+        "y": 389.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -67,8 +80,8 @@
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
       "graphPosition": {
-        "x": 1692.0,
-        "y": 384.0
+        "x": 2332.0,
+        "y": 389.0
       },
       "dialogueOptions": [],
       "dialogueEvents": [
