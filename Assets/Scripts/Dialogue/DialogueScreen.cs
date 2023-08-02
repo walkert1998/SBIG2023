@@ -31,10 +31,10 @@ public class DialogueScreen : MonoBehaviour
         dialogueScreenUI.SetActive(false);
         characterSource = new AudioSource();
         // StartConversation(conversation);
-        #if UNITY_EDITOR
-        QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
-        #endif
+        // #if UNITY_EDITOR
+        // QualitySettings.vSyncCount = 0;
+        // Application.targetFrameRate = 60;
+        // #endif
     }
 
     public void RunDialogueTree(DialogueTree newTree)
