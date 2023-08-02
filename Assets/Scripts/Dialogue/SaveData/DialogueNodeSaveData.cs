@@ -8,6 +8,7 @@ public struct DialogueNodeSaveData
     public string dialogueText;
     public string characterSpeaking;
     public string dialogueAudioFileName;
+    public float silenceLength;
     public Vector2 graphPosition;
     public List<DialogueOptionSaveData> dialogueOptions;
     public List<DialogueEvent> dialogueEvents;

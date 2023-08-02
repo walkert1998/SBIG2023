@@ -30,6 +30,7 @@ public class DialogueTree
             newNode.dialogueText = nodeSaveData.dialogueText;
             newNode.nodeIndex = nodeSaveData.nodeIndex;
             newNode.graphPosition = nodeSaveData.graphPosition;
+            newNode.silenceLength = nodeSaveData.silenceLength;
             
             if (nodeSaveData.dialogueOptions != null && nodeSaveData.dialogueOptions.Count > 0)
             {

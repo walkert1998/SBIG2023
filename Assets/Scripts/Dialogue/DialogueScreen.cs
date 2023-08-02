@@ -19,7 +19,7 @@ public class DialogueScreen : MonoBehaviour
     AudioSource characterSource;
     private int selectedOption = -2;
     public NPCConversation conversation;
-    public float expressionTime;
+    // public float expressionTime;
     public Inventory playerInventory;
     public ThirdPersonController playerController;
     public Camera monologueCamera;
@@ -40,7 +40,6 @@ public class DialogueScreen : MonoBehaviour
     public void RunDialogueTree(DialogueTree newTree)
     {
         tree = newTree;
-        expressionTime = 0;
         selectedOption = -2;
         StartCoroutine(Run());
     }
@@ -89,6 +88,7 @@ public class DialogueScreen : MonoBehaviour
         npcName.text = node.characterSpeaking;
         ClearOptionsList();
         optionsList.gameObject.SetActive(false);
+        CharacterInstance talkingCharacter = null;
         if (node.characterSpeaking == "Internal Monologue")
         {
             monologueCamera.gameObject.SetActive(true);
@@ -101,19 +101,29 @@ public class DialogueScreen : MonoBehaviour
             {
                 if (character.activeConversation.characterName == node.characterSpeaking)
                 {
-                    CameraSwitcher.SwitchCameraTo(character.vCam);
+                    talkingCharacter = character;
+                    CameraSwitcher.SwitchCameraTo(talkingCharacter.vCam);
+                }
+                else if (talkingCharacter != null && character.headLook != null)
+                {
+                    character.headLook.target = talkingCharacter.headTarget;
                 }
             }
         }
+        Debug.Log("length of silence: " + node.silenceLength);
         if (node.dialogueAudioFileName != string.Empty && node.dialogueAudioFileName != null)
         {
             StartCoroutine(PlayDialogueLine(node));
         }
-        else if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
+        else if (node.silenceLength > 0)
         {
-            PopulateOptionsList(node);
-            optionsList.gameObject.SetActive(true);
+            StartCoroutine(WaitForSilence(node));
         }
+        // else if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
+        // {
+        //     PopulateOptionsList(node);
+        //     optionsList.gameObject.SetActive(true);
+        // }
         else if (node.dialogueOptions == null || node.dialogueOptions.Count <= 0)
         {
             selectedOption = node.destinationNodeIndex;
@@ -122,6 +132,84 @@ public class DialogueScreen : MonoBehaviour
                 selectedOption--;
             }
             Debug.Log(selectedOption);
+        }
+    }
+
+    IEnumerator WaitForSilence(DialogueNode node)
+    {
+        float eventTimer = 0;
+        float timer = 0;
+        List<DialogueEvent> dialogueEvents;
+        bool hasEvents = (node.dialogueEvents != null && node.dialogueEvents.Count > 0);
+        foreach (CharacterInstance character in characters)
+        {
+            if (character.transform.root.name == node.characterSpeaking)
+            {
+                characterSource = character.source;
+            }
+        }
+        characterSource.Stop();
+        // characterSource.PlayOneShot(voiceLine);
+        Debug.Log("Playing voiceline");
+        if (hasEvents)
+        {
+            dialogueEvents = node.dialogueEvents;
+            while (timer < node.silenceLength)
+            {
+                timer += Time.deltaTime * Time.timeScale;
+                eventTimer += Time.deltaTime * Time.timeScale;
+                foreach (DialogueEvent evt in dialogueEvents)
+                {
+                    if (eventTimer < evt.invokeTime && evt.invoked == 1)
+                    {
+                        evt.invoked = 0;
+                    }
+                    if (eventTimer >= evt.invokeTime && evt.invoked == 0)
+                    {
+                        switch (evt.eventType)
+                        {
+                            case DialogueEventType.PlayAnimation:
+                                characterSource.GetComponentInParent<Animator>().Play(evt.eventName);
+                                evt.invoked = 1;
+                                Debug.Log("Play animation " + evt.eventName);
+                            break;
+                            case DialogueEventType.SetAnimationBoolValue:
+                                bool val = (evt.intParameter == 1) ? true : false;
+                                characterSource.GetComponentInParent<Animator>().SetBool(evt.eventName, val);
+                                evt.invoked = 1;
+                                Debug.Log("Set animation bool " + evt.eventName + " to " + val);
+                            break;
+                            case DialogueEventType.SetFacialPose:
+                                StartCoroutine(DialogueEventFacialExpression(evt));
+                                evt.invoked = 1;
+                                Debug.Log("Set facial pose " + evt.eventName);
+                            break;
+                        }
+                    }
+                }
+                yield return null;
+            }
+        }
+        else
+        {
+            yield return new WaitForSeconds(node.silenceLength);
+        }
+        
+        Debug.Log(node.dialogueOptions);
+
+        if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
+        {
+            PopulateOptionsList(node);
+        }
+        optionsList.gameObject.SetActive(true);
+        nodeText.text = string.Empty;
+        if (node.dialogueOptions == null || node.dialogueOptions.Count <= 0)
+        {
+            selectedOption = node.destinationNodeIndex;
+            if (node.destinationNodeIndex > 0)
+            {
+                selectedOption--;
+            }
         }
     }
 
@@ -145,7 +233,6 @@ public class DialogueScreen : MonoBehaviour
         // characterSource.PlayOneShot(voiceLine);
         Debug.Log("Playing voiceline");
         characterSource.Play();
-        expressionTime = 0;
         if (hasEvents)
         {
             dialogueEvents = node.dialogueEvents;
@@ -174,8 +261,8 @@ public class DialogueScreen : MonoBehaviour
                                 Debug.Log("Set animation bool " + evt.eventName + " to " + val);
                             break;
                             case DialogueEventType.SetFacialPose:
-                                expressionTime += Time.deltaTime * Time.timeScale;
-                                SetFacialExpression(evt);
+                                StartCoroutine(DialogueEventFacialExpression(evt));
+                                evt.invoked = 1;
                                 Debug.Log("Set facial pose " + evt.eventName);
                             break;
                         }
@@ -207,6 +294,17 @@ public class DialogueScreen : MonoBehaviour
             }
         }
         // Debug.Log(selectedOption);
+    }
+
+    IEnumerator DialogueEventFacialExpression(DialogueEvent evt)
+    {
+        float timer = 0;
+        while (timer < evt.floatParameter)
+        {
+            timer += Time.deltaTime;
+            SetFacialExpression(evt, timer);
+            yield return null;
+        }
     }
 
     public void PopulateOptionsList(DialogueNode node)
@@ -342,19 +440,24 @@ public class DialogueScreen : MonoBehaviour
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + conversation.characterName + "/" + conversation.dialogueTreePath);
         Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);
+        conversation.GetComponent<CharacterInstance>().headLook.target = playerController.GetComponent<CharacterInstance>().headTarget;
+        playerController.GetComponent<CharacterInstance>().headLook.target = conversation.GetComponent<CharacterInstance>().headTarget;
         RunDialogueTree(tree);
     }
 
-    public void SetFacialExpression(DialogueEvent expressionEvent)
+    public void SetFacialExpression(DialogueEvent expressionEvent, float expressionTime)
     {
         int shapeKeyIndex = 0;
         SkinnedMeshRenderer[] skinnedMeshes = characterSource.GetComponentsInChildren<SkinnedMeshRenderer>();
         foreach (SkinnedMeshRenderer skinnedMesh in skinnedMeshes)
         {
             shapeKeyIndex = skinnedMesh.sharedMesh.GetBlendShapeIndex(expressionEvent.eventName);
-            float move = Mathf.Lerp(skinnedMesh.GetBlendShapeWeight(shapeKeyIndex), expressionEvent.intParameter, expressionTime / expressionEvent.floatParameter);
-            // Debug.Log(move);
-            skinnedMesh.SetBlendShapeWeight(shapeKeyIndex, move);
+            if (shapeKeyIndex != -1)
+            {
+                float move = Mathf.Lerp(skinnedMesh.GetBlendShapeWeight(shapeKeyIndex), expressionEvent.intParameter, expressionTime / expressionEvent.floatParameter);
+                Debug.Log(expressionEvent.eventName + " " + move);
+                skinnedMesh.SetBlendShapeWeight(shapeKeyIndex, move);
+            }
         }
     }
 }

@@ -50,6 +50,7 @@ public class PickUp : MonoBehaviour, IInteractable
             {
                 world_item.SetActive(false);
                 PlayerInteraction.SetPrompt("");
+                PlayerInteraction.SetFocusObject_Static(null);
             }
         }
         else
@@ -99,6 +100,7 @@ public class PickUp : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             other.GetComponent<PlayerInteraction>().SetFocusObject(this);
+            other.GetComponent<NPCHeadLook>().target = transform;
         }
     }
 
@@ -107,6 +109,7 @@ public class PickUp : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             other.GetComponent<PlayerInteraction>().SetFocusObject(null);
+            other.GetComponent<NPCHeadLook>().target = null;
         }
     }
 

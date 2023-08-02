@@ -117,7 +117,20 @@ public class DialogueGraphView : GraphView
         nodeText.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.dialogueText = nodeText.value);
         graphNode.mainContainer.Add(nodeText);
 
-        ObjectField nodeAudio = new ObjectField();
+        FloatField silenceLengthField = new FloatField("Silence Length");
+        silenceLengthField.name = "Silence Length";
+        silenceLengthField.tooltip = "For use when there's no audio file but we want the node to last a certain time.";
+        if (saveFileNode != null)
+        {
+            if (saveFileNode.silenceLength > 0)
+            {
+                silenceLengthField.value = saveFileNode.silenceLength;
+            }
+        }
+        silenceLengthField.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.silenceLength = silenceLengthField.value);
+        graphNode.mainContainer.Add(silenceLengthField);
+
+        ObjectField nodeAudio = new ObjectField("Dialogue Voice Line");
         nodeAudio.objectType = typeof(AudioClip);
         nodeAudio.name = "Dialogue Voice Line";
         Label audioLength = new Label();

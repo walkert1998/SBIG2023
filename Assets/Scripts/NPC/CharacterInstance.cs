@@ -10,6 +10,8 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public AudioSource source;
     public Animator animator;
     public CinemachineVirtualCamera vCam;
+    public Transform headTarget;
+    public NPCHeadLook headLook;
 
     public bool focused { get; set; }
     public bool holdToInteract { get; set; }
@@ -59,6 +61,8 @@ public class CharacterInstance : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             PlayerInteraction.SetFocusObject_Static(this);
+            other.GetComponent<NPCHeadLook>().target = headTarget;
+            headLook.target = other.GetComponent<CharacterInstance>().headTarget;
         }
     }
 
@@ -67,6 +71,8 @@ public class CharacterInstance : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             PlayerInteraction.SetFocusObject_Static(null);
+            other.GetComponent<NPCHeadLook>().target = null;
+            headLook.target = null;
         }
     }
 }

@@ -1610,7 +1610,7 @@ MonoBehaviour:
     m_Bits: 1
   interactionBlocked_nonStatic: 0
   playerCamera: {fileID: 5987183948737547590}
-  inputManager: {fileID: 0}
+  inputManager: {fileID: 2305641616034920728}
   interacting: 0
 --- !u!114 &2305641616034920728
 MonoBehaviour:

@@ -111,6 +111,10 @@ public class PlayerInteraction : MonoBehaviour
                 focusedObject.Focus();
             }
         }
+        if (newObject == null)
+        {
+            GetComponent<NPCHeadLook>().target = null;
+        }
     }
 
     public void Interact(InputAction.CallbackContext context)

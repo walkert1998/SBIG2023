@@ -4,9 +4,10 @@
     {
       "nodeIndex": 1,
       "destinationNodeIndex": -1,
-      "dialogueText": "He nods at you in greeting.",
+      "dialogueText": null,
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 250.0,
         "y": 200.0
@@ -40,6 +41,7 @@
       "dialogueText": null,
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 1271.0,
         "y": 134.0
@@ -48,30 +50,46 @@
       "dialogueEvents": null
     },
     {
-      "nodeIndex": 5,
-      "destinationNodeIndex": 3,
-      "dialogueText": "I knew from my research, the the African-American community suffered greatly at the hands of law enforcement. I would have to convince Marvin, that I was not the enemy...",
-      "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": "african-americans-suffered-greatly-from-law-enforcement",
-      "graphPosition": {
-        "x": 1271.0,
-        "y": 389.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
       "nodeIndex": 3,
       "destinationNodeIndex": 4,
-      "dialogueText": "Who let the dogs out, am I right?",
+      "dialogueText": null,
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": "who-let-the-dogs-out",
+      "silenceLength": 4.0,
       "graphPosition": {
         "x": 1911.0,
         "y": 389.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 4.0,
+          "eventName": "e",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 4,
@@ -79,6 +97,7 @@
       "dialogueText": null,
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 2332.0,
         "y": 389.0
@@ -95,6 +114,20 @@
           "invoked": 0
         }
       ]
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 3,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "african-americans-suffered-greatly-from-law-enforcement",
+      "silenceLength": 3.0,
+      "graphPosition": {
+        "x": 1271.0,
+        "y": 389.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
     }
   ]
 }

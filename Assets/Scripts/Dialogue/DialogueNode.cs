@@ -9,6 +9,7 @@ public class DialogueNode
     public string dialogueText;
     public string characterSpeaking;
     public string dialogueAudioFileName;
+    public float silenceLength;
     public AudioClip dialogueAudio;
     public Vector2 graphPosition;
     public List<DialogueOption> dialogueOptions;

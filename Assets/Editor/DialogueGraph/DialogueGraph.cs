@@ -98,6 +98,7 @@ public class DialogueGraph : EditorWindow
             nodeSaveData.nodeIndex = dialogueNodes[i].dialogueNode.nodeIndex;
             nodeSaveData.destinationNodeIndex = dialogueNodes[i].dialogueNode.destinationNodeIndex;
             nodeSaveData.graphPosition = dialogueNodes[i].GetPosition().position;
+            nodeSaveData.silenceLength = dialogueNodes[i].dialogueNode.silenceLength;
             if (dialogueNodes[i].dialogueNode.dialogueAudio != null)
             {
                 nodeSaveData.dialogueAudioFileName = dialogueNodes[i].dialogueNode.dialogueAudio.name;
