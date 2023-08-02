@@ -100,7 +100,7 @@ public class PickUp : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             other.GetComponent<PlayerInteraction>().SetFocusObject(this);
-            other.GetComponent<NPCHeadLook>().target = transform;
+            other.GetComponent<NPCHeadLook>().SetTarget(transform);
         }
     }
 
@@ -109,7 +109,7 @@ public class PickUp : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             other.GetComponent<PlayerInteraction>().SetFocusObject(null);
-            other.GetComponent<NPCHeadLook>().target = null;
+            other.GetComponent<NPCHeadLook>().SetTarget(null);
         }
     }
 

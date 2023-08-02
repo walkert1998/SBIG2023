@@ -113,7 +113,7 @@ public class PlayerInteraction : MonoBehaviour
         }
         if (newObject == null)
         {
-            GetComponent<NPCHeadLook>().target = null;
+            GetComponent<NPCHeadLook>().SetTarget(null);
         }
     }
 

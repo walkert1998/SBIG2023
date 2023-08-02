@@ -32,6 +32,11 @@ public class NPCHeadLook : MonoBehaviour
         //npcAI = GetComponent<NPCAI>();
     }
 
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
+
     private void OnAnimatorIK(int layerIndex)
     {
         if (animator.enabled)

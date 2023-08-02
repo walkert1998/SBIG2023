@@ -104,11 +104,16 @@ public class DialogueScreen : MonoBehaviour
                     talkingCharacter = character;
                     CameraSwitcher.SwitchCameraTo(talkingCharacter.vCam);
                 }
-                else if (talkingCharacter != null && character.headLook != null)
+            }
+
+            foreach (CharacterInstance character in characters)
+            {
+                if (talkingCharacter != null && talkingCharacter != character && character.headLook != null)
                 {
-                    character.headLook.target = talkingCharacter.headTarget;
+                    character.headLook.SetTarget(talkingCharacter.headTarget);
                 }
             }
+            Debug.Log("Character speaking: " + talkingCharacter.activeConversation.characterName);
         }
         Debug.Log("length of silence: " + node.silenceLength);
         if (node.dialogueAudioFileName != string.Empty && node.dialogueAudioFileName != null)
@@ -440,8 +445,8 @@ public class DialogueScreen : MonoBehaviour
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + conversation.characterName + "/" + conversation.dialogueTreePath);
         Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);
-        conversation.GetComponent<CharacterInstance>().headLook.target = playerController.GetComponent<CharacterInstance>().headTarget;
-        playerController.GetComponent<CharacterInstance>().headLook.target = conversation.GetComponent<CharacterInstance>().headTarget;
+        conversation.GetComponent<CharacterInstance>().headLook.SetTarget(playerController.GetComponent<CharacterInstance>().headTarget);
+        playerController.GetComponent<CharacterInstance>().headLook.SetTarget(conversation.GetComponent<CharacterInstance>().headTarget);
         RunDialogueTree(tree);
     }
 
