@@ -86,7 +86,7 @@ public class GameMenu : MonoBehaviour
         Time.timeScale = 1.0f;
         Time.fixedDeltaTime = 0.02f * Time.timeScale;
         gamePaused = false;
-        if (!InventoryManager.IsNotePadOpen_Static())
+        if (!InventoryManager.IsNotePadOpen_Static() && !DialogueScreen.instance.dialogueScreenUI.activeSelf)
         {
             controller.GetComponent<ThirdPersonController>().LockMovement(true);
             Cursor.lockState = CursorLockMode.Locked;

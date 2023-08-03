@@ -1,0 +1,47 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 3,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 201.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 4,
+      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was one of my vict- I mean cousins!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 609.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": -1,
+      "dialogueText": "A feeling gnawed at my subconciousness, like a rat chewing on a wire, but the rat is a mechanical death rat, and the wire is my subconciousness.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 1221.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}
