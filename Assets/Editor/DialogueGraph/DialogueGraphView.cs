@@ -51,7 +51,9 @@ public class DialogueGraphView : GraphView
         return node.InstantiatePort(Orientation.Horizontal, portDir, capacity, typeof(float));
     }
 
-    public DialogueGraphNode CreateDialogueNode(string nodeName, DialogueNode saveFileNode)
+
+
+    public DialogueGraphNode CreateDialogueNode(string nodeName, Vector2 position, DialogueNode saveFileNode=null)
     {
         DialogueGraphNode graphNode = new DialogueGraphNode();
         graphNode.dialogueNode = new DialogueNode();
@@ -74,7 +76,7 @@ public class DialogueGraphView : GraphView
             // }
         }
         graphNode.dialogueNode.dialogueEvents = new List<DialogueEvent>();
-        Debug.Log(graphNode.dialogueNode.dialogueEvents.Count);
+        // Debug.Log(graphNode.dialogueNode.dialogueEvents.Count);
 
 
         Port inputPort = GeneratePort(graphNode, Direction.Input, Port.Capacity.Multi);
@@ -86,13 +88,17 @@ public class DialogueGraphView : GraphView
         outputPort.AddManipulator(new EdgeConnector<Edge>(new DialogueEdgeConnectorListener(graphNode)));
         graphNode.outputContainer.Add(outputPort);
 
-        Button button = new Button(() => { AddChoicePort(graphNode);} );
-        button.text = "New Dialogue Option";
+        Button button = new(() => { AddChoicePort(graphNode); })
+        {
+            text = "New Dialogue Option"
+        };
         graphNode.titleContainer.Add(button);
 
-        TextField characterSpeaking = new TextField("Character Speaking");
-        characterSpeaking.multiline = true;
-        characterSpeaking.maxLength = 100;
+        TextField characterSpeaking = new("Character Speaking")
+        {
+            multiline = true,
+            maxLength = 100
+        };
         characterSpeaking.style.whiteSpace = WhiteSpace.Normal;
         characterSpeaking.style.maxWidth = 500;
         if (saveFileNode != null)
@@ -102,9 +108,11 @@ public class DialogueGraphView : GraphView
         characterSpeaking.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.characterSpeaking = characterSpeaking.value);
         graphNode.mainContainer.Add(characterSpeaking);
 
-        TextField nodeText = new TextField("Dialogue Node Text");
-        // Make textfield multiline
-        nodeText.multiline = true;
+        TextField nodeText = new("Dialogue Node Text")
+        {
+            // Make textfield multiline
+            multiline = true
+        };
         // Give it a size so it doesn't stretch too far.
         nodeText.style.maxWidth = 500;
         // This is a buried property that has so far
@@ -117,9 +125,11 @@ public class DialogueGraphView : GraphView
         nodeText.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.dialogueText = nodeText.value);
         graphNode.mainContainer.Add(nodeText);
 
-        FloatField silenceLengthField = new FloatField("Silence Length");
-        silenceLengthField.name = "Silence Length";
-        silenceLengthField.tooltip = "For use when there's no audio file but we want the node to last a certain time.";
+        FloatField silenceLengthField = new("Silence Length")
+        {
+            name = "Silence Length",
+            tooltip = "For use when there's no audio file but we want the node to last a certain time."
+        };
         if (saveFileNode != null)
         {
             if (saveFileNode.silenceLength > 0)
@@ -192,10 +202,11 @@ public class DialogueGraphView : GraphView
 
         // Add node index to name to make it more clear
         graphNode.title = nodeName + " " + graphNode.dialogueNode.nodeIndex;
+        Debug.Log(graphNode.title);
 
         graphNode.RefreshExpandedState();
         graphNode.RefreshPorts();
-        graphNode.SetPosition(new Rect(Vector2.zero, defaultNodeSize));
+        graphNode.SetPosition(new Rect(position, defaultNodeSize));
         if (saveFileNode != null)
         {
             graphNode.SetPosition(new Rect(graphNode.dialogueNode.graphPosition, defaultNodeSize));
@@ -591,9 +602,9 @@ public class DialogueGraphView : GraphView
         node.RefreshExpandedState();
     }
 
-    public DialogueGraphNode CreateNode(string nodeName, DialogueNode saveFileNode=null)
+    public DialogueGraphNode CreateNode(string nodeName, Vector2 position, DialogueNode saveFileNode=null)
     {
-        DialogueGraphNode createdNode = CreateDialogueNode(nodeName, saveFileNode);
+        DialogueGraphNode createdNode = CreateDialogueNode(nodeName, position, saveFileNode);
         if (createdNode != null)
         {
             AddElement(createdNode);
@@ -665,7 +676,7 @@ public class DialogueGraphView : GraphView
             {
                 // This if statement is for connecting the entry node.
                 // There's a better way but I just want this to work.
-                if (dn.dialogueNode.nodeIndex > 0 )
+                if (dn.dialogueNode.nodeIndex > 0  && dn.dialogueNode.destinationNodeIndex != -1)
                 {
                     newEdge = port.ConnectTo(nodes.ToList()[dn.dialogueNode.destinationNodeIndex].inputContainer.Q<Port>());
                 }
@@ -681,5 +692,17 @@ public class DialogueGraphView : GraphView
             }
         }
         return 0;
+    }
+
+    public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
+    {
+        base.BuildContextualMenu(evt);
+        if (evt.target is DialogueGraphView || evt.target is DialogueGraphNode)
+        {
+            Vector2 localMousePos = evt.localMousePosition;
+            Vector2 actualGraphPosition = viewTransform.matrix.inverse.MultiplyPoint(localMousePos );
+            evt.menu.AppendAction("New Dialogue Node", (e) => { CreateNode("Dialogue Node", actualGraphPosition, null); });
+            evt.menu.AppendAction("New Start Node", (e) => { AddElement(GenerateEntryPointNode()); });
+        }
     }
 }

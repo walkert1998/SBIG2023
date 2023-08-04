@@ -45,12 +45,6 @@ public class DialogueGraph : EditorWindow
     {
         Toolbar toolbar = new Toolbar();
 
-        TextField fileNameTextField = new TextField("File Name:");
-        fileNameTextField.SetValueWithoutNotify("New Dialogue Tree");
-        fileNameTextField.MarkDirtyRepaint();
-        fileNameTextField.RegisterValueChangedCallback(evt => fileName = evt.newValue);
-        toolbar.Add(fileNameTextField);
-
         Button saveButton = new Button(() => SaveData());
         saveButton.text = "Save Dialogue Tree";
         toolbar.Add(saveButton);
@@ -59,7 +53,7 @@ public class DialogueGraph : EditorWindow
         loadButton.text = "Load Dialogue Tree";
         toolbar.Add(loadButton);
 
-        Button nodeCreateButton = new Button(() => { graphView.CreateNode("Dialogue Node"); } );
+        Button nodeCreateButton = new Button(() => { graphView.CreateNode("Dialogue Node", Vector2.zero); } );
         nodeCreateButton.text = "Create Node";
         toolbar.Add(nodeCreateButton);
 
@@ -79,7 +73,7 @@ public class DialogueGraph : EditorWindow
         Debug.Log(tree.dialogueNodes.Length);
         foreach (DialogueNode node in tree.dialogueNodes)
         {
-            DialogueGraphNode newNode = graphView.CreateNode("Dialogue Node", node);
+            DialogueGraphNode newNode = graphView.CreateNode("Dialogue Node", node.graphPosition, node);
         }
         graphView.ConnectAllPorts();
     }

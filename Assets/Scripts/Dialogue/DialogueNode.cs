@@ -14,4 +14,5 @@ public class DialogueNode
     public Vector2 graphPosition;
     public List<DialogueOption> dialogueOptions;
     public List<DialogueEvent> dialogueEvents;
+    public List<DialogueOptionRequirement> nodeRequirements;
 }
