@@ -4,10 +4,10 @@
     {
       "nodeIndex": 1,
       "destinationNodeIndex": 2,
-      "dialogueText": null,
+      "dialogueText": "O Toaster of the kitchen, speak thy wisdom!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 259.0,
         "y": 200.0
@@ -28,7 +28,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 2,
+          "destinationNodeIndex": 3,
           "dialogueOptionText": "I beg of you, please aid me in my investigation!",
           "optionRequirements": null,
           "optionEffects": null
@@ -97,7 +97,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 5,
+          "destinationNodeIndex": 6,
           "dialogueOptionText": "I have bread!",
           "optionRequirements": [
             {
@@ -125,7 +125,7 @@
       "dialogueText": "I have bread!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 3472.0,
         "y": 200.0

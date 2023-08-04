@@ -360,7 +360,10 @@ public class DialogueScreen : MonoBehaviour
         button.GetComponent<Button>().onClick.AddListener(
         delegate
         {
-            selectedOption = option.destinationNodeIndex - 1;
+            if (option.destinationNodeIndex > 0)
+                selectedOption = option.destinationNodeIndex - 1;
+            else
+                selectedOption = option.destinationNodeIndex;
         });
     }
 
