@@ -153,6 +153,7 @@ public class DialogueGraph : EditorWindow
         }
         // string newFilePath = Application.persistentDataPath + "/Resources/Dialogue/" + fileName;
         // string newFilePath = Application.persistentDataPath + "/" + fileName + ".json";
+        treeSaveData.dialogueNodes.Sort((p1,p2) => p1.nodeIndex.CompareTo(p2.nodeIndex));
         string jsonSaveinfo = JsonConvert.SerializeObject(treeSaveData, Formatting.Indented, new JsonSerializerSettings
         {
             PreserveReferencesHandling = PreserveReferencesHandling.None,

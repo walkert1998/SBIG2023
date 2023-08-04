@@ -62,7 +62,10 @@ public class CharacterInstance : MonoBehaviour, IInteractable
         {
             PlayerInteraction.SetFocusObject_Static(this);
             other.GetComponent<NPCHeadLook>().SetTarget(headTarget);
-            headLook.SetTarget(other.GetComponent<CharacterInstance>().headTarget);
+            if (headLook != null)
+            {
+                headLook.SetTarget(other.GetComponent<CharacterInstance>().headTarget);
+            }
         }
     }
 
@@ -72,7 +75,10 @@ public class CharacterInstance : MonoBehaviour, IInteractable
         {
             PlayerInteraction.SetFocusObject_Static(null);
             other.GetComponent<NPCHeadLook>().SetTarget(null);
-            headLook.SetTarget(null);
+            if (headLook != null)
+            {
+                headLook.SetTarget(null);
+            }
         }
     }
 }

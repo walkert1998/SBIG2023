@@ -22,7 +22,7 @@ public class DialogueEdgeConnectorListener : IEdgeConnectorListener
     {
         if (node != null)
         {
-            node.dialogueNode.destinationNodeIndex = graphView.nodes.ToList().IndexOf(edge.input.node) + 1;
+            node.dialogueNode.destinationNodeIndex = graphView.nodes.ToList().IndexOf(edge.input.node);
             Debug.Log(graphView.nodes.ToList().IndexOf(edge.input.node));
         }
         else

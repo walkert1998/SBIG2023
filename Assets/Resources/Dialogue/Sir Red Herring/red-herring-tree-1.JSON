@@ -1,0 +1,549 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 1.0,
+      "graphPosition": {
+        "x": 204.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-had-this-feeling-that-sir-red-herring",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 1307.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 1760.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 2107.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 6,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 2460.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 7,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 2805.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 3151.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-then-realized-had-become-engaged-in-a-bout-of-verbal-sparring",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 3550.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 4196.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Snivelling",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Right wing",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Silly",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Fundamentally incurious",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Two-faced",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Idiotic",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 6021.0,
+        "y": -354.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 5125.0,
+        "y": 239.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Insipid",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Left-leaning",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Barbarous",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Syncophantic",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Un-based",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Eldritch",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Duck-billed",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 6085.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 10,
+          "dialogueOptionText": "Nincompoop",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Centrist",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Cowpie",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Swineherd",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Vagabond",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 7093.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": 15,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 7575.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 7899.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 8219.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 8553.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 10,
+          "dialogueOptionText": "Frivolous",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 18,
+          "dialogueOptionText": "Fundamentally incurious",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 18,
+          "dialogueOptionText": "Borish",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 18,
+          "dialogueOptionText": "Witless",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 9585.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 10,
+          "dialogueOptionText": "Blue-pilled",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 19,
+          "dialogueOptionText": "Eldritch",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 19,
+          "dialogueOptionText": "Duck-billed",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 19,
+          "dialogueOptionText": "Maidenless",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 10545.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 10,
+          "dialogueOptionText": "Pillock",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 20,
+          "dialogueOptionText": "Scallywag",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 20,
+          "dialogueOptionText": "Nerf herder",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": 21,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 11574.0,
+        "y": 238.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 22,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 12207.0,
+        "y": 246.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": 23,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 12606.0,
+        "y": 253.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 12955.0,
+        "y": 253.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 13525.0,
+        "y": 253.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": 24,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "a-feeling-gnawed-at-my-subconscious",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 884.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Yes",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 522.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}

@@ -120,6 +120,7 @@ public class DialogueGraphView : GraphView
         nodeText.style.whiteSpace = WhiteSpace.Normal;
         if (saveFileNode != null)
         {
+            Debug.Log(saveFileNode.nodeIndex + " " + saveFileNode.dialogueText);
             nodeText.value = saveFileNode.dialogueText;
         }
         nodeText.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.dialogueText = nodeText.value);
@@ -286,7 +287,7 @@ public class DialogueGraphView : GraphView
         string outputPortName = string.Empty;
         generatedPort.portName = outputPortName;
 
-        Button deleteOptionButton = new Button(() => RemovePort(graphNode, generatedPort));
+        Button deleteOptionButton = new Button(() => RemovePort(graphNode, generatedPort, option));
         deleteOptionButton.text = "X";
 
         VisualElement optionContainer = new VisualElement();
@@ -585,10 +586,11 @@ public class DialogueGraphView : GraphView
         return preReqContainer;
     }
 
-    public void RemovePort(DialogueGraphNode node, Port generatedPort)
+    public void RemovePort(DialogueGraphNode node, Port generatedPort, DialogueOption option)
     {
         IEnumerable<Edge> targetEdge = edges.ToList().Where(x => x.output.portName == generatedPort.portName && x.output.node == generatedPort.node);
         Debug.Log(generatedPort.portName);
+        
 
         if (targetEdge.Any())
         {
@@ -596,7 +598,7 @@ public class DialogueGraphView : GraphView
             edge.input.Disconnect(edge);
             RemoveElement(targetEdge.First());
         }
-
+        node.dialogueNode.dialogueOptions.Remove(option);
         node.outputContainer.Remove(generatedPort);
         node.RefreshPorts();
         node.RefreshExpandedState();
@@ -678,6 +680,7 @@ public class DialogueGraphView : GraphView
                 // There's a better way but I just want this to work.
                 if (dn.dialogueNode.nodeIndex > 0  && dn.dialogueNode.destinationNodeIndex != -1)
                 {
+                    Debug.Log("dest node index " + dn.dialogueNode.nodeIndex + " " + dn.dialogueNode.destinationNodeIndex);
                     newEdge = port.ConnectTo(nodes.ToList()[dn.dialogueNode.destinationNodeIndex].inputContainer.Q<Port>());
                 }
                 else

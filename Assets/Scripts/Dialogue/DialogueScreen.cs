@@ -103,7 +103,9 @@ public class DialogueScreen : MonoBehaviour
                 {
                     talkingCharacter = character;
                     CameraSwitcher.SwitchCameraTo(talkingCharacter.vCam);
+
                 }
+                Debug.Log("Character: " + character.activeConversation.characterName + " node: " + node.characterSpeaking + " " + node.nodeIndex);
             }
 
             foreach (CharacterInstance character in characters)
@@ -445,7 +447,10 @@ public class DialogueScreen : MonoBehaviour
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + conversation.characterName + "/" + conversation.dialogueTreePath);
         Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);
-        conversation.GetComponent<CharacterInstance>().headLook.SetTarget(playerController.GetComponent<CharacterInstance>().headTarget);
+        if (conversation.GetComponent<NPCHeadLook>())
+        {
+            conversation.GetComponent<CharacterInstance>().headLook.SetTarget(playerController.GetComponent<CharacterInstance>().headTarget);
+        }
         playerController.GetComponent<CharacterInstance>().headLook.SetTarget(conversation.GetComponent<CharacterInstance>().headTarget);
         RunDialogueTree(tree);
     }

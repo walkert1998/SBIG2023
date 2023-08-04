@@ -1,0 +1,179 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 259.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": -1,
+      "dialogueText": "The Toaster remaines silent...",
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 753.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 2,
+          "dialogueOptionText": "I beg of you, please aid me in my investigation!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 5,
+          "dialogueOptionText": "I have bread!",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave]",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": "I beg of you, please aid me in my investigation!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1707.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": "...",
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": null,
+      "silenceLength": 1.0,
+      "graphPosition": {
+        "x": 2219.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I require... bread...",
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": "i-require-bread",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 2545.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 5,
+          "dialogueOptionText": "I have bread!",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave]",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 7,
+      "dialogueText": "I have bread!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 3472.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "Yes, ha ha ha... YES",
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": "yes-yes",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 3867.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": "Will you help me?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4238.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": "as-you-have-served-me",
+      "silenceLength": 0.0,
+      "graphPosition": {
+        "x": 4575.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}
