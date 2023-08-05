@@ -13820,7 +13820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Sir Red Herring
-  dialogueTreePath: red-herring-tree-1
+  dialogueTreePath: red-herring-tree-2
 --- !u!114 &1610808115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17152,6 +17152,14 @@ PrefabInstance:
       propertyPath: MinDistance
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2305641616034920735, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
+      propertyPath: m_SlopeLimit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305641616034920735, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
+      propertyPath: m_StepOffset
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4767378197853715108, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -17159,6 +17167,10 @@ PrefabInstance:
     - target: {fileID: 5897340308170652713, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965433408871739737, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
+      propertyPath: m_DefaultBlend.m_Time
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 5987183948737547585, guid: f25f001d24e2db24892ae7f80547949c, type: 3}
       propertyPath: m_LocalPosition.x

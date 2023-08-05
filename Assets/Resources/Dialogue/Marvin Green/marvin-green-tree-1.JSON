@@ -4,10 +4,10 @@
     {
       "nodeIndex": 1,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "dialogueText": "He nods at you...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 250.0,
         "y": 200.0
@@ -17,7 +17,14 @@
           "destinationNodeIndex": 2,
           "dialogueOptionText": "Nod back.",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 1,
+              "intValue": 5,
+              "itemBaseID": null
+            }
+          ]
         },
         {
           "destinationNodeIndex": 5,
@@ -33,29 +40,49 @@
           ]
         }
       ],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "Nod",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 2,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 9,
+      "dialogueText": "You nod back...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 1271.0,
-        "y": 134.0
+        "y": -1.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "Nod",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 3,
       "destinationNodeIndex": 4,
-      "dialogueText": null,
+      "dialogueText": "Who let the dogs out, am I right?",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": "who-let-the-dogs-out",
-      "silenceLength": 4.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 1911.0,
         "y": 389.0
@@ -88,21 +115,52 @@
           "intParameter": 100,
           "floatParameter": 1.0,
           "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 1.2,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 1.5,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
         }
       ]
     },
     {
       "nodeIndex": 4,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 6,
+      "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 2332.0,
         "y": 389.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 6,
+          "dialogueOptionText": "Cut me some slack jack!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 7,
+          "dialogueOptionText": "I understand you're a tenant of Doctor Cadaver?",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": [
         {
           "eventType": 2,
@@ -118,13 +176,480 @@
     {
       "nodeIndex": 5,
       "destinationNodeIndex": 3,
-      "dialogueText": null,
+      "dialogueText": "I knew from my research that the African-American community suffered greatly at the hands of law enforcement. I would have to convince Marvin that I was not the enemy.",
       "characterSpeaking": "Internal Monologue",
       "dialogueAudioFileName": "african-americans-suffered-greatly-from-law-enforcement",
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 1271.0,
         "y": 389.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 8,
+      "dialogueText": "Cut me some slack jack!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "cut-me-some-slack-jack",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3256.0,
+        "y": 389.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I understand you're a tenant of Doctor Cadaver?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3256.0,
+        "y": 647.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3696.0,
+        "y": 389.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "eyes-closed",
+          "stringParameter": null,
+          "intParameter": 50,
+          "floatParameter": 2.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1598.0,
+        "y": -325.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "Nod",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 2.0,
+          "eventName": "ThumbsUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 2.0,
+          "eventName": "Happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": 11,
+      "dialogueText": "It appears that Mr. Green is mute! An unexpected challenge to be sure, but nothing I hadn't handled on Epsilon V before!",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1918.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": 12,
+      "dialogueText": "Do you mind if I ask you some questions?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2459.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2873.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "What were you doing last night?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "What can you tell me about the other residents?",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": "What were you doing last night?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-were-you-doing-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3818.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": 15,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4228.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "Hmm, so you ran in place and counted your fingers...",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "You went for a walk and then studied...",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "You were running from hoes in your DMs...",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5286.0,
+        "y": 17.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 16,
+          "dialogueOptionText": "Um, ok...",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 18,
+          "dialogueOptionText": "There was 1 you, and 3 sex, and then you shot the Doctor?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "1-3-F? And you heard a gunshot...",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6211.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": 19,
+      "dialogueText": "That's a fascinating story Marvin, thank you. You remind me of an old friend from Uranus.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6558.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6211.0,
+        "y": 130.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "WagFinger",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": 20,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7119.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.5,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I mean...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7470.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "You're under arrest for the murder of Doctor Cadaver!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Jupiter!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Option 3",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 22,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8411.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": -1,
+      "dialogueText": "And what evidence do you have Detective?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8792.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 23,
+          "dialogueOptionText": "I made it up!",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": "My evidence is, I made it up!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "my-evidence-is-i-made-it-up",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9741.0,
+        "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 1.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HandsOnHips",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good enough for me.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10159.0,
+        "y": -80.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

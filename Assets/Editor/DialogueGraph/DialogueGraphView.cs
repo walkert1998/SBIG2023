@@ -122,8 +122,9 @@ public class DialogueGraphView : GraphView
         {
             Debug.Log(saveFileNode.nodeIndex + " " + saveFileNode.dialogueText);
             nodeText.value = saveFileNode.dialogueText;
+            graphNode.dialogueNode.dialogueText = saveFileNode.dialogueText;
         }
-        nodeText.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.dialogueText = nodeText.value);
+        nodeText.RegisterValueChangedCallback((evt) => { graphNode.dialogueNode.dialogueText = nodeText.value; Debug.Log(graphNode.dialogueNode.dialogueText); });
         graphNode.mainContainer.Add(nodeText);
 
         FloatField silenceLengthField = new("Silence Length")
@@ -137,6 +138,10 @@ public class DialogueGraphView : GraphView
             {
                 silenceLengthField.value = saveFileNode.silenceLength;
             }
+        }
+        else
+        {
+            silenceLengthField.value = 3.0f;
         }
         silenceLengthField.RegisterValueChangedCallback((evt) => graphNode.dialogueNode.silenceLength = silenceLengthField.value);
         graphNode.mainContainer.Add(silenceLengthField);

@@ -377,6 +377,10 @@ public class DialogueScreen : MonoBehaviour
                 switch (requirement.requirementType)
                 {
                     case DialogueOptionRequirementType.PlayerHasItem:
+                        if (playerInventory.FindItem(requirement.requiredItem) == null)
+                        {
+                            return 1;
+                        }
                     break;
                     case DialogueOptionRequirementType.CharacterOpinion:
                     break;

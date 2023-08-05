@@ -7,18 +7,28 @@
       "dialogueText": "O Toaster of the kitchen, speak thy wisdom!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 259.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 2,
       "destinationNodeIndex": -1,
-      "dialogueText": "The Toaster remaines silent...",
+      "dialogueText": "[The Toaster remains silent.]",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
@@ -59,10 +69,10 @@
     {
       "nodeIndex": 3,
       "destinationNodeIndex": 4,
-      "dialogueText": "I beg of you, please aid me in my investigation!",
+      "dialogueText": "I beg of you, please aid my investigation!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 1707.0,
         "y": 200.0
@@ -76,9 +86,9 @@
       "dialogueText": "...",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 3.0,
       "graphPosition": {
-        "x": 2219.0,
+        "x": 2178.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -87,7 +97,7 @@
     {
       "nodeIndex": 5,
       "destinationNodeIndex": -1,
-      "dialogueText": "I require... bread...",
+      "dialogueText": "I require... Bread...",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": "i-require-bread",
       "silenceLength": 0.0,
@@ -97,7 +107,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 6,
+          "destinationNodeIndex": 5,
           "dialogueOptionText": "I have bread!",
           "optionRequirements": [
             {
@@ -122,7 +132,7 @@
     {
       "nodeIndex": 6,
       "destinationNodeIndex": 7,
-      "dialogueText": "I have bread!",
+      "dialogueText": "I possess bread!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
@@ -136,10 +146,10 @@
     {
       "nodeIndex": 7,
       "destinationNodeIndex": 8,
-      "dialogueText": "Yes, ha ha ha... YES",
+      "dialogueText": "Yes, heh heh heh heh... YES...",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": "yes-yes",
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 3867.0,
         "y": 200.0
@@ -153,7 +163,7 @@
       "dialogueText": "Will you help me?",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 3.0,
       "graphPosition": {
         "x": 4238.0,
         "y": 200.0
@@ -164,15 +174,29 @@
     {
       "nodeIndex": 9,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "dialogueText": "As you have served me, I shall serve you.",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": "as-you-have-served-me",
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 4575.0,
         "y": 200.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Perfect, lets go!",
+          "optionRequirements": null,
+          "optionEffects": [
+            {
+              "effectType": 0,
+              "faction": 0,
+              "intValue": 1,
+              "itemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35"
+            }
+          ]
+        }
+      ],
       "dialogueEvents": null
     }
   ]

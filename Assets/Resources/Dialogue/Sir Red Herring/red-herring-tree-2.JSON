@@ -1,0 +1,178 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": "Excuse me, are you a relative of Doctor Cadaver?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "excuse-me-are-you-a-relative-of-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 232.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was one of my vict- I mean cousins!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 757.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": "A feeling gnawed at my subconsciousness, like a rat chewing on a wire, but the rat is a mechanical death rat, and the wire is my subconsciousness.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "a-feeling-gnawed-at-my-subconscious",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1307.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": "I had this feeling, that Sir Red Herring might be the murderer!",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-had-this-feeling-that-sir-red-herring",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1865.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 6,
+      "dialogueText": "My condolences for your loss Sir, do you mind if I ask you a few questions?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "my-condolences-for-your-loss-sir",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2431.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 7,
+      "dialogueText": "Who do you think you are? You…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2999.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 50,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "...Snivelling...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3421.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": "...Insipid...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3761.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "...Nincompoop!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4105.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": 11,
+      "dialogueText": "I then realized I had become inadvertently engaged in a bout of verbal sparring. The games purpose was convoluted, but the rules simple. String together insulting adjectives and nouns, and repeating an opponents jab results in immediate loss. I would have to prove myself to this loquacious loser.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-then-realized-had-become-engaged-in-a-bout-of-verbal-sparring",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4435.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Well at least I'm not a...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5034.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}
