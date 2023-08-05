@@ -6,8 +6,8 @@
       "destinationNodeIndex": 2,
       "dialogueText": "O Toaster of the kitchen, speak thy wisdom!",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "dialogueAudioFileName": "o-toaster-of-the-kitchen-speak-thy-wisdom",
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 259.0,
         "y": 200.0
@@ -21,6 +21,15 @@
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 50,
+          "floatParameter": 0.1,
           "invoked": 0
         }
       ]
@@ -71,14 +80,33 @@
       "destinationNodeIndex": 4,
       "dialogueText": "I beg of you, please aid my investigation!",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "dialogueAudioFileName": "i-beg-of-you-please-aid-my-investigation",
+      "silenceLength": 0.0,
       "graphPosition": {
         "x": 1707.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 4,
@@ -86,7 +114,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 2178.0,
         "y": 200.0
@@ -100,7 +128,7 @@
       "dialogueText": "I require... Bread...",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": "i-require-bread",
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 2545.0,
         "y": 200.0
@@ -134,14 +162,24 @@
       "destinationNodeIndex": 7,
       "dialogueText": "I possess bread!",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "i-possess-bread",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3472.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 7,
@@ -163,13 +201,23 @@
       "dialogueText": "Will you help me?",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 4238.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 9,

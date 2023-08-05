@@ -1,0 +1,158 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": "I'll be out in a minute, just wait out in the living room!",
+      "characterSpeaking": "Decoy",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 223.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "Very well. You have a nice house by the way!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 710.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": "Did you have any trouble finding the place?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "did-you-have-any-trouble-finding-the-place",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1163.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 4,
+          "dialogueOptionText": "[Disintegrate him] AHH!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 6,
+          "dialogueOptionText": "No.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": "And just like that, I was dead.",
+      "characterSpeaking": "Narration",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2094.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I knew this was a trap, I must exit at once!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2464.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 6,
+      "dialogueText": "No, it's right next door to my investigation.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2085.0,
+        "y": 411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "Why don't you have a seat over here?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "why-dont-you-have-a-seat-over-here",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2517.0,
+        "y": 411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": "Very well.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2947.0,
+        "y": 411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "What are you doing here?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3275.0,
+        "y": 411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3623.0,
+        "y": 411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}

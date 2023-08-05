@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e968735be1e3449a98521736b7e842, type: 3}
   m_Name: Toaster
   m_EditorClassIdentifier: 
-  itemType: 0
-  itemName: 
-  itemID: 
-  baseItemID: 
+  itemType: 10
+  itemName: Toaster
+  itemID: 76ae60bf-b284-4481-be4e-dd83a0c2faff
+  baseItemID: 76ae60bf-b284-4481-be4e-dd83a0c2faff
   description: 
   price: 0
   horizontalIcon: {fileID: 0}
   verticalIcon: {fileID: 0}
   size:
-    x: 0
-    y: 0
+    x: 1
+    y: 1
   stackable: 0
   itemCombinationsPossible: []
   destroyOnUse: 0
