@@ -12,6 +12,7 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public CinemachineVirtualCamera vCam;
     public Transform headTarget;
     public NPCHeadLook headLook;
+    public Color subtitlecolour;
 
     public bool focused { get; set; }
     public bool holdToInteract { get; set; }

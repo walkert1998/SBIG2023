@@ -23,6 +23,7 @@ public class DialogueScreen : MonoBehaviour
     public Inventory playerInventory;
     public ThirdPersonController playerController;
     public Camera monologueCamera;
+    CharacterInstance talkingCharacter;
 
     // Start is called before the first frame update
     void Start()
@@ -77,6 +78,7 @@ public class DialogueScreen : MonoBehaviour
         dialogueScreenUI.SetActive(false);
         CameraSwitcher.SwitchToPlayerCamera();
         playerController.LockMovement(true);
+        playerController.GetComponent<Animator>().Play("Idle Walk Run Blend");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -88,11 +90,12 @@ public class DialogueScreen : MonoBehaviour
         npcName.text = node.characterSpeaking;
         ClearOptionsList();
         optionsList.gameObject.SetActive(false);
-        CharacterInstance talkingCharacter = null;
+        talkingCharacter = null;
         if (node.characterSpeaking == "Internal Monologue")
         {
             monologueCamera.gameObject.SetActive(true);
             npcName.text = "Hugh Mann";
+            npcName.color = Color.cyan;
         }
         else
         {
@@ -103,6 +106,7 @@ public class DialogueScreen : MonoBehaviour
                 {
                     talkingCharacter = character;
                     CameraSwitcher.SwitchCameraTo(talkingCharacter.vCam);
+                    npcName.color = talkingCharacter.subtitlecolour;
 
                 }
                 Debug.Log("Character: " + character.activeConversation.characterName + " node: " + node.characterSpeaking + " " + node.nodeIndex);
@@ -153,6 +157,7 @@ public class DialogueScreen : MonoBehaviour
             if (character.transform.root.name == node.characterSpeaking)
             {
                 characterSource = character.source;
+                talkingCharacter = character;
             }
         }
         characterSource.Stop();
@@ -176,13 +181,15 @@ public class DialogueScreen : MonoBehaviour
                         switch (evt.eventType)
                         {
                             case DialogueEventType.PlayAnimation:
-                                characterSource.GetComponentInParent<Animator>().Play(evt.eventName);
+                                talkingCharacter.animator.Play(evt.eventName,0);
+                                talkingCharacter.animator.Play(evt.eventName,1);
+                                talkingCharacter.animator.Play(evt.eventName,2);
                                 evt.invoked = 1;
                                 Debug.Log("Play animation " + evt.eventName);
                             break;
                             case DialogueEventType.SetAnimationBoolValue:
                                 bool val = (evt.intParameter == 1) ? true : false;
-                                characterSource.GetComponentInParent<Animator>().SetBool(evt.eventName, val);
+                                talkingCharacter.animator.SetBool(evt.eventName, val);
                                 evt.invoked = 1;
                                 Debug.Log("Set animation bool " + evt.eventName + " to " + val);
                             break;
@@ -233,6 +240,7 @@ public class DialogueScreen : MonoBehaviour
             if (character.transform.root.name == node.characterSpeaking)
             {
                 characterSource = character.source;
+                talkingCharacter = character;
             }
         }
         characterSource.Stop();
@@ -257,13 +265,15 @@ public class DialogueScreen : MonoBehaviour
                         switch (evt.eventType)
                         {
                             case DialogueEventType.PlayAnimation:
-                                characterSource.GetComponentInParent<Animator>().Play(evt.eventName);
+                                talkingCharacter.animator.Play(evt.eventName,0);
+                                talkingCharacter.animator.Play(evt.eventName,1);
+                                talkingCharacter.animator.Play(evt.eventName,2);
                                 evt.invoked = 1;
                                 Debug.Log("Play animation " + evt.eventName);
                             break;
                             case DialogueEventType.SetAnimationBoolValue:
                                 bool val = (evt.intParameter == 1) ? true : false;
-                                characterSource.GetComponentInParent<Animator>().SetBool(evt.eventName, val);
+                                talkingCharacter.animator.SetBool(evt.eventName, val);
                                 evt.invoked = 1;
                                 Debug.Log("Set animation bool " + evt.eventName + " to " + val);
                             break;

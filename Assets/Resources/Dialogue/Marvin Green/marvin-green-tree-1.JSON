@@ -133,6 +133,24 @@
           "intParameter": 0,
           "floatParameter": 0.1,
           "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 2.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
         }
       ]
     },
@@ -199,7 +217,17 @@
         "y": 389.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ArmThrowForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 7,
@@ -210,7 +238,7 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3256.0,
-        "y": 647.0
+        "y": 813.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -235,6 +263,15 @@
           "stringParameter": null,
           "intParameter": 50,
           "floatParameter": 2.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
           "invoked": 0
         }
       ]
@@ -300,10 +337,10 @@
       "destinationNodeIndex": 12,
       "dialogueText": "Do you mind if I ask you some questions?",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "do-you-mind-if-i-ask-you-some-questions",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2459.0,
+        "x": 2445.0,
         "y": 17.0
       },
       "dialogueOptions": [],
@@ -338,7 +375,7 @@
         {
           "eventType": 0,
           "invokeTime": 0.0,
-          "eventName": "SourceShrug",
+          "eventName": "SourceHandShrug",
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
@@ -591,7 +628,7 @@
       "destinationNodeIndex": -1,
       "dialogueText": "And what evidence do you have Detective?",
       "characterSpeaking": "Officer Wilson",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "and-what-evidence-do-you-have-detective",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 8792.0,

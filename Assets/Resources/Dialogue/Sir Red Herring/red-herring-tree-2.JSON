@@ -20,14 +20,33 @@
       "destinationNodeIndex": 3,
       "dialogueText": "Yes! I am Sir Red Herring! The Doctor was one of my vict- I mean cousins!",
       "characterSpeaking": "Sir Red Herring",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "yes-i-am-sir-red-herring",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 757.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 4.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 2.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 3,
@@ -41,7 +60,17 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ThinkingIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 4,
@@ -55,7 +84,17 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "Idle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 5,
@@ -76,7 +115,7 @@
       "destinationNodeIndex": 7,
       "dialogueText": "Who do you think you are? You…",
       "characterSpeaking": "Sir Red Herring",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "who-do-you-think-you-are-you",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 2999.0,
@@ -101,6 +140,15 @@
           "intParameter": 50,
           "floatParameter": 0.1,
           "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HandsOnHips",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
         }
       ]
     },
@@ -109,7 +157,7 @@
       "destinationNodeIndex": 8,
       "dialogueText": "...Snivelling...",
       "characterSpeaking": "Sir Red Herring",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "snivelling",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3421.0,
@@ -123,7 +171,7 @@
       "destinationNodeIndex": 9,
       "dialogueText": "...Insipid...",
       "characterSpeaking": "Sir Red Herring",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "insipid",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3761.0,
@@ -137,7 +185,7 @@
       "destinationNodeIndex": 10,
       "dialogueText": "...Nincompoop!",
       "characterSpeaking": "Sir Red Herring",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "nincompoop",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4105.0,
@@ -170,6 +218,1045 @@
       "graphPosition": {
         "x": 5034.0,
         "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 14,
+          "dialogueOptionText": "Snivelling",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Right-wing",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Two-faced",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Eldritch",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5999.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 14,
+          "dialogueOptionText": "Insipid",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Left-leaning",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Duck-billed",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "Gibbous",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6946.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 14,
+          "dialogueOptionText": "Nincompoop",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "Centrist",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "Cowpie",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "Swineherd",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "ah-ah-you-violated-the-one-rule",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6009.0,
+        "y": -202.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": "Hah! You think you can best me in linguistics you…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "hah-you-think-you-can-best-me-in-linguistics-you",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7919.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "...Frivolous...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "frivolous",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8431.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": 18,
+      "dialogueText": "…Blue Pilled…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "blue-pilled",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8775.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": 19,
+      "dialogueText": "...Pillock!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "pillock",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9114.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": -1,
+      "dialogueText": "You're nothing but a...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9459.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Frivolous",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 20,
+          "dialogueOptionText": "Silly",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 20,
+          "dialogueOptionText": "Fundamentally incurious",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 20,
+          "dialogueOptionText": "Borish",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10396.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Blue-pilled",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "Little",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "Syncophantic",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "Un-based",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11322.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Pillock",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 22,
+          "dialogueOptionText": "Goose",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 22,
+          "dialogueOptionText": "Sophist",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 22,
+          "dialogueOptionText": "Vagabond",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": 23,
+      "dialogueText": "I’ve heard better lexicographical skills from a gnat! You’re nothing but a…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "ive-heard-better-lexicographical-skills-from-a-gnat",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 12247.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": "...Lily-livered...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "lily-livered",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 12784.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": 25,
+      "dialogueText": "...Lickspittle...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "lickspittle",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 13123.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": 26,
+      "dialogueText": "...Loser!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "loser",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 13462.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": -1,
+      "dialogueText": "That was pathetic, I will not tolerate a...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 13821.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Lily-livered",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 27,
+          "dialogueOptionText": "Witless",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 27,
+          "dialogueOptionText": "Idiotic",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 27,
+          "dialogueOptionText": "Barborous",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 14759.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Lickspittle",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "Maidenless",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "Cantankerous",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "Hagridden",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 15684.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Loser",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 29,
+          "dialogueOptionText": "Scallywag",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 29,
+          "dialogueOptionText": "Half-wit",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 29,
+          "dialogueOptionText": "Consumer",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": 30,
+      "dialogueText": "Hmmm, well-played detective. I didn’t know there was another human being in existence so intellectual as myself.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "hmm-well-played-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 16609.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 1.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 2.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": 31,
+      "dialogueText": "Well, technically I am an alien.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "well-technically-i-am-an-alien",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 17167.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": 32,
+      "dialogueText": "I beg your pardon?!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-beg-your-pardon",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 17560.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 32,
+      "destinationNodeIndex": 33,
+      "dialogueText": "I said I am 'sesquipedalien'... Now if I may ask you some questions.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-said-i-am-sesquipedalien",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 17913.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 33,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Oh, very well...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "oh-very-well",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 18445.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 34,
+          "dialogueOptionText": "Tell me about yourself.",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 38,
+          "dialogueOptionText": "What do you know of the other residents in this house?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave] That will be all...",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "sad",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 34,
+      "destinationNodeIndex": 35,
+      "dialogueText": "Tell me about yourself.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "tell-me-about-yourself",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19452.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 35,
+      "destinationNodeIndex": 36,
+      "dialogueText": "I'm a killer!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "im-a-killer",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19823.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "sad",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 36,
+      "destinationNodeIndex": 37,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20157.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 37,
+      "destinationNodeIndex": 37,
+      "dialogueText": "Of bananas I mean! I could eat them all day long! Unfortunately, I have eaten so many that if I have one more I will die instantly!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "of-bananas-i-mean",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20508.0,
+        "y": 13.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PointFinger",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 8.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.2,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 9.0,
+          "eventName": "sad",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 2.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 38,
+      "destinationNodeIndex": 39,
+      "dialogueText": "What do you know of the other residents in this house?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-do-you-know-of-the-other-residents",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19365.0,
+        "y": 543.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.75,
+          "eventName": "DeusExShocked",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 39,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Which one specifically?",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "which-one-specifically",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19864.0,
+        "y": 767.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 40,
+          "dialogueOptionText": "Marvin Green",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 42,
+          "dialogueOptionText": "Timmy Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 44,
+          "dialogueOptionText": "Violet Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 34,
+          "dialogueOptionText": "Nevermind.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 40,
+      "destinationNodeIndex": 41,
+      "dialogueText": "Marvin Green.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "marvin-green",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20838.0,
+        "y": 767.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 41,
+      "destinationNodeIndex": 38,
+      "dialogueText": "The mute, my cousin rented out an extra room to him, housing being scant and all. He always has his nose in a geography book. I know the little brat never got along with him for some reason.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "the-mute",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21191.0,
+        "y": 767.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 42,
+      "destinationNodeIndex": 43,
+      "dialogueText": "Timmy Cadaver.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "timmy-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20838.0,
+        "y": 1044.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 43,
+      "destinationNodeIndex": 38,
+      "dialogueText": "That little hellion is a blight upon humanity. If ever there was a baby that needed kicking it was surely him! Spends all day on his computer or yelling obscenities at passersby!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "that-little-hellion",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21191.0,
+        "y": 1057.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 44,
+      "destinationNodeIndex": 45,
+      "dialogueText": "Violet Cadaver.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "violet-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20838.0,
+        "y": 1332.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 45,
+      "destinationNodeIndex": 38,
+      "dialogueText": "Ah, the Doctor’s niece. That little harlot is always T-posing around wherever she pleases! Her uncle would always give her money, no questions asked! I’d be careful around her though, many suitors have fallen under her vapid spell…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "ah-the-doctors-niece",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21191.0,
+        "y": 1332.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
