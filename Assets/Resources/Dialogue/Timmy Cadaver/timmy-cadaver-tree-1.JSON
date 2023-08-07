@@ -147,14 +147,20 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 10,
+          "destinationNodeIndex": -1,
           "dialogueOptionText": "What do you know about the other residents?",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 15,
           "dialogueOptionText": "What were you doing last night?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 33,
+          "dialogueOptionText": "What's up with the toothbrush?",
           "optionRequirements": null,
           "optionEffects": null
         }
@@ -167,7 +173,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 4426.0,
         "y": 445.0
@@ -180,20 +186,26 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 12,
           "dialogueOptionText": "Violet Cadaver",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 13,
           "dialogueOptionText": "Sir Red Herring",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 14,
           "dialogueOptionText": "Doctor Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 9,
+          "dialogueOptionText": "Let me ask about something else.",
           "optionRequirements": null,
           "optionEffects": null
         }
@@ -208,8 +220,415 @@
       "dialogueAudioFileName": "i-dont-like-marvin-hes-a-cuck",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 5382.0,
-        "y": 445.0
+        "x": 5374.0,
+        "y": 166.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Violet is a slut!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "violet-is-a",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5374.0,
+        "y": 428.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": -1,
+      "dialogueText": "That old idiot got scammed by crypto. Put all of his money into Chonkcoin!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "that-old-idiot-got-scammed-by-crypto",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5374.0,
+        "y": 706.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": -1,
+      "dialogueText": "He's dead but I never liked him anyway!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "hes-dead-but-i-never-liked-him-anyway",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5374.0,
+        "y": 1002.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": "What were you doing last night?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-were-you-doing-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4332.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "Wouldn't you like to know law boy?",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4758.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 1.0,
+      "graphPosition": {
+        "x": 5179.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 18,
+          "dialogueOptionText": "Threaten",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": 19,
+      "dialogueText": "ThIS ISN'T A JOKE TIMMY! DO YOU WISH TO DIE BEFORE THIRD GRADE?!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "this-isnt-a-joke-timmy",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6130.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": 20,
+      "dialogueText": "I thought you were a detective!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "i-thought-you-were-a-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6692.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": 21,
+      "dialogueText": "Part-time!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "part-time",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7111.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "Question further",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 23,
+          "dialogueOptionText": "Eliminate Timmy",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 22,
+      "dialogueText": "What were you doing last night?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-were-you-doing-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8047.0,
+        "y": 1384.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": 26,
+      "dialogueText": "I was gaming with my friends! And practicing noose tying!",
+      "characterSpeaking": "Timmy ",
+      "dialogueAudioFileName": "i-was-gaming-with-my-friends-and-practicing-noose-tying",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8445.0,
+        "y": 1197.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 26,
+          "dialogueOptionText": "You're under arrest!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave] Ok cool.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": "If we were online, I'd ban you from my server!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "if-we-were-online-right-now",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8047.0,
+        "y": 1650.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": 25,
+      "dialogueText": "We're not online",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "were-not-online",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8501.0,
+        "y": 1650.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8833.0,
+        "y": 1650.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PistolShoot",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 4,
+          "invokeTime": 0.0,
+          "eventName": "Timmy Cadaver",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": 27,
+      "dialogueText": "You're under arrest for the murder of Doctor Cadaver!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "youre-under-arrest-for-the-murder-of-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9426.0,
+        "y": 1197.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": -1,
+      "dialogueText": "And what evidence do you have detective?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-what-evidence-do-you-have-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9960.0,
+        "y": 1197.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "I made it up!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 29,
+          "dialogueOptionText": "He knows how to tie nooses!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 30,
+          "dialogueOptionText": "The toothbrush!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "The Toaster told me!",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "76ae60bf-b284-4481-be4e-dd83a0c2faff",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": 32,
+      "dialogueText": "My evidence is I made it up!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "my-evidence-is-i-made-it-up",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10937.0,
+        "y": 1197.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": 32,
+      "dialogueText": "Only Timmy could have tied those nooses!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "only-timmy-could-have-tied",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10937.0,
+        "y": 1514.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": 32,
+      "dialogueText": "Because of that creepy ass toothbrush in Timmy's room!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "because-of-that-creepy-ass-toothbrush",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10937.0,
+        "y": 1804.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": 32,
+      "dialogueText": "The Toaster told me!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "the-toaster-told-me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10937.0,
+        "y": 2089.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 32,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good enough for me.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "good-enough-for-me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11575.0,
+        "y": 1197.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 33,
+      "destinationNodeIndex": 34,
+      "dialogueText": "What is up with that toothbrush?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-is-up-with-that-toothbrush",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3746.0,
+        "y": 1067.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 34,
+      "destinationNodeIndex": -1,
+      "dialogueText": "DON'T ASK ABOUT THE TOOTHBRUSH!",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": "dont-ask-about-the-toothbrush",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4171.0,
+        "y": 1067.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

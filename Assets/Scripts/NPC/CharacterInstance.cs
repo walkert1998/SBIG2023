@@ -84,4 +84,9 @@ public class CharacterInstance : MonoBehaviour, IInteractable
             }
         }
     }
+
+    public void KillNPC()
+    {
+        health = 0;
+    }
 }
