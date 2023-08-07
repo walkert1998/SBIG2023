@@ -55,4 +55,12 @@ public class FactionTable : ScriptableObject
         }
         return -1;
     }
+
+    public void ResetOpinions()
+    {
+        for (int i = 0; i < opinions.Length; i++)
+        {
+            opinions[i] = 0;
+        }
+    }
 }

@@ -14,7 +14,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 1,
+          "destinationNodeIndex": 2,
           "dialogueOptionText": "Want a banana?",
           "optionRequirements": [
             {
@@ -73,7 +73,7 @@
       "dialogueEvents": [
         {
           "eventType": 4,
-          "invokeTime": 0.0,
+          "invokeTime": 2.0,
           "eventName": "Sir Red Herring",
           "stringParameter": null,
           "intParameter": 0,

@@ -17,6 +17,7 @@ public class NPCColliders : MonoBehaviour
     [ContextMenu("Populate Colliders")]
     public void PopulateColliders()
     {
+        otherColliders = new List<Collider>();
         foreach (Collider col in GetComponentsInChildren<Collider>())
         {
             otherColliders.Add(col);

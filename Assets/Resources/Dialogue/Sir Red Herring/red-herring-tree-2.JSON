@@ -33,7 +33,7 @@
     {
       "nodeIndex": 2,
       "destinationNodeIndex": 3,
-      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was a vi- I mean cousin of mine!",
+      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was one of my vi- I mean cousins!",
       "characterSpeaking": "Sir Red Herring",
       "dialogueAudioFileName": "yes-i-am-sir-red-herring",
       "silenceLength": 2.0,
@@ -257,7 +257,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 5999.0,
         "y": 200.0
@@ -304,7 +304,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 6946.0,
         "y": 200.0
@@ -348,7 +348,7 @@
     {
       "nodeIndex": 14,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "dialogueText": "Ah ha! You violated the one rule of verbal sparring! Get away from me you dog!",
       "characterSpeaking": "Sir Red Herring",
       "dialogueAudioFileName": "ah-ah-you-violated-the-one-rule",
       "silenceLength": 2.0,
@@ -535,7 +535,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 10396.0,
         "y": 200.0
@@ -582,7 +582,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 11322.0,
         "y": 200.0
@@ -770,7 +770,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 14759.0,
         "y": 200.0
@@ -817,7 +817,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 15684.0,
         "y": 200.0

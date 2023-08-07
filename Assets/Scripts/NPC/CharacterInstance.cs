@@ -14,6 +14,7 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public Transform headTarget;
     public NPCHeadLook headLook;
     public Color subtitlecolour;
+    public NPCColliders colliders;
     public int health = 1;
 
     public bool focused { get; set; }
@@ -88,5 +89,13 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public void KillNPC()
     {
         health = 0;
+        animator.enabled = false;
+        colliders.EnableRagdoll();
+        GetComponent<Collider>().enabled = false;
+        activeConversation.enabled = false;
+        headLook.enabled = false;
+        // DialogueScreen.instance.characters.Remove(this);
+        // DialogueScreen.instance.characterAudioSources.Remove(source);
+        Debug.Log("NPC killed!");
     }
 }

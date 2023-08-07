@@ -53,8 +53,8 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 5,
-          "dialogueOptionText": "I have bread!",
+          "destinationNodeIndex": 6,
+          "dialogueOptionText": "I possess bread!",
           "optionRequirements": [
             {
               "requirementType": 0,
@@ -81,7 +81,7 @@
       "dialogueText": "I beg of you, please aid my investigation!",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": "i-beg-of-you-please-aid-my-investigation",
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 1707.0,
         "y": 200.0
@@ -135,8 +135,8 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 5,
-          "dialogueOptionText": "I have bread!",
+          "destinationNodeIndex": 6,
+          "dialogueOptionText": "I possess bread!",
           "optionRequirements": [
             {
               "requirementType": 0,
@@ -200,7 +200,7 @@
       "destinationNodeIndex": 9,
       "dialogueText": "Will you help me?",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "will-you-help-me",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4238.0,
@@ -222,7 +222,7 @@
     {
       "nodeIndex": 9,
       "destinationNodeIndex": -1,
-      "dialogueText": "As you have served me, I shall serve you.",
+      "dialogueText": "As you have served me, I will now serve you.",
       "characterSpeaking": "Toaster",
       "dialogueAudioFileName": "as-you-have-served-me",
       "silenceLength": 2.0,
@@ -240,7 +240,8 @@
               "effectType": 0,
               "faction": 0,
               "intValue": 1,
-              "itemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35"
+              "itemBaseID": "76ae60bf-b284-4481-be4e-dd83a0c2faff",
+              "stringValue": null
             }
           ]
         }

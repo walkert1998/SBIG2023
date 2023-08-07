@@ -98,7 +98,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 9,
+          "destinationNodeIndex": 8,
           "dialogueOptionText": "Do you mind if I ask you some questions?",
           "optionRequirements": null,
           "optionEffects": null
@@ -147,7 +147,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 10,
           "dialogueOptionText": "What do you know about the other residents?",
           "optionRequirements": null,
           "optionEffects": null
@@ -214,7 +214,7 @@
     },
     {
       "nodeIndex": 11,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 10,
       "dialogueText": "I don't like Marvin, he's a cuck!",
       "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "i-dont-like-marvin-hes-a-cuck",
@@ -228,7 +228,7 @@
     },
     {
       "nodeIndex": 12,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 10,
       "dialogueText": "Violet is a slut!",
       "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "violet-is-a",
@@ -242,7 +242,7 @@
     },
     {
       "nodeIndex": 13,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 10,
       "dialogueText": "That old idiot got scammed by crypto. Put all of his money into Chonkcoin!",
       "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "that-old-idiot-got-scammed-by-crypto",
@@ -256,7 +256,7 @@
     },
     {
       "nodeIndex": 14,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 10,
       "dialogueText": "He's dead but I never liked him anyway!",
       "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "hes-dead-but-i-never-liked-him-anyway",
@@ -302,7 +302,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 5179.0,
         "y": 1384.0
@@ -465,7 +465,7 @@
         },
         {
           "eventType": 4,
-          "invokeTime": 0.0,
+          "invokeTime": 1.0,
           "eventName": "Timmy Cadaver",
           "stringParameter": null,
           "intParameter": 0,
@@ -519,7 +519,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 28,
+          "destinationNodeIndex": 31,
           "dialogueOptionText": "The Toaster told me!",
           "optionRequirements": [
             {
@@ -621,7 +621,7 @@
     },
     {
       "nodeIndex": 34,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 9,
       "dialogueText": "DON'T ASK ABOUT THE TOOTHBRUSH!",
       "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "dont-ask-about-the-toothbrush",

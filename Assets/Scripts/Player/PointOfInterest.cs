@@ -16,8 +16,8 @@ public class PointOfInterest : MonoBehaviour, IInteractable
     public void EndInteraction()
     {
         CameraSwitcher.SwitchToPlayerCamera();
-        promptIndicator.SetActive(true);
-        PlayerInteraction.SetPrompt(System.String.Empty);
+        // promptIndicator.SetActive(true);
+        PlayerInteraction.SetPrompt("Inspect");
     }
 
     public void Examine()
@@ -26,19 +26,23 @@ public class PointOfInterest : MonoBehaviour, IInteractable
 
     public void Focus()
     {
-        promptIndicator.SetActive(true);
+        // promptIndicator.SetActive(true);
+        PlayerInteraction.SetPrompt("Inspect");
     }
 
     public void StartInteraction()
     {
         CameraSwitcher.SwitchCameraTo(vCam);
-        promptIndicator.SetActive(false);
+        if (promptIndicator != null)
+            promptIndicator.SetActive(false);
+        PlayerInteraction.SetPrompt(System.String.Empty);
         PlayerInteraction.SetPrompt(description);
     }
 
     public void UnFocus()
     {
-        promptIndicator.SetActive(false);
+        // promptIndicator.SetActive(false);
+        PlayerInteraction.SetPrompt(System.String.Empty);
     }
 
     void OnTriggerEnter(Collider other)
@@ -46,6 +50,7 @@ public class PointOfInterest : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             PlayerInteraction.SetFocusObject_Static(this);
+            other.GetComponent<NPCHeadLook>().SetTarget(transform);
         }
     }
 
@@ -54,6 +59,7 @@ public class PointOfInterest : MonoBehaviour, IInteractable
         if (other.GetComponent<PlayerInteraction>())
         {
             PlayerInteraction.SetFocusObject_Static(null);
+            other.GetComponent<NPCHeadLook>().SetTarget(null);
         }
     }
 

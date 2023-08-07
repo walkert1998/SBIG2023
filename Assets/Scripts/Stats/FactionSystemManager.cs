@@ -10,6 +10,7 @@ public class FactionSystemManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        factionTable.ResetOpinions();
     }
 
     public static int GetFactionOpinion(Factions faction1, Factions faction2)

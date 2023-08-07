@@ -14,8 +14,8 @@ public class DialogueScreen : MonoBehaviour
     public TMP_Text nodeText;
     public GameObject optionPrefab;
     public Transform optionsList;
-    public AudioSource[] characterAudioSources;
-    public CharacterInstance[] characters;
+    public List<AudioSource> characterAudioSources;
+    public List<CharacterInstance> characters;
     AudioSource characterSource;
     private int selectedOption = -2;
     public NPCConversation conversation;
@@ -207,6 +207,16 @@ public class DialogueScreen : MonoBehaviour
                                 evt.invoked = 1;
                                 // Debug.Log("Set facial pose " + evt.eventName);
                             break;
+                            case DialogueEventType.KillNPC:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.KillNPC();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
                         }
                     }
                 }
@@ -292,6 +302,14 @@ public class DialogueScreen : MonoBehaviour
                                 // Debug.Log("Set facial pose " + evt.eventName);
                             break;
                             case DialogueEventType.KillNPC:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.KillNPC();
+                                    }
+                                }
+                                evt.invoked = 1;
                             break;
                         }
                     }
@@ -475,7 +493,7 @@ public class DialogueScreen : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + newConversation.characterName + "/" + newConversation.dialogueTreePath);
-        // Debug.Log(textAsset);
+        Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);
         if (newConversation.GetComponent<NPCHeadLook>())
         {
