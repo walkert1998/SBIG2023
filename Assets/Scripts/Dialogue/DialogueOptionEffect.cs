@@ -9,4 +9,5 @@ public class DialogueOptionEffect : VisualElement
     public Factions faction;
     public int intValue;
     public Item item;
+    public string stringValue;
 }

@@ -7,12 +7,14 @@ public class CharacterInstance : MonoBehaviour, IInteractable
 {
     public Character characterTemplate;
     public NPCConversation activeConversation;
+    public Faction faction;
     public AudioSource source;
     public Animator animator;
     public CinemachineVirtualCamera vCam;
     public Transform headTarget;
     public NPCHeadLook headLook;
     public Color subtitlecolour;
+    public int health = 1;
 
     public bool focused { get; set; }
     public bool holdToInteract { get; set; }

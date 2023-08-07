@@ -1,0 +1,86 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Go away you banana-lacking scamp!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "go-away-you-banana-lacking-scamp",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 204.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 1,
+          "dialogueOptionText": "Want a banana?",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "9cacae77-42b0-45c1-bddf-a31645922320",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": [
+            {
+              "effectType": 1,
+              "faction": 0,
+              "intValue": 1,
+              "itemBaseID": "9cacae77-42b0-45c1-bddf-a31645922320",
+              "stringValue": null
+            }
+          ]
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave]",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "Want a banana?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "want-a-banana",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1202.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I don't see why not!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "oh-i-dont-see-why-not",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1553.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 4,
+          "invokeTime": 0.0,
+          "eventName": "Sir Red Herring",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    }
+  ]
+}

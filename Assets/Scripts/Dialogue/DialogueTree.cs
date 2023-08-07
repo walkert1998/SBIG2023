@@ -49,6 +49,7 @@ public class DialogueTree
                             newOptionEffect.effectType = optionEffectSaveData.effectType;
                             newOptionEffect.faction = optionEffectSaveData.faction;
                             newOptionEffect.intValue = optionEffectSaveData.intValue;
+                            newOptionEffect.stringValue = optionEffectSaveData.stringValue;
                             if (optionEffectSaveData.itemBaseID != null)
                             {
                                 newOptionEffect.item =  Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == optionEffectSaveData.itemBaseID).First();
@@ -65,7 +66,10 @@ public class DialogueTree
                             newRequirement.comparisonOperator = requirementSaveData.comparisonOperator;
                             newRequirement.factionRequirement = requirementSaveData.factionRequirement;
                             newRequirement.intValue = requirementSaveData.intValue;
-                            newRequirement.requiredItem = Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == requirementSaveData.requiredItemBaseID).First();
+                            if (requirementSaveData.requiredItemBaseID != null && requirementSaveData.requiredItemBaseID != System.String.Empty)
+                            {
+                                newRequirement.requiredItem = Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == requirementSaveData.requiredItemBaseID).First();
+                            }
                             newRequirement.requirementType = requirementSaveData.requirementType;
                             newOption.optionRequirements.Add(newRequirement);
                         }

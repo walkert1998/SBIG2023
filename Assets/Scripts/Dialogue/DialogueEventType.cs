@@ -6,5 +6,7 @@ public enum DialogueEventType
 {
     PlayAnimation,
     SetAnimationBoolValue,
-    SetFacialPose
+    SetFacialPose,
+    ChangeNPCTree,
+    KillNPC
 }

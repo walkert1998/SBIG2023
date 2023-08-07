@@ -1,0 +1,630 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": "Hello Detective, I'm Officer Wilson.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "hello-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 207.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 3.0,
+          "eventName": "PointAtSelf",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "I am... HUGH MANN",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-am-hugh-mann-1",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 621.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "PointAtSelf",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 1.75,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": "I have some facts regarding the case.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "i-have-some-facts-regarding-the-case",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 946.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 2.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": "There are four suspects in the residence...",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "there-are-four-suspects-in-the-residence",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1377.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 6,
+      "dialogueText": "There's Violet Cadaver, the Doctor's niece.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "theres-violet-cadaver-the-doctors-niece",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1852.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 1.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.5,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 3.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.5,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 7,
+      "dialogueText": "Sir Red Herring, the Doctor's cousin.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "sir-red-herring-the-doctors-cousin",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2277.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "Marvin Green, a tenant of the deceased.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "marvin-green-a-tenant-of-the-deceased",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2684.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 4.0,
+          "eventName": "SourceHandNo",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": "And Timmy Cadaver, the Doctor's great-nephew.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-timmy-cadaver-the-doctors-great-nephew",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3130.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "As I spoke to Officer Wilson, I remembered I was able to vaguely influence the flow of conversation at key points by clicking on lines of text in the top right of the screen.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3631.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4178.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Do we have any other info on these facts?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 15,
+          "dialogueOptionText": "Good enough for me.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": 12,
+      "dialogueText": "Do we have any other info on these facts?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "do-we-have-any-info-on-these-facts",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5117.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ThinkingIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": 13,
+      "dialogueText": "The Doctor was last seen alive last night and was found dead this morning in his bedroom. For your information that's on the second floor.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "the-doctor-was-last-seen-alive-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5560.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 8.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": "Is that a fact?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "is-that-a-fact",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6101.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HandsOnHips",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.3,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": 15,
+      "dialogueText": "No... It's information.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "no-its-information",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6421.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "WagFinger",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": "To complete the investigation you will have to question the suspects. And at the end of questioning a suspect you can choose whether to arrest them or not.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "to-complete-the-investigation",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6735.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 11.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "And remember, we only want to find one murderer.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-rememeber-we-only-want-to-find-one-murderer",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7279.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 4.5,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": 18,
+      "dialogueText": "Why is that?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "why-is-that",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7791.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "dour",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": 19,
+      "dialogueText": "That is the law.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "that-is-the-law",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8134.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ArmThrowForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": 20,
+      "dialogueText": "It would seem my inquisitive journey would have two aspects:",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "it-would-seem-my-inquisitive-journey-would-have-two-aspects",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8477.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": 21,
+      "dialogueText": "Solving the murder of Doctor Cadaver, and then following through on my mission as a hitman to eliminate the other residents.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "solving-the-murder-of-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9045.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 22,
+      "dialogueText": "But I would have to be careful to ensure that latter fact wasn't revealed",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "but-i-would-have-to-be-careful-to-ensure",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9591.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": 23,
+      "dialogueText": "I am not a hitman",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-am-not-a-hitman",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10159.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "DeusExShocked",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.01,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.01,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": -1,
+      "dialogueText": "And what evidence do you have detective?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-what-evidence-do-you-have-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10510.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 24,
+          "dialogueOptionText": "Make a joke",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 24,
+          "dialogueOptionText": "Calmly explain cover story",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 24,
+          "dialogueOptionText": "Sarcastic",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ThinkingIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": 25,
+      "dialogueText": "I am actually an alien.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-am-actually-an-alien",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11451.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": -1,
+      "dialogueText": "As you say detective.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "as-you-say-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11812.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "Idle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    }
+  ]
+}

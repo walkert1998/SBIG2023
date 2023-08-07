@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703b323291b826b48b12811698ce011d, type: 3}
+  m_Name: Banana
+  m_EditorClassIdentifier: 
+  itemType: 5
+  itemName: Banana
+  itemID: 9cacae77-42b0-45c1-bddf-a31645922320
+  baseItemID: 9cacae77-42b0-45c1-bddf-a31645922320
+  description: 
+  price: 0
+  horizontalIcon: {fileID: 0}
+  verticalIcon: {fileID: 0}
+  size:
+    x: 1
+    y: 1
+  stackable: 0
+  itemCombinationsPossible: []
+  destroyOnUse: 0
+  coolDownTime: 1
+  droppedItem: {fileID: 0}
+  onUseSound: {fileID: 0}
+  value: 0
+  statModifiers: []
+  alcoholic: 0
+  itemToSpawnAfterConsumption: {fileID: 0}

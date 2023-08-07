@@ -18,9 +18,9 @@
     {
       "nodeIndex": 2,
       "destinationNodeIndex": 3,
-      "dialogueText": "Very well. You have a nice house by the way!",
+      "dialogueText": "Very well.",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "very-well",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 710.0,
@@ -32,39 +32,26 @@
     {
       "nodeIndex": 3,
       "destinationNodeIndex": 4,
-      "dialogueText": "Did you have any trouble finding the place?",
-      "characterSpeaking": "Chris Handsome",
-      "dialogueAudioFileName": "did-you-have-any-trouble-finding-the-place",
+      "dialogueText": "You have a nice house by the way!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "you-have-a-nice-house-by-the-way",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 1163.0,
+        "x": 1090.0,
         "y": 200.0
       },
-      "dialogueOptions": [
-        {
-          "destinationNodeIndex": 4,
-          "dialogueOptionText": "[Disintegrate him] AHH!",
-          "optionRequirements": null,
-          "optionEffects": null
-        },
-        {
-          "destinationNodeIndex": 6,
-          "dialogueOptionText": "No.",
-          "optionRequirements": null,
-          "optionEffects": null
-        }
-      ],
+      "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 4,
       "destinationNodeIndex": 5,
-      "dialogueText": "And just like that, I was dead.",
-      "characterSpeaking": "Narration",
-      "dialogueAudioFileName": null,
+      "dialogueText": "Did you have any trouble finding the place?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "did-you-have-any-trouble-finding-the-place",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2094.0,
+        "x": 1539.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -72,13 +59,13 @@
     },
     {
       "nodeIndex": 5,
-      "destinationNodeIndex": -1,
-      "dialogueText": "I knew this was a trap, I must exit at once!",
+      "destinationNodeIndex": 6,
+      "dialogueText": "No, fortunately this place is right across the street from the murder.",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2464.0,
+        "x": 2018.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -86,14 +73,14 @@
     },
     {
       "nodeIndex": 6,
-      "destinationNodeIndex": 6,
-      "dialogueText": "No, it's right next door to my investigation.",
-      "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "destinationNodeIndex": 7,
+      "dialogueText": "Why don't you have a seat over here?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "why-dont-you-have-a-seat-over-here",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2085.0,
-        "y": 411.0
+        "x": 2569.0,
+        "y": 200.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -101,55 +88,420 @@
     {
       "nodeIndex": 7,
       "destinationNodeIndex": 8,
-      "dialogueText": "Why don't you have a seat over here?",
-      "characterSpeaking": "Chris Handsome",
-      "dialogueAudioFileName": "why-dont-you-have-a-seat-over-here",
+      "dialogueText": "Very well.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "very-well",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2517.0,
-        "y": 411.0
+        "x": 3023.0,
+        "y": 200.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 8,
-      "destinationNodeIndex": 9,
-      "dialogueText": "Very well.",
-      "characterSpeaking": "Hugh Mann",
+      "destinationNodeIndex": -1,
+      "dialogueText": "You mind telling me what you're doing here tonight?",
+      "characterSpeaking": "Chris Handsome",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2947.0,
-        "y": 411.0
+        "x": 3369.0,
+        "y": 200.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 9,
+          "dialogueOptionText": "I'm conducting an investigation.",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "I'm meeting someone.",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 29,
+          "dialogueOptionText": "I'm here to meet you, I'm a big fan of the show.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 9,
       "destinationNodeIndex": 10,
-      "dialogueText": "What are you doing here?",
+      "dialogueText": "Find any clues detective?",
       "characterSpeaking": "Chris Handsome",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "find-any-clues",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3275.0,
-        "y": 411.0
+        "x": 4295.0,
+        "y": 200.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 10,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 11,
+      "dialogueText": "No, but I'm hoping I'll get some from Katie.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4640.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": 12,
+      "dialogueText": "Now what kind of a guy, does interstellar-murder-mystery roleplay with a 13 year old girl?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "now-what-kind-of-a-guy",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5079.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": 13,
+      "dialogueText": "I don't know what you're talking about.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-dont-know-what-youre-talking-about",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5644.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": "You say it could be dangerous...",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "you-say-it-could-be-dangerous",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6090.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": 15,
+      "dialogueText": "And you go into graphic detail about this murder. That's a bit of a heavy question isn't it?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "and-you-go-into-graphic-detail",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6502.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": "yes, it's a... Very intriguing question actually. Do you have any thoughts on it?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "yes-its-a-very-intriguing-question",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7052.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "My thoughts are clearly not as disturbing as yours.",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "my-thoughts-are-clearly-not-as-disturbing-as-yours",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7603.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": 18,
+      "dialogueText": "You say you're going to 'question' her... 'Thoroughly'... Now what do you mean by that?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "you-say-youre-going-to-question-her-thoroughly",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8118.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": 19,
+      "dialogueText": "You don't understand, I need to talk to that girl!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "you-dont-understand-i-need-to-talk-to-that-girl",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8677.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": 20,
+      "dialogueText": "All I understand is this filthy chat log.",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "all-i-understand-is-this-filthy-chat-log",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9175.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": 21,
+      "dialogueText": "Now, do you think it's appropriate, for a man of your age and position, to be asking this?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "now-do-you-think-its-appropriate-for-a-man-of-your-age",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9634.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 22,
+      "dialogueText": "A good detective leaves no stone unturned!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10199.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": 23,
+      "dialogueText": "Do you often conduct investigations like this detective?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10646.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": "Actually, this is my first time doing something like this.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "actually-this-is-my-first-time",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11173.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": 25,
+      "dialogueText": "You know I've heard that a lot.",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "you-know-ive-heard-that-a-lot",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 11690.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": 26,
+      "dialogueText": "I found myself trapped in a separate investigation. I would have to come up with some clever plan to get myself out of this situation.",
       "characterSpeaking": "Internal Monologue",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3623.0,
-        "y": 411.0
+        "x": 12087.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": 27,
+      "dialogueText": "Pedophiles say 'what'!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "pedophiles-say-what",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 12643.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": 28,
+      "dialogueText": "What?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "what",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 12990.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good enough for me, take him away boys!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "good-enough-for-me-take-him-away",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 13329.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": 30,
+      "dialogueText": "Really? You- you've seen the show? You like it?",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": "really-youve-seen-the-show",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4295.0,
+        "y": 467.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": 31,
+      "dialogueText": "Yes, I actually donated to your crowdfunding campaign for the new show.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4769.0,
+        "y": 467.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": 32,
+      "dialogueText": "I was wondering when I'd receive my signed memorabilia.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5318.0,
+        "y": 467.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 32,
+      "destinationNodeIndex": 33,
+      "dialogueText": "...",
+      "characterSpeaking": "Chris Handsome",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5847.0,
+        "y": 467.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 4,
+          "invokeTime": 0.0,
+          "eventName": "Chris Handsome",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 33,
+      "destinationNodeIndex": 34,
+      "dialogueText": "I didn't actually know he had a crowdfunding campaign. Luckily the question made him have a heart attack.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6165.0,
+        "y": 467.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 34,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I have to get out of here!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-have-to-get-out-of-here",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6720.0,
+        "y": 467.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

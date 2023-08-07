@@ -5,7 +5,10 @@ using UnityEngine;
 public enum Factions
 {
     Player,
-    MarvinGreen
+    MarvinGreen,
+    SirRedHerring,
+    VioletCadaver,
+    TimmyCadaver
 }
 
 [System.Serializable]

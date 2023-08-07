@@ -394,6 +394,7 @@ public class DialogueGraphView : GraphView
             optionEffect.effectType = saveFileEffect.effectType;
             optionEffect.intValue = saveFileEffect.intValue;
             optionEffect.item = saveFileEffect.item;
+            optionEffect.stringValue = saveFileEffect.stringValue;
             // if (saveFileEffect.item != null)
             // {
             //     Debug.Log(saveFileEffect.item.baseItemID);
@@ -480,6 +481,29 @@ public class DialogueGraphView : GraphView
                 effectContainer.Add(faction);
                 effectContainer.Add(opinionValue);
             break;
+            case DialogueOptionEffectType.ChangeDialogueTree:
+                TextField dialogueTreePath = new TextField("Dialogue Tree Path:");
+                dialogueTreePath.RegisterValueChangedCallback((evt) => effect.stringValue = dialogueTreePath.value);
+                if (effect.stringValue != null && effect.stringValue != System.String.Empty)
+                {
+                    dialogueTreePath.value = effect.stringValue;
+                }
+                effectContainer.Add(dialogueTreePath);
+            break;
+            case DialogueOptionEffectType.ChangeNPCStat:
+                EnumField statTypefield = new EnumField(StatType.Health);
+                if (effect.stringValue != null && effect.stringValue != System.String.Empty)
+                {
+                    StatType typeValue;
+                    Enum.TryParse<StatType>(effect.stringValue, out typeValue);
+                    statTypefield.value = typeValue;
+                }
+                statTypefield.RegisterValueChangedCallback((evt) => effect.stringValue = statTypefield.value.ToString());
+                IntegerField statValueChangeField = new IntegerField("Stat Change Value:");
+                statValueChangeField.RegisterValueChangedCallback((evt) => effect.intValue = statValueChangeField.value);
+                effectContainer.Add(statTypefield);
+                effectContainer.Add(statValueChangeField);
+            break;
         }
         return effectContainer;
     }
@@ -509,13 +533,19 @@ public class DialogueGraphView : GraphView
         if (requirement != null)
         {
             optionRequirement.dialogueOptionRequirement = requirement;
+            preReqType.value = requirement.requirementType;
             // if (requirement.requiredItem != null)
             // {
             //     optionRequirement.dialogueOptionRequirement.requiredItem = Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == requirement.requiredItem.baseItemID).First();
             // }
         }
+        else
+        {
+            optionRequirement.dialogueOptionRequirement.requirementType = (DialogueOptionRequirementType)preReqType.value;
+        }
         VisualElement leftPanel = new VisualElement();
         VisualElement rightPanel = new VisualElement();
+
 
         Button removePreReqButton = new Button(() => RemoveOptionPreRequisite(node, option, container, optionRequirement));
         removePreReqButton.text = "X";
@@ -564,22 +594,23 @@ public class DialogueGraphView : GraphView
                 operatorField.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.comparisonOperator = (DialogueOptionOperators)operatorField.value);
                 IntegerField factionOpinion = new IntegerField("Opinion Value:");
                 factionOpinion.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.intValue = factionOpinion.value);
-                if (optionRequirement.dialogueOptionRequirement.requiredItem != null)
-                {
+                // if (optionRequirement.dialogueOptionRequirement.factionRequirement != Factions.Player)
+                // {
                     faction.value = optionRequirement.dialogueOptionRequirement.factionRequirement;
                     operatorField.value = optionRequirement.dialogueOptionRequirement.comparisonOperator;
                     factionOpinion.value = optionRequirement.dialogueOptionRequirement.intValue;
-                }
+                // }
                 preReqContainer.Add(faction);
                 preReqContainer.Add(operatorField);
                 preReqContainer.Add(factionOpinion);
+                Debug.Log("Added faction standing requirement");
             break;
             case DialogueOptionRequirementType.CharacterOpinion:
                 operatorField = new EnumField("Operator:", DialogueOptionOperators.EqualTo);
                 operatorField.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.comparisonOperator = (DialogueOptionOperators)operatorField.value);
                 IntegerField characterOpinion = new IntegerField("Opinion Value:");
                 characterOpinion.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.intValue = characterOpinion.value);
-                if (optionRequirement.dialogueOptionRequirement.requiredItem != null)
+                if (optionRequirement.dialogueOptionRequirement.intValue != null)
                 {
                     operatorField.value = optionRequirement.dialogueOptionRequirement.comparisonOperator;
                     characterOpinion.value = optionRequirement.dialogueOptionRequirement.intValue;
@@ -594,7 +625,7 @@ public class DialogueGraphView : GraphView
     public void RemovePort(DialogueGraphNode node, Port generatedPort, DialogueOption option)
     {
         IEnumerable<Edge> targetEdge = edges.ToList().Where(x => x.output.portName == generatedPort.portName && x.output.node == generatedPort.node);
-        Debug.Log(generatedPort.portName);
+        // Debug.Log(generatedPort.portName);
         
 
         if (targetEdge.Any())

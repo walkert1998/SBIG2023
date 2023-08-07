@@ -4,4 +4,5 @@ public struct DialogueOptionEffectSaveData
     public Factions faction;
     public int intValue;
     public string itemBaseID;
+    public string stringValue;
 }

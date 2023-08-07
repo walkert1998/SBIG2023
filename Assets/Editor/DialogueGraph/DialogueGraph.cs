@@ -117,6 +117,7 @@ public class DialogueGraph : EditorWindow
                             effectSaveData.effectType = effect.effectType;
                             effectSaveData.faction = effect.faction;
                             effectSaveData.intValue = effect.intValue;
+                            effectSaveData.stringValue = effect.stringValue;
                             if (effect.item != null)
                             {
                                 effectSaveData.itemBaseID = effect.item.baseItemID;
@@ -134,7 +135,10 @@ public class DialogueGraph : EditorWindow
                             requirementSaveData.factionRequirement = requirement.factionRequirement;
                             requirementSaveData.comparisonOperator = requirement.comparisonOperator;
                             requirementSaveData.intValue = requirement.intValue;
-                            requirementSaveData.requiredItemBaseID = requirement.requiredItem.baseItemID;
+                            if (requirement.requiredItem != null)
+                            {
+                                requirementSaveData.requiredItemBaseID = requirement.requiredItem.baseItemID;
+                            }
                             optionSaveData.optionRequirements.Add(requirementSaveData);
                         }
                     }

@@ -9,44 +9,40 @@
       "dialogueAudioFileName": "excuse-me-are-you-a-relative-of-doctor-cadaver",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 232.0,
-        "y": 200.0
+        "x": -172.0,
+        "y": 349.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 33,
+          "dialogueOptionText": "Oh wait, you already answered that, let's get back to the questioning",
+          "optionRequirements": [
+            {
+              "requirementType": 2,
+              "comparisonOperator": 1,
+              "intValue": 50,
+              "requiredItemBaseID": null,
+              "factionRequirement": 2
+            }
+          ],
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 2,
       "destinationNodeIndex": 3,
-      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was one of my vict- I mean cousins!",
+      "dialogueText": "Yes! I am Sir Red Herring! The Doctor was a vi- I mean cousin of mine!",
       "characterSpeaking": "Sir Red Herring",
       "dialogueAudioFileName": "yes-i-am-sir-red-herring",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 757.0,
+        "x": 772.0,
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": [
-        {
-          "eventType": 0,
-          "invokeTime": 0.0,
-          "eventName": "RaiseHands",
-          "stringParameter": null,
-          "intParameter": 0,
-          "floatParameter": 0.0,
-          "invoked": 0
-        },
-        {
-          "eventType": 2,
-          "invokeTime": 4.0,
-          "eventName": "happy",
-          "stringParameter": null,
-          "intParameter": 100,
-          "floatParameter": 2.0,
-          "invoked": 0
-        }
-      ]
+      "dialogueEvents": null
     },
     {
       "nodeIndex": 3,
@@ -224,7 +220,15 @@
           "destinationNodeIndex": 14,
           "dialogueOptionText": "Snivelling",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 12,
@@ -263,7 +267,15 @@
           "destinationNodeIndex": 14,
           "dialogueOptionText": "Insipid",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 13,
@@ -302,7 +314,15 @@
           "destinationNodeIndex": 14,
           "dialogueOptionText": "Nincompoop",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 15,
@@ -478,7 +498,15 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Frivolous",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 20,
@@ -517,7 +545,15 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Blue-pilled",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 21,
@@ -556,7 +592,15 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Pillock",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 22,
@@ -670,7 +714,15 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Lily-livered",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 27,
@@ -728,7 +780,15 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Lickspittle",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 28,
@@ -767,25 +827,57 @@
           "destinationNodeIndex": -1,
           "dialogueOptionText": "Loser",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         },
         {
           "destinationNodeIndex": 29,
           "dialogueOptionText": "Scallywag",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 2,
+              "intValue": 100,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
         },
         {
           "destinationNodeIndex": 29,
           "dialogueOptionText": "Half-wit",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 2,
+              "intValue": 100,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
         },
         {
           "destinationNodeIndex": 29,
           "dialogueOptionText": "Consumer",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 2,
+              "intValue": 100,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
         }
       ],
       "dialogueEvents": null
@@ -947,6 +1039,12 @@
           "optionEffects": null
         },
         {
+          "destinationNodeIndex": 49,
+          "dialogueOptionText": "What were you doing last night?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
           "destinationNodeIndex": -1,
           "dialogueOptionText": "[Leave] That will be all...",
           "optionRequirements": null,
@@ -1000,7 +1098,7 @@
       "dialogueAudioFileName": "tell-me-about-yourself",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 19452.0,
+        "x": 19365.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -1074,7 +1172,7 @@
     },
     {
       "nodeIndex": 37,
-      "destinationNodeIndex": 37,
+      "destinationNodeIndex": 33,
       "dialogueText": "Of bananas I mean! I could eat them all day long! Unfortunately, I have eaten so many that if I have one more I will die instantly!",
       "characterSpeaking": "Sir Red Herring",
       "dialogueAudioFileName": "of-bananas-i-mean",
@@ -1146,8 +1244,8 @@
       "dialogueAudioFileName": "which-one-specifically",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 19864.0,
-        "y": 767.0
+        "x": 19882.0,
+        "y": 909.0
       },
       "dialogueOptions": [
         {
@@ -1169,8 +1267,14 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 34,
-          "dialogueOptionText": "Nevermind.",
+          "destinationNodeIndex": 46,
+          "dialogueOptionText": "Doctor Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 33,
+          "dialogueOptionText": "I wanna ask about something else",
           "optionRequirements": null,
           "optionEffects": null
         }
@@ -1257,6 +1361,631 @@
       "graphPosition": {
         "x": 21191.0,
         "y": 1332.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 46,
+      "destinationNodeIndex": 47,
+      "dialogueText": "How about the deceased?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "how-about-the-deceased",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20838.0,
+        "y": 1622.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 47,
+      "destinationNodeIndex": 48,
+      "dialogueText": "My dear cousin Doctor Cadaver… An odd man, I mean who puts on a tacky jacket, hangs themself and then walks over to their bed? Still, he let me stay here until I got back on my feet.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "my-dear-cousin-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21191.0,
+        "y": 1622.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 4.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 1.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 4.0,
+          "eventName": "sad",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.2,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 5.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 48,
+      "destinationNodeIndex": 38,
+      "dialogueText": "I got on the wrong end of the crypto market I’m afraid…",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-got-on-the-wrong-end-of-the-crypto-market",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21733.0,
+        "y": 1622.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "sad",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 2.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 1.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 49,
+      "destinationNodeIndex": 50,
+      "dialogueText": "What were you doing last night?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-were-you-doing-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19365.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 50,
+      "destinationNodeIndex": 51,
+      "dialogueText": "I was having dinner with the Doctor. The food was to DIE for!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-was-having-dinner-with-the-doctor",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19789.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 51,
+      "destinationNodeIndex": 52,
+      "dialogueText": "We conversed briefly, but unfortunately, the Doctor didn't want to... HANG OUT! MWAHAHAHAHA!!!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "we-conversed-briefly-but-unfortunately-the-doctor-didnt-want",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20340.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 52,
+      "destinationNodeIndex": 53,
+      "dialogueText": "And what did you converse about?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "and-what-did-you-converse-about",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 20934.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 53,
+      "destinationNodeIndex": 54,
+      "dialogueText": "Oh, we didn't discuss anything of... 'importance'.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "oh-we-didnt-discuss-anything-of-importance",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 21356.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 54,
+          "dialogueOptionText": "Doubt",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Believe",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 54,
+      "destinationNodeIndex": 55,
+      "dialogueText": "Doubt!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "doubt",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 22323.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 55,
+      "destinationNodeIndex": 56,
+      "dialogueText": "I asked about his vast wealth, but every time the subject was broached, the Doctor would get... CHOKED UP! EEHEHEHEHEHEHE!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-asked-about-his-vast-wealth",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 22676.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 56,
+      "destinationNodeIndex": 57,
+      "dialogueText": "What happened after that?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-happened-after-that",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 23248.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 57,
+      "destinationNodeIndex": 58,
+      "dialogueText": "Once he had eaten the Doctor went to bed, and I retired to my room.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "once-he-had-eaten-the-doctor-went-to-bed",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 23632.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 58,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I was uhhh, reading… Definitely not writing.",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-was-reading-definitely-not-writing",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 24211.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 59,
+          "dialogueOptionText": "Doubt",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 81,
+          "dialogueOptionText": "Believe",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 59,
+      "destinationNodeIndex": 60,
+      "dialogueText": "Doubt!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "doubt",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 25156.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 60,
+      "destinationNodeIndex": 61,
+      "dialogueText": "Oh, you got me! I was writing fanfiction shipping myself and my cousin’s wealth!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "oh-you-got-me-i-was-writing-fanfiction",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 25492.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 61,
+      "destinationNodeIndex": 62,
+      "dialogueText": "So, you were fantasizing about Doctor Cadaver's money?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "so-you-were-fantasizing-about-doctor-cadavers-money",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 26043.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 62,
+      "destinationNodeIndex": 63,
+      "dialogueText": "Yes, but that doesn’t mean anything! You have nothing!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "yes-but-that-doesnt-mean-anything-you-have-nothing",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 26597.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 63,
+      "destinationNodeIndex": 64,
+      "dialogueText": "Let me ask you one last question...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "let-me-ask-you-one-last-question",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 27134.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 64,
+      "destinationNodeIndex": 65,
+      "dialogueText": "I knew I would have to be smart with my inquisition. Herring lives up to his name in both slipperiness and hue. I came up with a masterful plan for getting this loquacious loser to confess. A plan so perfect that if it were a painting, the Mona Lisa would appear as a childs drawing in comparison.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-knew-i-would-have-to-be-smart",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 27567.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 65,
+      "destinationNodeIndex": 66,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 28119.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 66,
+      "destinationNodeIndex": 67,
+      "dialogueText": "...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 28454.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 67,
+      "destinationNodeIndex": 68,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 28796.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 68,
+      "destinationNodeIndex": 69,
+      "dialogueText": "...",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 29139.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 69,
+      "destinationNodeIndex": 70,
+      "dialogueText": "DID YOU KILL DOCTOR CADAVER?!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "did-you-kill-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 29490.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 70,
+      "destinationNodeIndex": 71,
+      "dialogueText": "AAAH you caught me you nave! I just wanted to have enough money so I could perform tax evasion!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "aaah-you-caught-me-you-nave",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 29889.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 71,
+      "destinationNodeIndex": 72,
+      "dialogueText": "I am destitute, so I have no income to stow away! Do you know how embarrassing it is to be a villain who has no money to siphon from the tax base?!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "i-am-destitute-so-i-have-no-money-to-stow-away",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 30441.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 72,
+      "destinationNodeIndex": 73,
+      "dialogueText": "You killed a man so that you could have enough money to evade taxes?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "you-killed-a-man-so-that-you-could-have-enough-money",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 31040.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 73,
+      "destinationNodeIndex": 74,
+      "dialogueText": "Well I-",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "well-i",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 31596.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 74,
+          "dialogueOptionText": "Arrest him",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave]",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 74,
+      "destinationNodeIndex": 75,
+      "dialogueText": "Good enough for me, take him away!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "good-enough-for-me-take-him-away",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 32542.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 75,
+      "destinationNodeIndex": -1,
+      "dialogueText": "And what evidence do you have detective?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-what-evidence-do-you-have-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 32975.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 76,
+          "dialogueOptionText": "I made it up!",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 76,
+      "destinationNodeIndex": 77,
+      "dialogueText": "My evidence is, I made it up!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "my-evidence-is-i-made-it-up",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 33927.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 77,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good enough for me.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "good-enough-for-me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 34342.0,
+        "y": -282.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 78,
+      "destinationNodeIndex": 79,
+      "dialogueText": "That makes sense",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "that-makes-sense",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 22323.0,
+        "y": 7.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 79,
+      "destinationNodeIndex": 56,
+      "dialogueText": "You FOOL! I mean, you full-y considered my answer!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "you-fool-i-mean-you-fully-considered",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 22656.0,
+        "y": 7.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 80,
+      "destinationNodeIndex": 80,
+      "dialogueText": "And what were you reading?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "and-what-were-you-reading",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 25156.0,
+        "y": 28.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 81,
+      "destinationNodeIndex": 82,
+      "dialogueText": "Jetpack sex erotica!",
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "jet-pack-sex-erotica",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 25574.0,
+        "y": 28.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 82,
+      "destinationNodeIndex": 83,
+      "dialogueText": "Ah, a man of culture.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "ah-a-man-of-culture",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 25940.0,
+        "y": 28.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 83,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I was sadly unable to pin the murder on Sir Herring, so he would have to be eliminated.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 26278.0,
+        "y": 28.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

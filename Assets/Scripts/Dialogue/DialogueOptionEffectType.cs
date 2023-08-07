@@ -7,5 +7,6 @@ public enum DialogueOptionEffectType
     ChangeFactionStanding,
     ChangePlayerStat,
     ChangeNPCStat,
-    ChangeObjectiveStatus
+    ChangeObjectiveStatus,
+    ChangeDialogueTree
 }
