@@ -71,7 +71,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 21,
+          "destinationNodeIndex": 1,
           "dialogueOptionText": "Actually, I'd like to know something else.",
           "optionRequirements": null,
           "optionEffects": null

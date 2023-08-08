@@ -248,6 +248,10 @@ public class DialogueScreen : MonoBehaviour
                                 }
                                 evt.invoked = 1;
                             break;
+                            case DialogueEventType.StartTimeline:
+                                TimelinePlayer.PlayTimeline_Static(evt.intParameter);
+                                evt.invoked = 1;
+                            break;
                         }
                     }
                 }
@@ -370,6 +374,10 @@ public class DialogueScreen : MonoBehaviour
                                         character.UseWeapon();
                                     }
                                 }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.StartTimeline:
+                                TimelinePlayer.PlayTimeline_Static(evt.intParameter);
                                 evt.invoked = 1;
                             break;
                         }
@@ -553,6 +561,13 @@ public class DialogueScreen : MonoBehaviour
         playerController.LockMovement(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        if (newConversation.playerStandLocation != Vector3.zero)
+        {
+            playerController.GetComponent<CharacterController>().enabled = false;
+            playerController.transform.position = newConversation.playerStandLocation;
+            playerController.GetComponent<CharacterController>().enabled = true;
+            // playerController.transform.LookAt();
+        }
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + newConversation.characterName + "/" + newConversation.dialogueTreePath);
         Debug.Log(textAsset);
         tree = DialogueTree.LoadDialogue(textAsset.text);

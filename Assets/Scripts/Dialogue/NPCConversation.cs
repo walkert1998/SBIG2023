@@ -6,4 +6,5 @@ public class NPCConversation : MonoBehaviour
 {
     public string characterName;
     public string dialogueTreePath;
+    public Vector3 playerStandLocation;
 }

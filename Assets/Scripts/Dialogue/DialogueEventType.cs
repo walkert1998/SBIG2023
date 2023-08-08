@@ -11,5 +11,6 @@ public enum DialogueEventType
     KillNPC,
     DrawWeapon,
     HolsterWeapon,
-    UseWeapon
+    UseWeapon,
+    StartTimeline
 }

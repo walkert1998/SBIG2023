@@ -1,0 +1,102 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": -1,
+      "dialogueText": "[Hmm, what do I wanna do here?]",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 229.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 2,
+          "dialogueOptionText": "[Eliminate] Throw the Toaster in the bathtub.",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 0,
+              "requiredItemBaseID": "76ae60bf-b284-4481-be4e-dd83a0c2faff",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 3,
+          "dialogueOptionText": "[Question] I'll just talk to her.",
+          "optionRequirements": [
+            {
+              "requirementType": 2,
+              "comparisonOperator": 1,
+              "intValue": 10,
+              "requiredItemBaseID": null,
+              "factionRequirement": 3
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave] Nevermind.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Here goes nothing...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1130.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 4,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Here goes nothing...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1130.0,
+        "y": 579.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 6,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    }
+  ]
+}
