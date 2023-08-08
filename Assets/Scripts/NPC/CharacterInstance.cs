@@ -96,7 +96,10 @@ public class CharacterInstance : MonoBehaviour, IInteractable
             animator.enabled = false;
         }
         colliders?.EnableRagdoll();
-        GetComponent<Collider>().enabled = false;
+        if (GetComponent<Collider>() != null)
+        {
+            GetComponent<Collider>().enabled = false;
+        }
         activeConversation.enabled = false;
         if (headLook != null)
         {
