@@ -1,0 +1,366 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": 2,
+      "dialogueText": "Well hello there big boy, what's your name?",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "well-hello-there-big-boy",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 229.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "Boob Mammary, at your service!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "boob-mammary-at-your-service",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 678.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": 4,
+      "dialogueText": "Ha ha ha! you silly little goose! I'm Violet, Violet Cadaver.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "ha-ha-ha-you-silly-little-goose",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1106.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": 5,
+      "dialogueText": "You must be the Doctor's teets. I mean niece!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "you-must-be-the-doctors-niece",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1651.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": 6,
+      "dialogueText": "Yes, my poor uncle is now dead! And now I’m all alone and sad since my parents aren’t home…",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "yes-my-poor-uncle-is-now-dead",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2122.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 7,
+      "dialogueText": null,
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "from-the-moment-i-set-eyes-on-her",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2683.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "I am not a hitman!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-am-not-a-hitman",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3120.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": -1,
+      "dialogueText": "What a shame, I was hoping you'd want to 'hit it'...",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "what-a-shame-i-was-hoping",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3457.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 9,
+          "dialogueOptionText": "Perhaps some bread can keep you company?",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 3,
+              "intValue": 50,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
+        },
+        {
+          "destinationNodeIndex": 10,
+          "dialogueOptionText": "Do you mind if I ask you some questions?",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "Oh my god I am a total trollop for bread! Perhaps there’s some way I can “thank” you…",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "oh-my-god-i-am-a-total-trollop",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4396.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": 11,
+      "dialogueText": "Do you mind if I ask you some questions?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "do-you-mind-if-i-ask-you-some-questions",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4951.0,
+        "y": 324.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Hmm, I think I’ll need a bath to jog my memory. If you’d like you can join me, and I’ll answer any question you desire…",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "hmm-i-think-ill-need-a-bath",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5430.0,
+        "y": 324.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Very well.",
+          "optionRequirements": null,
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "violet-cadaver-tree-2"
+            }
+          ]
+        },
+        {
+          "destinationNodeIndex": 13,
+          "dialogueOptionText": "No!",
+          "optionRequirements": [
+            {
+              "requirementType": 2,
+              "comparisonOperator": 2,
+              "intValue": 10,
+              "requiredItemBaseID": null,
+              "factionRequirement": 3
+            }
+          ],
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 3,
+              "intValue": -25,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
+        },
+        {
+          "destinationNodeIndex": 16,
+          "dialogueOptionText": "No, I'd rather not.",
+          "optionRequirements": [
+            {
+              "requirementType": 2,
+              "comparisonOperator": 1,
+              "intValue": 10,
+              "requiredItemBaseID": null,
+              "factionRequirement": 3
+            }
+          ],
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 3,
+              "intValue": -25,
+              "itemBaseID": null,
+              "stringValue": null
+            },
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "violet-cadaver-tree-2"
+            }
+          ]
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": 15,
+      "dialogueText": "Very well.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "very-well",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6352.0,
+        "y": 324.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": "No dice foul temptress!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "no-dice-foul-temptress",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6352.0,
+        "y": 582.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "WagFinger",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "HandsOnHips",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Well I never, excuse me detective, but I'm going to go have my bath now!",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "well-i-never",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6726.0,
+        "y": 582.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": -1,
+      "dialogueText": "The bathroom is just through the door behind me, don't keep a girl waiting detective...",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "the-bathroom-is-just-through-that-door",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6726.0,
+        "y": 324.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "No dice foul temptress!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "no-dice-foul-temptress",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6352.0,
+        "y": 910.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Well, if you change your mind, I'll be just behind that door...",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6726.0,
+        "y": 910.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}

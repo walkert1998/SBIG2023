@@ -13,7 +13,26 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 2,
@@ -41,14 +60,42 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "StompFoot",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 2.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 4,
       "destinationNodeIndex": 5,
       "dialogueText": "This small humanoid irked me greatly. But I thought I'd try a more diplomatic approach.",
       "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "this-small-humanoid-irked-me-greatly",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 1475.0,
@@ -111,7 +158,7 @@
       "destinationNodeIndex": 8,
       "dialogueText": "Eww, its S.P.I.N.A.C.H. brand, I hate that brand!",
       "characterSpeaking": "Timmy Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "ew-its-spinach-brand-i-hate-that-brand",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3431.0,
@@ -280,14 +327,24 @@
         "y": 1384.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 16,
       "destinationNodeIndex": 17,
       "dialogueText": "Wouldn't you like to know law boy?",
       "characterSpeaking": "Timmy Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "wouldnt-you-like-to-know-law-boy",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4758.0,
@@ -329,7 +386,35 @@
         "y": 1384.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PistolIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 5,
+          "invokeTime": 0.0,
+          "eventName": "Hugh Mann",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 19,
@@ -343,7 +428,26 @@
         "y": 1384.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 20,
@@ -370,7 +474,26 @@
           "optionEffects": null
         }
       ],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 21,
@@ -390,7 +513,7 @@
       "nodeIndex": 22,
       "destinationNodeIndex": 26,
       "dialogueText": "I was gaming with my friends! And practicing noose tying!",
-      "characterSpeaking": "Timmy ",
+      "characterSpeaking": "Timmy Cadaver",
       "dialogueAudioFileName": "i-was-gaming-with-my-friends-and-practicing-noose-tying",
       "silenceLength": 2.0,
       "graphPosition": {
@@ -425,7 +548,26 @@
         "y": 1650.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 24,
@@ -439,11 +581,21 @@
         "y": 1650.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.2,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 25,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 35,
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
@@ -464,9 +616,18 @@
           "invoked": 0
         },
         {
-          "eventType": 4,
-          "invokeTime": 1.0,
-          "eventName": "Timmy Cadaver",
+          "eventType": 0,
+          "invokeTime": 0.99,
+          "eventName": "Idle Walk Run Blend",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 7,
+          "invokeTime": 0.0,
+          "eventName": "Hugh Mann",
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
@@ -631,7 +792,50 @@
         "y": 1067.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ArmThrowForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 35,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Timmy Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9154.0,
+        "y": 1650.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 4,
+          "invokeTime": 0.5,
+          "eventName": "Timmy Cadaver",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 6,
+          "invokeTime": 0.1,
+          "eventName": "Hugh Mann",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }

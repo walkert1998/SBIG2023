@@ -8,5 +8,8 @@ public enum DialogueEventType
     SetAnimationBoolValue,
     SetFacialPose,
     ChangeNPCTree,
-    KillNPC
+    KillNPC,
+    DrawWeapon,
+    HolsterWeapon,
+    UseWeapon
 }

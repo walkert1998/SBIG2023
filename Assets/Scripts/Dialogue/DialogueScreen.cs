@@ -217,6 +217,36 @@ public class DialogueScreen : MonoBehaviour
                                 }
                                 evt.invoked = 1;
                             break;
+                            case DialogueEventType.DrawWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.DrawWeapon();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.HolsterWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.HolsterWeapon();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.UseWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.UseWeapon();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
                         }
                     }
                 }
@@ -307,6 +337,36 @@ public class DialogueScreen : MonoBehaviour
                                     if (character.activeConversation.characterName == evt.eventName)
                                     {
                                         character.KillNPC();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.DrawWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.DrawWeapon();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.HolsterWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.HolsterWeapon();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
+                            case DialogueEventType.UseWeapon:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.UseWeapon();
                                     }
                                 }
                                 evt.invoked = 1;

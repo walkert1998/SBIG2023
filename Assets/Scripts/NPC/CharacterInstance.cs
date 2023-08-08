@@ -15,6 +15,8 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public NPCHeadLook headLook;
     public Color subtitlecolour;
     public NPCColliders colliders;
+    public GameObject weaponModel;
+    public AudioClip weaponSound;
     public int health = 1;
 
     public bool focused { get; set; }
@@ -97,5 +99,27 @@ public class CharacterInstance : MonoBehaviour, IInteractable
         // DialogueScreen.instance.characters.Remove(this);
         // DialogueScreen.instance.characterAudioSources.Remove(source);
         Debug.Log("NPC killed!");
+    }
+
+    public void DrawWeapon()
+    {
+        weaponModel?.SetActive(true);
+    }
+
+    public void HolsterWeapon()
+    {
+        weaponModel?.SetActive(false);
+    }
+
+    public void UseWeapon()
+    {
+        if (weaponModel != null)
+        {
+            if (weaponSound != null && weaponModel.GetComponent<AudioSource>())
+            {
+                weaponModel.GetComponent<AudioSource>().PlayOneShot(weaponSound);
+                Debug.Log("Played shot sound");
+            }
+        }
     }
 }

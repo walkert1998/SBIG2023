@@ -55,21 +55,21 @@ public class InventoryManager : MonoBehaviour, ISaveable
 
     private void OnEnable()
     {
-        toggleInventory = playerInput.actions.FindAction("Inventory");
-        toggleInventory.performed += ToggleInventory;
-        toggleInventory.Enable();
-        toggleSuspects = playerInput.actions.FindAction("Suspects");
-        toggleSuspects.performed += ToggleSuspects;
-        toggleSuspects.Enable();
-        toggleNotePad = playerInput.actions.FindAction("NotePad");
-        toggleNotePad.performed += ToggleNotePad;
-        toggleNotePad.Enable();
+        // toggleInventory = playerInput.actions.FindAction("Inventory");
+        // toggleInventory.performed += ToggleInventory;
+        // toggleInventory.Enable();
+        // toggleSuspects = playerInput.actions.FindAction("Suspects");
+        // toggleSuspects.performed += ToggleSuspects;
+        // toggleSuspects.Enable();
+        // toggleNotePad = playerInput.actions.FindAction("NotePad");
+        // toggleNotePad.performed += ToggleNotePad;
+        // toggleNotePad.Enable();
     }
     private void OnDisable()
     {
-        toggleInventory.Disable();
-        toggleSuspects.Disable();
-        toggleNotePad.Disable();
+        // toggleInventory.Disable();
+        // toggleSuspects.Disable();
+        // toggleNotePad.Disable();
     }
 
     private void ToggleInventory(InputAction.CallbackContext obj)

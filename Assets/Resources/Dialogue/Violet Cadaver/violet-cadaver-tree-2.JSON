@@ -1,0 +1,314 @@
+{
+  "characterName": null,
+  "dialogueNodes": [
+    {
+      "nodeIndex": 1,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Now then Hugh, what questions did you want to ask?",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "now-then-hugh-what-questions",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 226.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 2,
+          "dialogueOptionText": "What do you know of the other residents in this house?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 7,
+          "dialogueOptionText": "What were you doing last night?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Tell me about yourself.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 2,
+      "destinationNodeIndex": 3,
+      "dialogueText": "What do you know of the other residents in this house?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-do-you-know-of-the-other-residents",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1159.0,
+        "y": -123.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 3,
+          "dialogueOptionText": "Marvin Green",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 4,
+          "dialogueOptionText": "Sir Red Herring",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 5,
+          "dialogueOptionText": "Timmy Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 6,
+          "dialogueOptionText": "Doctor Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 3,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2085.0,
+        "y": -729.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 4,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2085.0,
+        "y": -507.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2085.0,
+        "y": -293.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2085.0,
+        "y": -81.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 7,
+      "destinationNodeIndex": 8,
+      "dialogueText": "What were you doing last night?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-were-you-doing-last-night",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1159.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 8,
+      "destinationNodeIndex": 9,
+      "dialogueText": "I was draining the blood from my eyes in a sexy fashion.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "i-was-draining-the-blood-from-my-eyes",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1555.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 9,
+      "destinationNodeIndex": 10,
+      "dialogueText": "You know how it is being a woman in a world with not a lot of nice.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "you-know-how-it-is-being-a-woman",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2060.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": 11,
+      "dialogueText": "What happened after that?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-happened-after-that",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2603.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 11,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Nothing.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "nothing",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2979.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Doubt",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "Believe",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 12,
+      "destinationNodeIndex": 13,
+      "dialogueText": "Doubt!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "doubt",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3912.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 13,
+      "destinationNodeIndex": 14,
+      "dialogueText": "You're very... persuasive... detective. I like that in a man.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4257.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 14,
+      "destinationNodeIndex": 15,
+      "dialogueText": "Well technically I am an alien.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "well-technically-i-am-an-alien",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4786.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 15,
+      "destinationNodeIndex": 16,
+      "dialogueText": "Ha ha ha! Stop it!",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5197.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 16,
+      "destinationNodeIndex": 17,
+      "dialogueText": "I was having an incestuous relationship with my uncle so I could have all his money.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5525.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 17,
+      "destinationNodeIndex": 18,
+      "dialogueText": "Dear god in heaven, you slept with your own uncle?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "dear-god-in-heaven-you-slept-with-your-own-uncle",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6062.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 18,
+      "destinationNodeIndex": -1,
+      "dialogueText": "You know how it is being a woman in a world with not a lot of nice.",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "you-know-how-it-is-being-a-woman",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6571.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    }
+  ]
+}

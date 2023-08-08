@@ -22,7 +22,8 @@
               "effectType": 4,
               "faction": 1,
               "intValue": 5,
-              "itemBaseID": null
+              "itemBaseID": null,
+              "stringValue": null
             }
           ]
         },
@@ -35,7 +36,8 @@
               "effectType": 4,
               "faction": 1,
               "intValue": -5,
-              "itemBaseID": null
+              "itemBaseID": null,
+              "stringValue": null
             }
           ]
         }
@@ -170,7 +172,15 @@
           "destinationNodeIndex": 6,
           "dialogueOptionText": "Cut me some slack jack!",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 1,
+              "intValue": -10,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
         },
         {
           "destinationNodeIndex": 7,
@@ -231,14 +241,14 @@
     },
     {
       "nodeIndex": 7,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 25,
       "dialogueText": "I understand you're a tenant of Doctor Cadaver?",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "i-understand-you-are-a-tenant",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3256.0,
-        "y": 813.0
+        "x": 3233.0,
+        "y": 1411.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -251,10 +261,31 @@
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3696.0,
-        "y": 389.0
+        "x": 3327.0,
+        "y": 747.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 32,
+          "dialogueOptionText": "Bread?",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 34,
+          "dialogueOptionText": "Do you mind if I ask you some questions?",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": [
         {
           "eventType": 2,
@@ -282,7 +313,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 3.5,
       "graphPosition": {
         "x": 1598.0,
         "y": -325.0
@@ -323,7 +354,7 @@
       "destinationNodeIndex": 11,
       "dialogueText": "It appears that Mr. Green is mute! An unexpected challenge to be sure, but nothing I hadn't handled on Epsilon V before!",
       "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "it-appears-that-mr-green-is-mute",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 1918.0,
@@ -344,7 +375,17 @@
         "y": 17.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 40,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 12,
@@ -365,7 +406,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 29,
           "dialogueOptionText": "What can you tell me about the other residents?",
           "optionRequirements": null,
           "optionEffects": null
@@ -395,7 +436,26 @@
         "y": 17.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "ThinkingIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 14,
@@ -403,7 +463,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 5.0,
       "graphPosition": {
         "x": 4228.0,
         "y": 17.0
@@ -428,7 +488,44 @@
           "optionEffects": null
         }
       ],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "Run",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 1.5,
+          "eventName": "ClipboardPoint",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 3.5,
+          "eventName": "ClipboardPoint",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 4.0,
+          "eventName": "Idle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 15,
@@ -436,14 +533,14 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 6.0,
       "graphPosition": {
-        "x": 5286.0,
+        "x": 5219.0,
         "y": 17.0
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 16,
+          "destinationNodeIndex": 15,
           "dialogueOptionText": "Um, ok...",
           "optionRequirements": null,
           "optionEffects": null
@@ -455,13 +552,68 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 15,
           "dialogueOptionText": "1-3-F? And you heard a gunshot...",
           "optionRequirements": null,
           "optionEffects": null
         }
       ],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "PointAtSelf",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 4.5,
+          "eventName": "PistolShoot",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 5.0,
+          "eventName": "Idle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "OneFingerUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 2.5,
+          "eventName": "ThreeFingersUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 3.5,
+          "eventName": "FSign",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 16,
@@ -482,27 +634,50 @@
       "destinationNodeIndex": 19,
       "dialogueText": "That's a fascinating story Marvin, thank you. You remind me of an old friend from Uranus.",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "thats-a-fascinating-story-marvin",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 6558.0,
         "y": -80.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "CrossedArms",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 18,
-      "destinationNodeIndex": -1,
+      "destinationNodeIndex": 27,
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 6211.0,
-        "y": 130.0
+        "y": 407.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "You're under arrest!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 14,
+          "dialogueOptionText": "Nevermind, thanks for information.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": [
         {
           "eventType": 0,
@@ -553,7 +728,7 @@
       "destinationNodeIndex": -1,
       "dialogueText": "I mean...",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "i-mean",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 7470.0,
@@ -561,25 +736,35 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 21,
+          "destinationNodeIndex": 28,
           "dialogueOptionText": "You're under arrest for the murder of Doctor Cadaver!",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 27,
           "dialogueOptionText": "Jupiter!",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
-          "dialogueOptionText": "Option 3",
+          "destinationNodeIndex": 27,
+          "dialogueOptionText": "Harlem!",
           "optionRequirements": null,
           "optionEffects": null
         }
       ],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 21,
@@ -594,6 +779,15 @@
       },
       "dialogueOptions": [],
       "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIK",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
         {
           "eventType": 1,
           "invokeTime": 0.0,
@@ -682,11 +876,382 @@
       "destinationNodeIndex": -1,
       "dialogueText": "Good enough for me.",
       "characterSpeaking": "Officer Wilson",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "good-enough-for-me",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 10159.0,
         "y": -80.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3720.0,
+        "y": 1411.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 11,
+          "dialogueOptionText": "Do you mind if I ask you some questions?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 26,
+          "dialogueOptionText": "Perhaps some bread would help?",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": [
+            {
+              "effectType": 4,
+              "faction": 1,
+              "intValue": 100,
+              "itemBaseID": null,
+              "stringValue": null
+            }
+          ]
+        }
+      ],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "Nod",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": 11,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4650.0,
+        "y": 1411.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.5,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8411.0,
+        "y": 837.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "Actually, you're under arrest!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 36,
+          "dialogueOptionText": "[Eliminate] Actually, what do you say to a foot race?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave] That will be all.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": 21,
+      "dialogueText": "You're under arrest for the murder of Doctor Cadaver!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "youre-under-arrest-for-the-murder-of-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7726.0,
+        "y": 356.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HoldFingerUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": -1,
+      "dialogueText": "What do you know of the other residents?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-do-you-know-of-the-other-residents",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 3818.0,
+        "y": -1108.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 30,
+          "dialogueOptionText": "Violet Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 31,
+          "dialogueOptionText": "Sir Red Herring",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 32,
+          "dialogueOptionText": "Timmy Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 33,
+          "dialogueOptionText": "Doctor Cadaver",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 12,
+          "dialogueOptionText": "Let me ask you something else...",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": 29,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4748.0,
+        "y": -1108.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": 29,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4748.0,
+        "y": -913.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 32,
+      "destinationNodeIndex": 29,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4748.0,
+        "y": -705.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 33,
+      "destinationNodeIndex": 29,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4748.0,
+        "y": -497.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 34,
+      "destinationNodeIndex": 35,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4249.0,
+        "y": 1103.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 35,
+      "destinationNodeIndex": 38,
+      "dialogueText": "I suddenly realized that my attempts to come to a mutual understanding had failed. I would have no choice but to eliminate Marvin.",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 4568.0,
+        "y": 1103.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 36,
+      "destinationNodeIndex": 37,
+      "dialogueText": "What do you say to a foot race?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-do-you-say-to-a-foot-race",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9445.0,
+        "y": 639.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 37,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Marvin Green",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9876.0,
+        "y": 639.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "ThumbsUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 38,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5129.0,
+        "y": 1377.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 39,
+          "dialogueOptionText": "[Eliminate] How about a foot race?",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": -1,
+          "dialogueOptionText": "[Leave] Bye Marvin.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 39,
+      "destinationNodeIndex": 37,
+      "dialogueText": "What do you say we put all this murder unpleasantness behind us? And have a foot race!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "what-do-you-say-we-put-all-this-murder-unpleasentness-behind-us",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6081.0,
+        "y": 1377.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

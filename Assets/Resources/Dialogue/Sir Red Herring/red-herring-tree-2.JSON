@@ -209,7 +209,7 @@
       "destinationNodeIndex": -1,
       "dialogueText": "Well at least I'm not a...",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "well-atleast-im-not-a",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 5034.0,
@@ -257,7 +257,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 5999.0,
         "y": 200.0
@@ -304,7 +304,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 6946.0,
         "y": 200.0
@@ -487,7 +487,7 @@
       "destinationNodeIndex": -1,
       "dialogueText": "You're nothing but a...",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "youre-nothing-but-a",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 9459.0,
@@ -535,7 +535,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 10396.0,
         "y": 200.0
@@ -582,7 +582,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 11322.0,
         "y": 200.0
@@ -703,7 +703,7 @@
       "destinationNodeIndex": -1,
       "dialogueText": "That was pathetic, I will not tolerate a...",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "that-was-pathetic-i-will-not-tolerate-a",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 13821.0,
@@ -770,7 +770,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 14759.0,
         "y": 200.0
@@ -817,7 +817,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 1.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 15684.0,
         "y": 200.0
@@ -973,7 +973,7 @@
         {
           "eventType": 0,
           "invokeTime": 0.0,
-          "eventName": "YIIKScream",
+          "eventName": "YIIK",
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
@@ -1082,7 +1082,7 @@
         {
           "eventType": 0,
           "invokeTime": 0.0,
-          "eventName": "YIIKScream",
+          "eventName": "YIIK",
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
@@ -1142,6 +1142,15 @@
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
           "invoked": 0
         }
       ]
@@ -1615,7 +1624,15 @@
           "destinationNodeIndex": 81,
           "dialogueOptionText": "Believe",
           "optionRequirements": null,
-          "optionEffects": null
+          "optionEffects": [
+            {
+              "effectType": 8,
+              "faction": 0,
+              "intValue": 0,
+              "itemBaseID": null,
+              "stringValue": "red-herring-tree-3"
+            }
+          ]
         }
       ],
       "dialogueEvents": null
