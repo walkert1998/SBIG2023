@@ -348,7 +348,7 @@
     {
       "nodeIndex": 14,
       "destinationNodeIndex": -1,
-      "dialogueText": "Ah ha! You violated the one rule of verbal sparring! Get away from me you dog!",
+      "dialogueText": "Ah ha! You violated the one rule of verbal sparring! You can't repeat an insult! Get away from me you dog!",
       "characterSpeaking": "Sir Red Herring",
       "dialogueAudioFileName": "ah-ah-you-violated-the-one-rule",
       "silenceLength": 2.0,
@@ -653,6 +653,15 @@
           "intParameter": 0,
           "floatParameter": 0.0,
           "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
         }
       ]
     },
@@ -682,7 +691,17 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HoldFingerUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 25,
@@ -696,7 +715,17 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HandsOnHips",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 26,
@@ -1011,6 +1040,15 @@
           "intParameter": 0,
           "floatParameter": 0.0,
           "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
         }
       ]
     },
@@ -1042,6 +1080,20 @@
           "destinationNodeIndex": 49,
           "dialogueOptionText": "What were you doing last night?",
           "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 84,
+          "dialogueOptionText": "[Eliminate] Want a banana?",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "9cacae77-42b0-45c1-bddf-a31645922320",
+              "factionRequirement": 0
+            }
+          ],
           "optionEffects": null
         },
         {
@@ -1078,15 +1130,6 @@
           "intParameter": 100,
           "floatParameter": 0.1,
           "invoked": 0
-        },
-        {
-          "eventType": 0,
-          "invokeTime": 0.0,
-          "eventName": "YIIK",
-          "stringParameter": null,
-          "intParameter": 0,
-          "floatParameter": 0.0,
-          "invoked": 0
         }
       ]
     },
@@ -1102,7 +1145,17 @@
         "y": 200.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 35,
@@ -1241,6 +1294,15 @@
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "angry",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
           "invoked": 0
         }
       ]
@@ -1532,13 +1594,13 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 54,
+          "destinationNodeIndex": -1,
           "dialogueOptionText": "Doubt",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 78,
           "dialogueOptionText": "Believe",
           "optionRequirements": null,
           "optionEffects": null
@@ -1621,7 +1683,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 81,
+          "destinationNodeIndex": 80,
           "dialogueOptionText": "Believe",
           "optionRequirements": null,
           "optionEffects": [
@@ -1953,7 +2015,7 @@
     },
     {
       "nodeIndex": 80,
-      "destinationNodeIndex": 80,
+      "destinationNodeIndex": 81,
       "dialogueText": "And what were you reading?",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": "and-what-were-you-reading",
@@ -2006,6 +2068,44 @@
       },
       "dialogueOptions": [],
       "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 84,
+      "destinationNodeIndex": 85,
+      "dialogueText": "Want a banana?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "want-a-banana",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 18853.0,
+        "y": -629.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 85,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Sir Red Herring",
+      "dialogueAudioFileName": "oh-i-dont-see-why-not",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 19185.0,
+        "y": -731.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 4,
+          "invokeTime": 2.0,
+          "eventName": "Sir Red Herring",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }

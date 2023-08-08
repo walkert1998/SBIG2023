@@ -137,6 +137,7 @@ public class DialogueGraphView : GraphView
             if (saveFileNode.silenceLength > 0)
             {
                 silenceLengthField.value = saveFileNode.silenceLength;
+                graphNode.dialogueNode.silenceLength = saveFileNode.silenceLength;
             }
         }
         else

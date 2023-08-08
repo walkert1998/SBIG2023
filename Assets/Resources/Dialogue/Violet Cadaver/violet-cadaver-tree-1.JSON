@@ -74,12 +74,12 @@
     {
       "nodeIndex": 6,
       "destinationNodeIndex": 7,
-      "dialogueText": null,
+      "dialogueText": "From the moment I laid eyes on her, I knew this dame would be trouble. Her cold lifeless eyes felt like they were drawing me in to her luscious maw.",
       "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": "from-the-moment-i-set-eyes-on-her",
+      "dialogueAudioFileName": "from-the-moment-i-laid-eyes-on-her",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2683.0,
+        "x": 2636.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -93,7 +93,7 @@
       "dialogueAudioFileName": "i-am-not-a-hitman",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3120.0,
+        "x": 3149.0,
         "y": 200.0
       },
       "dialogueOptions": [],

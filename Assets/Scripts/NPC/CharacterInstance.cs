@@ -91,11 +91,17 @@ public class CharacterInstance : MonoBehaviour, IInteractable
     public void KillNPC()
     {
         health = 0;
-        animator.enabled = false;
-        colliders.EnableRagdoll();
+        if (animator != null)
+        {
+            animator.enabled = false;
+        }
+        colliders?.EnableRagdoll();
         GetComponent<Collider>().enabled = false;
         activeConversation.enabled = false;
-        headLook.enabled = false;
+        if (headLook != null)
+        {
+            headLook.enabled = false;
+        }
         // DialogueScreen.instance.characters.Remove(this);
         // DialogueScreen.instance.characterAudioSources.Remove(source);
         Debug.Log("NPC killed!");

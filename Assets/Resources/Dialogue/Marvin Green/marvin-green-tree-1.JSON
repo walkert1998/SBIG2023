@@ -313,7 +313,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 3.5,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 1598.0,
         "y": -325.0
@@ -463,7 +463,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 5.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 4228.0,
         "y": 17.0
@@ -493,6 +493,15 @@
           "eventType": 0,
           "invokeTime": 0.0,
           "eventName": "Run",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 1.0,
+          "eventName": "Idle",
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,
@@ -533,14 +542,14 @@
       "dialogueText": "...",
       "characterSpeaking": "Marvin Green",
       "dialogueAudioFileName": null,
-      "silenceLength": 6.0,
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 5219.0,
         "y": 17.0
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 15,
+          "destinationNodeIndex": 16,
           "dialogueOptionText": "Um, ok...",
           "optionRequirements": null,
           "optionEffects": null
@@ -552,7 +561,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 15,
+          "destinationNodeIndex": 16,
           "dialogueOptionText": "1-3-F? And you heard a gunshot...",
           "optionRequirements": null,
           "optionEffects": null
@@ -672,7 +681,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 14,
+          "destinationNodeIndex": 17,
           "dialogueOptionText": "Nevermind, thanks for information.",
           "optionRequirements": null,
           "optionEffects": null
@@ -832,6 +841,12 @@
         {
           "destinationNodeIndex": 23,
           "dialogueOptionText": "I made it up!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 40,
+          "dialogueOptionText": "Only Marvin was strong enough to strangle the Doctor!",
           "optionRequirements": null,
           "optionEffects": null
         }
@@ -1092,10 +1107,20 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4748.0,
-        "y": -1108.0
+        "y": -1303.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "FSign",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 31,
@@ -1106,10 +1131,20 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4748.0,
-        "y": -913.0
+        "y": -1073.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandNo",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 32,
@@ -1120,10 +1155,20 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4748.0,
-        "y": -705.0
+        "y": -836.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "StompFoot",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 33,
@@ -1134,10 +1179,20 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4748.0,
-        "y": -497.0
+        "y": -573.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.5,
+          "eventName": "ThumbsUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 34,
@@ -1158,7 +1213,7 @@
       "destinationNodeIndex": 38,
       "dialogueText": "I suddenly realized that my attempts to come to a mutual understanding had failed. I would have no choice but to eliminate Marvin.",
       "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "i-suddenly-realized-that-my-attempts",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4568.0,
@@ -1255,6 +1310,30 @@
       },
       "dialogueOptions": [],
       "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 40,
+      "destinationNodeIndex": 24,
+      "dialogueText": "Only Marvin would have the strength to strangle Doctor Cadaver with that tiny noose!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "only-marvin-would-have-the-strength",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10258.0,
+        "y": 489.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }

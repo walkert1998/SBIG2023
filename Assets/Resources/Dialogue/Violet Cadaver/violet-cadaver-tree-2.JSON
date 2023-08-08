@@ -26,7 +26,7 @@
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 33,
           "dialogueOptionText": "Tell me about yourself.",
           "optionRequirements": null,
           "optionEffects": null
@@ -43,7 +43,7 @@
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 1159.0,
-        "y": -123.0
+        "y": -125.0
       },
       "dialogueOptions": [
         {
@@ -69,62 +69,68 @@
           "dialogueOptionText": "Doctor Cadaver",
           "optionRequirements": null,
           "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 21,
+          "dialogueOptionText": "Actually, I'd like to know something else.",
+          "optionRequirements": null,
+          "optionEffects": null
         }
       ],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 3,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 2,
+      "dialogueText": "He's a university student my uncle let rent out a spare bedroom. He's mute but loves reading, working out and running. Timmy doesn't like him though.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "hes-a-university-student",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 2085.0,
-        "y": -729.0
+        "y": -884.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 4,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 2,
+      "dialogueText": "My uncle's deadbeat cousin. He stares down his nose at everyone despite being broke. Uncle never gave him much money because Red would just spend it all on something stupid.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "my-uncles-deadbeat-cousin",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 2085.0,
-        "y": -507.0
+        "y": -598.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 5,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 2,
+      "dialogueText": "Timmy's my nephew and he's a pain in the ass. He's always playing computer games and shitposting. If he's not doing that he's practicing knot-tying or playing with his cursed toothbrush.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "timmys-my-nephew",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 2085.0,
-        "y": -293.0
+        "y": -286.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 6,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "destinationNodeIndex": 2,
+      "dialogueText": "My poor dead uncle. It's a shame he died before he could make more money to leave behind.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "my-poor-dead-uncle",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 2085.0,
-        "y": -81.0
+        "y": 19.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -141,7 +147,17 @@
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 8,
@@ -183,7 +199,17 @@
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 11,
@@ -224,14 +250,33 @@
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HoldFingerUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "smirk",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 13,
       "destinationNodeIndex": 14,
       "dialogueText": "You're very... persuasive... detective. I like that in a man.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "youre-very-persuasive-detective",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 4257.0,
@@ -252,7 +297,17 @@
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 15,
@@ -270,10 +325,10 @@
     },
     {
       "nodeIndex": 16,
-      "destinationNodeIndex": 17,
+      "destinationNodeIndex": 20,
       "dialogueText": "I was having an incestuous relationship with my uncle so I could have all his money.",
       "characterSpeaking": "Violet Cadaver",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "i-was-having-an-incestuous-relationship",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 5525.0,
@@ -290,11 +345,39 @@
       "dialogueAudioFileName": "dear-god-in-heaven-you-slept-with-your-own-uncle",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 6062.0,
+        "x": 6063.0,
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIK",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "confused",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "surprised",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 18,
@@ -306,6 +389,335 @@
       "graphPosition": {
         "x": 6571.0,
         "y": 457.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 19,
+          "dialogueOptionText": "No I don't!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 23,
+          "dialogueOptionText": "Preach it sister!",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 19,
+      "destinationNodeIndex": 22,
+      "dialogueText": "I don't know what you're talking about!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-dont-know-what-youre-talking-about",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7533.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 20,
+      "destinationNodeIndex": 21,
+      "dialogueText": "I pondered what she just said as the warm bath water soaked my skin. Could she really have slept with her own uncle?",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-pondered-what-she-just-said",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 5938.0,
+        "y": 103.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 21,
+      "destinationNodeIndex": 17,
+      "dialogueText": "I cringed at the thought...",
+      "characterSpeaking": "Internal Monologue",
+      "dialogueAudioFileName": "i-cringed-at-the-thought",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 6499.0,
+        "y": 103.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 22,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I'm pulling the plug on your dirty deeds!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "im-pulling-the-plug-on-your-dirty-deeds",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7996.0,
+        "y": 457.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 26,
+          "dialogueOptionText": "[Arrest] You're under arrest!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 32,
+          "dialogueOptionText": "[Eliminate] Literally!",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 23,
+      "destinationNodeIndex": 24,
+      "dialogueText": "Preach it, sister!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "preach-it-sister",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7533.0,
+        "y": 798.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "RaiseHands",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 2,
+          "invokeTime": 0.0,
+          "eventName": "happy",
+          "stringParameter": null,
+          "intParameter": 100,
+          "floatParameter": 0.1,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 24,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I mean...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "i-mean",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 7959.0,
+        "y": 837.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 22,
+          "dialogueOptionText": "I'm pulling the plug on you!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 25,
+          "dialogueOptionText": "[Leave] That will be all.",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 25,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Thank you for your time Miss Cadaver.",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "thank-you-for-you-time-miss-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8897.0,
+        "y": 837.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": 27,
+      "dialogueText": "You're under arrest for the murder of Doctor Cadaver!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "youre-under-arrest-for-the-murder-of-doctor-cadaver",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8897.0,
+        "y": 262.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": -1,
+      "dialogueText": "And what evidence do you have detective?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-what-evidence-do-you-have-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 9422.0,
+        "y": 262.0
+      },
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 28,
+          "dialogueOptionText": "I made it up!",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 30,
+          "dialogueOptionText": "The Toaster told me!",
+          "optionRequirements": [
+            {
+              "requirementType": 0,
+              "comparisonOperator": 0,
+              "intValue": 1,
+              "requiredItemBaseID": "76ae60bf-b284-4481-be4e-dd83a0c2faff",
+              "factionRequirement": 0
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 31,
+          "dialogueOptionText": "The toothbrush!",
+          "optionRequirements": null,
+          "optionEffects": null
+        }
+      ],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": 29,
+      "dialogueText": "My evidence is, I made it up!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "my-evidence-is-i-made-it-up",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10397.0,
+        "y": 262.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "HoldFingerUp",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good enough for me.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "good-enough-for-me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10824.0,
+        "y": 262.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": 29,
+      "dialogueText": "The Toaster told me!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "the-toaster-told-me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10397.0,
+        "y": 693.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": 29,
+      "dialogueText": "Because of that creepy ass toothbrush in Timmy's room!",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "because-of-that-creepy-ass-toothbrush",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 10397.0,
+        "y": 964.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 32,
+      "destinationNodeIndex": -1,
+      "dialogueText": "...",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 8908.0,
+        "y": 521.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 4,
+          "invokeTime": 0.0,
+          "eventName": "Violet Cadaver",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 33,
+      "destinationNodeIndex": 34,
+      "dialogueText": "You haven't made eye contact with me this entire time. Do you really care?",
+      "characterSpeaking": "Violet Cadaver",
+      "dialogueAudioFileName": "you-havent-made-eye-contact-with-me-once",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1159.0,
+        "y": 915.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 34,
+      "destinationNodeIndex": 1,
+      "dialogueText": "That makes... Sense",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "that-makes-sense",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1694.0,
+        "y": 915.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null

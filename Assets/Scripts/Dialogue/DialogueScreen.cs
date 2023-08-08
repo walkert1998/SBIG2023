@@ -83,6 +83,7 @@ public class DialogueScreen : MonoBehaviour
             }
         }
         // Debug.Log("Hiding UI");
+        ResetBlendShapes();
         dialogueScreenUI.SetActive(false);
         CameraSwitcher.SwitchToPlayerCamera();
         playerController.LockMovement(true);
@@ -575,6 +576,22 @@ public class DialogueScreen : MonoBehaviour
                 float move = Mathf.Lerp(skinnedMesh.GetBlendShapeWeight(shapeKeyIndex), expressionEvent.intParameter, expressionTime / expressionEvent.floatParameter);
                 // Debug.Log(expressionEvent.eventName + " " + move);
                 skinnedMesh.SetBlendShapeWeight(shapeKeyIndex, move);
+            }
+        }
+    }
+
+    public void ResetBlendShapes()
+    {
+        foreach (CharacterInstance characterInstance in characters)
+        {
+            SkinnedMeshRenderer[] skinnedMeshes = characterSource.GetComponentsInChildren<SkinnedMeshRenderer>();
+            foreach (SkinnedMeshRenderer skinnedMesh in skinnedMeshes)
+            {
+                Debug.Log("blendshape count: " + skinnedMesh.sharedMesh.blendShapeCount);
+                for (int i = 0; i < skinnedMesh.sharedMesh.blendShapeCount; i++)
+                {
+                    skinnedMesh.SetBlendShapeWeight(i, 0);
+                }
             }
         }
     }
