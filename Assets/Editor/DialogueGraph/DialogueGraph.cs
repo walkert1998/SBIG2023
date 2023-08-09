@@ -135,6 +135,7 @@ public class DialogueGraph : EditorWindow
                             requirementSaveData.factionRequirement = requirement.factionRequirement;
                             requirementSaveData.comparisonOperator = requirement.comparisonOperator;
                             requirementSaveData.intValue = requirement.intValue;
+                            requirementSaveData.boolValue = requirement.boolValue;
                             if (requirement.requiredItem != null)
                             {
                                 requirementSaveData.requiredItemBaseID = requirement.requiredItem.baseItemID;

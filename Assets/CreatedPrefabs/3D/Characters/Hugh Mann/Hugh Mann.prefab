@@ -1574,6 +1574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Hugh Mann
   dialogueTreePath: 
+  playerStandLocation: {x: 0, y: 0, z: 0}
 --- !u!114 &2305641616034920711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,9 +1589,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterTemplate: {fileID: 0}
   activeConversation: {fileID: 2305641616034920710}
+  faction:
+    faction: 0
   source: {fileID: 2305641616034920730}
   animator: {fileID: 2305641616034920731}
   vCam: {fileID: 2305641614890801481}
+  headTarget: {fileID: 0}
+  headLook: {fileID: 0}
+  subtitlecolour: {r: 0, g: 0, b: 0, a: 0}
+  colliders: {fileID: 0}
+  weaponModel: {fileID: 0}
+  weaponSound: {fileID: 0}
+  health: 1
 --- !u!114 &2305641616034920723
 MonoBehaviour:
   m_ObjectHideFlags: 0

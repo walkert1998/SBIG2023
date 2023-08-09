@@ -4,10 +4,10 @@
     {
       "nodeIndex": 1,
       "destinationNodeIndex": 2,
-      "dialogueText": null,
+      "dialogueText": "We got reports of alien activity in this place of residence.",
       "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "you-smell-that",
-      "silenceLength": 0.0,
+      "dialogueAudioFileName": "we-got-reports-of-alien-activity",
+      "silenceLength": 2.0,
       "graphPosition": {
         "x": 227.0,
         "y": 200.0
@@ -18,12 +18,12 @@
     {
       "nodeIndex": 2,
       "destinationNodeIndex": 3,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "yeah-toast-and-aliens",
-      "silenceLength": 0.0,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 608.0,
+        "x": 790.0,
         "y": 200.0
       },
       "dialogueOptions": [],
@@ -31,52 +31,24 @@
     },
     {
       "nodeIndex": 3,
-      "destinationNodeIndex": 4,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "hey-detective",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 1035.0,
-        "y": 200.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 4,
-      "destinationNodeIndex": 5,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "we-got-reports-of-alien-activity",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 1416.0,
-        "y": 200.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 5,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
+      "dialogueText": "Yeah, reports of a sus man in a suit and fedora AND tie. That sound familiar to you?",
       "characterSpeaking": "Agent Vernon",
       "dialogueAudioFileName": "yeah-reports-of-a-sus-man",
-      "silenceLength": 0.0,
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 1866.0,
+        "x": 1274.0,
         "y": 200.0
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": 6,
+          "destinationNodeIndex": 5,
           "dialogueOptionText": "Hey what's that over there?",
           "optionRequirements": null,
           "optionEffects": null
         },
         {
-          "destinationNodeIndex": 7,
+          "destinationNodeIndex": 6,
           "dialogueOptionText": "Hmm, you both seem to fit that description...",
           "optionRequirements": null,
           "optionEffects": null
@@ -85,28 +57,75 @@
       "dialogueEvents": null
     },
     {
-      "nodeIndex": 6,
-      "destinationNodeIndex": 8,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "we-got-a-runner",
-      "silenceLength": 0.0,
+      "nodeIndex": 4,
+      "destinationNodeIndex": 7,
+      "dialogueText": "What? There couldn't be 2 aliens here!",
+      "characterSpeaking": "Agent Jaxxon",
+      "dialogueAudioFileName": "what-there-couldnt-be-2-aliens-here",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2876.0,
-        "y": 200.0
+        "x": 2284.0,
+        "y": 480.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 5,
+      "destinationNodeIndex": -1,
+      "dialogueText": "What's that over there?",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "whats-that-over-there",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2238.0,
+        "y": -110.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PointForward",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 8,
+          "invokeTime": 2.3,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 6,
+      "destinationNodeIndex": 4,
+      "dialogueText": "You both seem to fit that description...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "you-both-seem-to-fit-that-description",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1778.0,
+        "y": 628.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
     },
     {
       "nodeIndex": 7,
-      "destinationNodeIndex": 16,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "what-there-couldnt-be-2-aliens-here",
-      "silenceLength": 0.0,
+      "destinationNodeIndex": 8,
+      "dialogueText": "Yeah we're not dumb?",
+      "characterSpeaking": "Agent Vernon",
+      "dialogueAudioFileName": "yeah-were-not-dumb",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 2876.0,
+        "x": 2742.0,
         "y": 480.0
       },
       "dialogueOptions": [],
@@ -115,27 +134,37 @@
     {
       "nodeIndex": 8,
       "destinationNodeIndex": 9,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "shoot-him-jaxxon",
-      "silenceLength": 0.0,
+      "dialogueText": "...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3386.0,
-        "y": 200.0
+        "x": 3179.0,
+        "y": 480.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "SourceHandShrug",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 9,
       "destinationNodeIndex": 10,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "im-trying-vernon",
-      "silenceLength": 0.0,
+      "dialogueText": "No, it can't be!",
+      "characterSpeaking": "Agent Vernon",
+      "dialogueAudioFileName": "no-it-cant-be",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3771.0,
-        "y": 200.0
+        "x": 3576.0,
+        "y": 480.0
       },
       "dialogueOptions": [],
       "dialogueEvents": null
@@ -143,170 +172,143 @@
     {
       "nodeIndex": 10,
       "destinationNodeIndex": 11,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "cmon-its-a-small-target",
-      "silenceLength": 0.0,
+      "dialogueText": "I always knew it would come to this, I'm sorry bro!",
+      "characterSpeaking": "Agent Jaxxon",
+      "dialogueAudioFileName": "i-always-knew-it-would-come-to-this",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 4135.0,
-        "y": 200.0
+        "x": 3941.0,
+        "y": 480.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PistolIdle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 7,
+          "invokeTime": 4.0,
+          "eventName": "Agent Jaxxon",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 4,
+          "invokeTime": 4.0,
+          "eventName": "Agent Vernon",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 11,
       "destinationNodeIndex": 12,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "i-cant-aim-when-youre-yelling-at-me",
-      "silenceLength": 0.0,
+      "dialogueText": "Actually I think he was human...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": null,
+      "silenceLength": 3.0,
       "graphPosition": {
-        "x": 4546.0,
-        "y": 200.0
+        "x": 4427.0,
+        "y": 480.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIK",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 0,
+          "invokeTime": 2.9,
+          "eventName": "Idle Walk Run Blend",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 12,
       "destinationNodeIndex": 13,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "oh-god",
-      "silenceLength": 0.0,
+      "dialogueText": "What?! Oh lordy-loo I can't go on knowing I've killed my brother. Goodbye cruel world!",
+      "characterSpeaking": "Agent Jaxxon",
+      "dialogueAudioFileName": "what-oh-lordy-loo",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 5019.0,
-        "y": 200.0
+        "x": 4853.0,
+        "y": 480.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 8.2,
+          "eventName": "PointAtSelf",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 7,
+          "invokeTime": 8.3,
+          "eventName": "Agent Jaxxon",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 4,
+          "invokeTime": 8.3,
+          "eventName": "Agent Jaxxon",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 13,
-      "destinationNodeIndex": 14,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "hold-still-bro-ill-get-him",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 5445.0,
-        "y": 200.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 14,
-      "destinationNodeIndex": 15,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "gah-you-hit-me-in-the-face",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 5862.0,
-        "y": 200.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 15,
       "destinationNodeIndex": -1,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "oh-dear-gosh-i-killed-him",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 6269.0,
-        "y": 200.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 16,
-      "destinationNodeIndex": 17,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "yeah-were-not-dumb",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 3334.0,
-        "y": 480.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 17,
-      "destinationNodeIndex": 18,
-      "dialogueText": null,
+      "dialogueText": "I am... HUGH MANN!",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
+      "dialogueAudioFileName": "i-am-hugh-mann-2",
+      "silenceLength": 2.0,
       "graphPosition": {
-        "x": 3771.0,
+        "x": 5417.0,
         "y": 480.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 18,
-      "destinationNodeIndex": 19,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Vernon",
-      "dialogueAudioFileName": "no-it-cant-be",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 4135.0,
-        "y": 480.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 19,
-      "destinationNodeIndex": 20,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "i-always-knew-it-would-come-to-this",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 4546.0,
-        "y": 480.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 20,
-      "destinationNodeIndex": 21,
-      "dialogueText": null,
-      "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": null,
-      "silenceLength": 3.0,
-      "graphPosition": {
-        "x": 5019.0,
-        "y": 480.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
-    },
-    {
-      "nodeIndex": 21,
-      "destinationNodeIndex": -1,
-      "dialogueText": null,
-      "characterSpeaking": "Agent Jaxxon",
-      "dialogueAudioFileName": "what-oh-lordy-loo",
-      "silenceLength": 0.0,
-      "graphPosition": {
-        "x": 5445.0,
-        "y": 480.0
-      },
-      "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 7,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }

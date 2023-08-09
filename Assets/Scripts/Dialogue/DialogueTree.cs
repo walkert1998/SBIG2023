@@ -66,6 +66,7 @@ public class DialogueTree
                             newRequirement.comparisonOperator = requirementSaveData.comparisonOperator;
                             newRequirement.factionRequirement = requirementSaveData.factionRequirement;
                             newRequirement.intValue = requirementSaveData.intValue;
+                            newRequirement.boolValue = requirementSaveData.boolValue;
                             if (requirementSaveData.requiredItemBaseID != null && requirementSaveData.requiredItemBaseID != System.String.Empty)
                             {
                                 newRequirement.requiredItem = Resources.LoadAll<Item>("ScriptableObject/").Where(x => x.baseItemID == requirementSaveData.requiredItemBaseID).First();

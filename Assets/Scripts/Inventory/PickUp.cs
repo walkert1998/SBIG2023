@@ -17,6 +17,7 @@ public class PickUp : MonoBehaviour, IInteractable
     public AudioClip pickUpSound;
     public UnityEvent onPickup;
     bool added;
+    public bool removeItem = true;
 
     public bool focused { get; set; }
     public bool holdToInteract { get; set; }
@@ -48,7 +49,14 @@ public class PickUp : MonoBehaviour, IInteractable
             //}
             if (added)
             {
-                world_item.SetActive(false);
+                if (removeItem)
+                {
+                    world_item.SetActive(false);
+                }
+                else
+                {
+                    this.enabled = false;
+                }
                 PlayerInteraction.SetPrompt("");
                 PlayerInteraction.SetFocusObject_Static(null);
             }

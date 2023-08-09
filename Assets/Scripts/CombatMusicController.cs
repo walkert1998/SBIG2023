@@ -57,4 +57,11 @@ public class CombatMusicController : MonoBehaviour
         instance.stopped = false;
         instance.source.Play();
     }
+
+    public static void PlaySpecificTrack(AudioClip clip)
+    {
+        StopMusic();
+        instance.source.clip = clip;
+        PlayMusic();
+    }
 }

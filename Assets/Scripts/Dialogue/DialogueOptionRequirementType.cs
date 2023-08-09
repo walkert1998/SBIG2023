@@ -5,5 +5,8 @@ public enum DialogueOptionRequirementType
     FactionStanding,
     StatLevel,
     ObjectiveComplete,
-    ObjectiveFailed
+    ObjectiveFailed,
+    MurderFound,
+    LivingSuspects,
+    AllSuspectsDead
 }

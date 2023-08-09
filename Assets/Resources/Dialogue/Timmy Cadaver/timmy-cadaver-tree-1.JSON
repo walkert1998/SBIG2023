@@ -139,7 +139,8 @@
               "comparisonOperator": 0,
               "intValue": 1,
               "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
-              "factionRequirement": 0
+              "factionRequirement": 0,
+              "boolValue": false
             }
           ],
           "optionEffects": null
@@ -524,12 +525,27 @@
         {
           "destinationNodeIndex": 26,
           "dialogueOptionText": "You're under arrest!",
-          "optionRequirements": null,
+          "optionRequirements": [
+            {
+              "requirementType": 6,
+              "comparisonOperator": 0,
+              "intValue": 0,
+              "requiredItemBaseID": null,
+              "factionRequirement": 0,
+              "boolValue": false
+            }
+          ],
           "optionEffects": null
         },
         {
           "destinationNodeIndex": -1,
           "dialogueOptionText": "[Leave] Ok cool.",
+          "optionRequirements": null,
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 23,
+          "dialogueOptionText": "[Eliminate Timmy]",
           "optionRequirements": null,
           "optionEffects": null
         }
@@ -638,9 +654,9 @@
     {
       "nodeIndex": 26,
       "destinationNodeIndex": 27,
-      "dialogueText": "You're under arrest for the murder of Doctor Cadaver!",
+      "dialogueText": "Timmy Cadaver, I am charging you with the murder of Doctor Cadaver!",
       "characterSpeaking": "Hugh Mann",
-      "dialogueAudioFileName": "youre-under-arrest-for-the-murder-of-doctor-cadaver",
+      "dialogueAudioFileName": "timmy-cadaver-i-am-charging-you-with",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 9426.0,
@@ -688,7 +704,8 @@
               "comparisonOperator": 0,
               "intValue": 1,
               "requiredItemBaseID": "76ae60bf-b284-4481-be4e-dd83a0c2faff",
-              "factionRequirement": 0
+              "factionRequirement": 0,
+              "boolValue": false
             }
           ],
           "optionEffects": null
@@ -764,7 +781,17 @@
         "y": 1197.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 9,
+          "invokeTime": 0.0,
+          "eventName": "Timmy Cadaver",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 33,

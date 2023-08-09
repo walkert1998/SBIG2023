@@ -120,7 +120,8 @@
               "comparisonOperator": 0,
               "intValue": 1,
               "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
-              "factionRequirement": 0
+              "factionRequirement": 0,
+              "boolValue": false
             }
           ],
           "optionEffects": [
@@ -205,7 +206,8 @@
               "comparisonOperator": 2,
               "intValue": 10,
               "requiredItemBaseID": null,
-              "factionRequirement": 3
+              "factionRequirement": 3,
+              "boolValue": false
             }
           ],
           "optionEffects": [
@@ -227,7 +229,8 @@
               "comparisonOperator": 1,
               "intValue": 10,
               "requiredItemBaseID": null,
-              "factionRequirement": 3
+              "factionRequirement": 3,
+              "boolValue": false
             }
           ],
           "optionEffects": [
@@ -314,11 +317,21 @@
       "dialogueAudioFileName": "well-i-never",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 6726.0,
-        "y": 582.0
+        "x": 6709.0,
+        "y": 441.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 4.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 8,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 15,
@@ -328,11 +341,21 @@
       "dialogueAudioFileName": "the-bathroom-is-just-through-that-door",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 6726.0,
+        "x": 7240.0,
         "y": 324.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 4.3,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 6,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 16,

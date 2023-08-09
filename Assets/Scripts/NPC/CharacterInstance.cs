@@ -90,6 +90,10 @@ public class CharacterInstance : MonoBehaviour, IInteractable
 
     public void KillNPC()
     {
+        if (activeConversation.characterName == "Marvin Green" || activeConversation.characterName == "Sir Red Herring" || activeConversation.characterName == "Timmy Cadaver" || activeConversation.characterName == "Violet Cadaver")
+        {
+            InvestigationManager.KillSuspect();
+        }
         health = 0;
         if (animator != null)
         {

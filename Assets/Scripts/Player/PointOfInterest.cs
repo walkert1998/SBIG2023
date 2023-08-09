@@ -12,6 +12,7 @@ public class PointOfInterest : MonoBehaviour, IInteractable
     public GameObject promptIndicator;
     [TextArea]
     public string description;
+    public Item pickUp;
 
     public void EndInteraction()
     {
@@ -37,6 +38,12 @@ public class PointOfInterest : MonoBehaviour, IInteractable
             promptIndicator.SetActive(false);
         PlayerInteraction.SetPrompt(System.String.Empty);
         PlayerInteraction.SetPrompt(description);
+        if (pickUp != null)
+        {
+            
+            Inventory playerInventory = Resources.Load<ScriptableObject>("ScriptableObject/Inventory/PlayerInventory") as Inventory;
+            playerInventory.AddItem(pickUp, 1);
+        }
     }
 
     public void UnFocus()

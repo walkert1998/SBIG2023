@@ -87,8 +87,10 @@ public class DialogueScreen : MonoBehaviour
         dialogueScreenUI.SetActive(false);
         CameraSwitcher.SwitchToPlayerCamera();
         playerController.LockMovement(true);
+        playerController.GetComponent<CharacterController>().enabled = true;
         playerController.GetComponent<Animator>().Play("Idle Walk Run Blend");
         Cursor.lockState = CursorLockMode.Locked;
+        PlayerInteraction.UnlockInteraction();
         Cursor.visible = false;
     }
 
@@ -252,6 +254,17 @@ public class DialogueScreen : MonoBehaviour
                                 TimelinePlayer.PlayTimeline_Static(evt.intParameter);
                                 evt.invoked = 1;
                             break;
+                            case DialogueEventType.ArrestSuspect:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.transform.position = new Vector3(character.transform.position.x, -100, character.transform.position.z);
+                                    }
+                                    InvestigationManager.ArrestMurderer();
+                                }
+                                evt.invoked = 1;
+                            break;
                         }
                     }
                 }
@@ -380,6 +393,17 @@ public class DialogueScreen : MonoBehaviour
                                 TimelinePlayer.PlayTimeline_Static(evt.intParameter);
                                 evt.invoked = 1;
                             break;
+                            case DialogueEventType.ArrestSuspect:
+                                foreach (CharacterInstance character in characters)
+                                {
+                                    if (character.activeConversation.characterName == evt.eventName)
+                                    {
+                                        character.transform.position = new Vector3(character.transform.position.x, -100, character.transform.position.z);
+                                        InvestigationManager.ArrestMurderer();
+                                    }
+                                }
+                                evt.invoked = 1;
+                            break;
                         }
                     }
                 }
@@ -499,6 +523,18 @@ public class DialogueScreen : MonoBehaviour
                     case DialogueOptionRequirementType.FactionStanding:
                         return CheckFactionStanding(requirement);
                     break;
+                    case DialogueOptionRequirementType.MurderFound:
+                        if (InvestigationManager.MurdererFound() != requirement.boolValue)
+                        {
+                            return 1;
+                        }
+                    break;
+                    case DialogueOptionRequirementType.AllSuspectsDead:
+                        if (InvestigationManager.instance.allSuspectsDead != requirement.boolValue)
+                        {
+                            return 1;
+                        }
+                    break;
                     default:
                     break;
                 }
@@ -558,14 +594,14 @@ public class DialogueScreen : MonoBehaviour
         conversation = newConversation;
         Debug.Log("running tree");
         PlayerInteraction.SetPrompt(System.String.Empty);
+        PlayerInteraction.LockInteraction();
         playerController.LockMovement(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        playerController.GetComponent<CharacterController>().enabled = false;
         if (newConversation.playerStandLocation != Vector3.zero)
         {
-            playerController.GetComponent<CharacterController>().enabled = false;
             playerController.transform.position = newConversation.playerStandLocation;
-            playerController.GetComponent<CharacterController>().enabled = true;
             // playerController.transform.LookAt();
         }
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + newConversation.characterName + "/" + newConversation.dialogueTreePath);

@@ -5,4 +5,5 @@ public struct DialogueOptionRequirementSaveData
     public int intValue;
     public string requiredItemBaseID;
     public Factions factionRequirement;
+    public bool boolValue;
 }

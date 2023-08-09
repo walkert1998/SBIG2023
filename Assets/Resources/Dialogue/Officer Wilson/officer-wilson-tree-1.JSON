@@ -9,10 +9,41 @@
       "dialogueAudioFileName": "hello-detective",
       "silenceLength": 2.0,
       "graphPosition": {
-        "x": 207.0,
-        "y": 200.0
+        "x": 194.0,
+        "y": -532.0
       },
-      "dialogueOptions": [],
+      "dialogueOptions": [
+        {
+          "destinationNodeIndex": 26,
+          "dialogueOptionText": "About the suspects...",
+          "optionRequirements": [
+            {
+              "requirementType": 8,
+              "comparisonOperator": 0,
+              "intValue": 0,
+              "requiredItemBaseID": null,
+              "factionRequirement": 0,
+              "boolValue": true
+            }
+          ],
+          "optionEffects": null
+        },
+        {
+          "destinationNodeIndex": 31,
+          "dialogueOptionText": "I solved the case!",
+          "optionRequirements": [
+            {
+              "requirementType": 6,
+              "comparisonOperator": 0,
+              "intValue": 0,
+              "requiredItemBaseID": null,
+              "factionRequirement": 0,
+              "boolValue": true
+            }
+          ],
+          "optionEffects": null
+        }
+      ],
       "dialogueEvents": [
         {
           "eventType": 0,
@@ -196,7 +227,7 @@
       "destinationNodeIndex": 10,
       "dialogueText": "As I spoke to Officer Wilson, I remembered I was able to vaguely influence the flow of conversation at key points by clicking on lines of text in the top right of the screen.",
       "characterSpeaking": "Internal Monologue",
-      "dialogueAudioFileName": null,
+      "dialogueAudioFileName": "as-i-spoke-to-officer-wilson",
       "silenceLength": 2.0,
       "graphPosition": {
         "x": 3631.0,
@@ -619,6 +650,129 @@
           "eventType": 0,
           "invokeTime": 0.0,
           "eventName": "Idle",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 26,
+      "destinationNodeIndex": 27,
+      "dialogueText": "Well detective, all the suspects are dead.",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "well-detective-all-the-suspects-are-dead",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1125.0,
+        "y": -532.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 27,
+      "destinationNodeIndex": 28,
+      "dialogueText": "Yes, it appears there's only one possible suspect remaining...",
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "yes-it-appears-theres-only-one-possible-suspect-remaining",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1576.0,
+        "y": -532.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 28,
+      "destinationNodeIndex": 29,
+      "dialogueText": "And who might that be?",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "and-who-might-that-be",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2163.0,
+        "y": -276.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 29,
+      "destinationNodeIndex": 30,
+      "dialogueText": null,
+      "characterSpeaking": "Hugh Mann",
+      "dialogueAudioFileName": "me",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2533.0,
+        "y": -276.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "PointAtSelf",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 30,
+      "destinationNodeIndex": -1,
+      "dialogueText": "I am in danger!",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "i-am-in-danger",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 2866.0,
+        "y": -423.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 0,
+          "invokeTime": 0.0,
+          "eventName": "YIIK",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
+    },
+    {
+      "nodeIndex": 31,
+      "destinationNodeIndex": -1,
+      "dialogueText": "Good wokr detective!",
+      "characterSpeaking": "Officer Wilson",
+      "dialogueAudioFileName": "good-work-detective",
+      "silenceLength": 2.0,
+      "graphPosition": {
+        "x": 1125.0,
+        "y": -256.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
           "stringParameter": null,
           "intParameter": 0,
           "floatParameter": 0.0,

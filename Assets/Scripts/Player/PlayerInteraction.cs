@@ -36,6 +36,8 @@ public class PlayerInteraction : MonoBehaviour
         //weaponManager = GetComponent<WeaponManager>();
         UnlockInteraction();
         //hit = new RaycastHit();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void OnEnable()
@@ -119,7 +121,8 @@ public class PlayerInteraction : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (!interacting)
+        Debug.Log(interactionBlocked);
+        if (!interacting && !interactionBlocked)
         {
             OnInteractionStart(context);
         }
@@ -154,6 +157,7 @@ public class PlayerInteraction : MonoBehaviour
     public static void LockInteraction()
     {
         interactionBlocked = true;
+        SetPrompt(System.String.Empty);
         // InteractionProgressBar.HideInteractionProgress_static();
         if (instance.focusedObject != null)
         {

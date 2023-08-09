@@ -91,6 +91,7 @@ public class GameMenu : MonoBehaviour
             controller.GetComponent<ThirdPersonController>().LockMovement(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            PlayerInteraction.UnlockInteraction();
         }
     }
 

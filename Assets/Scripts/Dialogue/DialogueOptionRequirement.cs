@@ -8,4 +8,5 @@ public class DialogueOptionRequirement
     public int intValue;
     public Item requiredItem;
     public Factions factionRequirement;
+    public bool boolValue;
 }

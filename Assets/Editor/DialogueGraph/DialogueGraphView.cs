@@ -621,6 +621,18 @@ public class DialogueGraphView : GraphView
                 preReqContainer.Add(operatorField);
                 preReqContainer.Add(characterOpinion);
             break;
+            case DialogueOptionRequirementType.MurderFound:
+                IntegerField murderFound = new IntegerField("Murderer Found:");
+                murderFound.value = optionRequirement.dialogueOptionRequirement.boolValue ? 1 : 0;
+                murderFound.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.boolValue = (murderFound.value == 1));
+                preReqContainer.Add(murderFound);
+            break;
+            case DialogueOptionRequirementType.AllSuspectsDead:
+                IntegerField allSuspectsDead = new IntegerField("all suspects dead:");
+                allSuspectsDead.value = optionRequirement.dialogueOptionRequirement.boolValue ? 1 : 0;
+                allSuspectsDead.RegisterValueChangedCallback((evt) => optionRequirement.dialogueOptionRequirement.boolValue = (allSuspectsDead.value == 1));
+                preReqContainer.Add(allSuspectsDead);
+            break;
         }
         return preReqContainer;
     }
