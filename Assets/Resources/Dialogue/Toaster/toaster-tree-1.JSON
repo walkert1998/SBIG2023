@@ -61,7 +61,8 @@
               "comparisonOperator": 0,
               "intValue": 1,
               "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
-              "factionRequirement": 0
+              "factionRequirement": 0,
+              "boolValue": false
             }
           ],
           "optionEffects": null
@@ -143,7 +144,8 @@
               "comparisonOperator": 0,
               "intValue": 1,
               "requiredItemBaseID": "66056fbb-e125-41d1-abd5-8bb2dc4b5a35",
-              "factionRequirement": 0
+              "factionRequirement": 0,
+              "boolValue": false
             }
           ],
           "optionEffects": null
@@ -232,7 +234,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 10,
           "dialogueOptionText": "Perfect, lets go!",
           "optionRequirements": null,
           "optionEffects": [
@@ -247,6 +249,30 @@
         }
       ],
       "dialogueEvents": null
+    },
+    {
+      "nodeIndex": 10,
+      "destinationNodeIndex": -1,
+      "dialogueText": null,
+      "characterSpeaking": "Toaster",
+      "dialogueAudioFileName": null,
+      "silenceLength": 0.1,
+      "graphPosition": {
+        "x": 5487.0,
+        "y": 200.0
+      },
+      "dialogueOptions": [],
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 0.0,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 9,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }

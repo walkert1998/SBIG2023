@@ -131,7 +131,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 7,
           "dialogueOptionText": "If I gave you bread would you be my friend?",
           "optionRequirements": [
             {
