@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using StarterAssets;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class DialogueScreen : MonoBehaviour
@@ -39,6 +40,14 @@ public class DialogueScreen : MonoBehaviour
         // #endif
     }
 
+    // void Update()
+    // {
+    //     if (Keyboard.current.spaceKey.wasPressedThisFrame)
+    //     {
+    //         Debug.Log("Pressed space");
+    //     }
+    // }
+
     public void RunDialogueTree(DialogueTree newTree)
     {
         tree = newTree;
@@ -53,7 +62,6 @@ public class DialogueScreen : MonoBehaviour
         int nodeIndex = 0;
         while (nodeIndex != -1)
         {
-            // Debug.Log(nodeIndex);
             DisplayNode(nodeIndex);
             if (selectedOption != -1)
             {
@@ -174,12 +182,18 @@ public class DialogueScreen : MonoBehaviour
         }
         characterSource.Stop();
         // characterSource.PlayOneShot(voiceLine);
-        // Debug.Log("Playing voiceline");
-        if (hasEvents)
+        while (timer < node.silenceLength)
         {
-            dialogueEvents = node.dialogueEvents;
-            while (timer < node.silenceLength)
+            if (hasEvents)
             {
+                dialogueEvents = node.dialogueEvents;
+                if (Keyboard.current.spaceKey.wasPressedThisFrame)
+                {
+                    SkipDialogue(node);
+                    timer = node.silenceLength;
+                    yield return new WaitForSeconds(0.01f);
+                    break;
+                }
                 timer += Time.deltaTime * Time.timeScale;
                 eventTimer += Time.deltaTime * Time.timeScale;
                 foreach (DialogueEvent evt in dialogueEvents)
@@ -270,10 +284,18 @@ public class DialogueScreen : MonoBehaviour
                 }
                 yield return null;
             }
-        }
-        else
-        {
-            yield return new WaitForSeconds(node.silenceLength);
+            else
+            {
+                if (Keyboard.current.spaceKey.wasPressedThisFrame)
+                {
+                    characterSource.Stop();
+                    timer = node.silenceLength;
+                    yield return new WaitForSeconds(0.01f);
+                    break;
+                }
+                timer += Time.deltaTime * Time.timeScale;
+                yield return null;
+            }
         }
         
         // Debug.Log(node.dialogueOptions);
@@ -315,11 +337,20 @@ public class DialogueScreen : MonoBehaviour
         // characterSource.PlayOneShot(voiceLine);
         // Debug.Log("Playing voiceline");
         characterSource.Play();
-        if (hasEvents)
+        while (characterSource.isPlaying)
         {
-            dialogueEvents = node.dialogueEvents;
-            while (characterSource.isPlaying)
+            if (hasEvents)
             {
+                dialogueEvents = node.dialogueEvents;
+                if (Keyboard.current.spaceKey.wasPressedThisFrame)
+                {
+                    Debug.Log("Skipped dialogue node " + node.nodeIndex);
+                    SkipDialogue(node);
+                    characterSource.Stop();
+                    Debug.Log("Breaking");
+                    yield return new WaitForSeconds(0.01f);
+                    break;
+                }
                 eventTimer += Time.deltaTime * Time.timeScale;
                 foreach (DialogueEvent evt in dialogueEvents)
                 {
@@ -407,15 +438,21 @@ public class DialogueScreen : MonoBehaviour
                         }
                     }
                 }
-                yield return null;
             }
+            else
+            {
+                if (Keyboard.current.spaceKey.wasPressedThisFrame)
+                {
+                    Debug.Log("Skipped dialogue node " + node.nodeIndex);
+                    characterSource.Stop();
+                    yield return new WaitForSeconds(0.01f);
+                    break;
+                }
+            }
+            yield return null;
         }
-        else
-        {
-            yield return new WaitForSeconds(voiceLine.length);
-        }
-        
-        // Debug.Log(node.dialogueOptions);
+        Debug.Log("End of " + node.characterSpeaking + "'s dialogue line");
+        Debug.Log(node.dialogueOptions);
 
         if (node.dialogueOptions != null && node.dialogueOptions.Count > 0)
         {
@@ -432,7 +469,7 @@ public class DialogueScreen : MonoBehaviour
                 selectedOption--;
             }
         }
-        // Debug.Log(selectedOption);
+        Debug.Log(selectedOption);
     }
 
     IEnumerator DialogueEventFacialExpression(DialogueEvent evt)
@@ -625,7 +662,7 @@ public class DialogueScreen : MonoBehaviour
             if (shapeKeyIndex != -1)
             {
                 float move = Mathf.Lerp(skinnedMesh.GetBlendShapeWeight(shapeKeyIndex), expressionEvent.intParameter, expressionTime / expressionEvent.floatParameter);
-                // Debug.Log(expressionEvent.eventName + " " + move);
+                Debug.Log(expressionEvent.eventName + " " + move);
                 skinnedMesh.SetBlendShapeWeight(shapeKeyIndex, move);
             }
         }
@@ -642,6 +679,96 @@ public class DialogueScreen : MonoBehaviour
                 for (int i = 0; i < skinnedMesh.sharedMesh.blendShapeCount; i++)
                 {
                     skinnedMesh.SetBlendShapeWeight(i, 0);
+                }
+            }
+        }
+    }
+
+    public void SkipDialogue(DialogueNode nodeToSkip)
+    {
+        List<DialogueEvent> sortedEvents = new List<DialogueEvent>(nodeToSkip.dialogueEvents);
+        sortedEvents.Sort((p1,p2) => p1.invokeTime.CompareTo(p2.invokeTime));
+        foreach (DialogueEvent evt in sortedEvents)
+        {
+            Debug.Log(evt.eventName + " " + talkingCharacter.activeConversation.characterName);
+            if (evt.invoked == 0)
+            {
+                switch (evt.eventType)
+                {
+                    case DialogueEventType.PlayAnimation:
+                        talkingCharacter.animator.Play(evt.eventName,0);
+                        talkingCharacter.animator.Play(evt.eventName,1);
+                        talkingCharacter.animator.Play(evt.eventName,2);
+                        evt.invoked = 1;
+                        // Debug.Log("Play animation " + evt.eventName);
+                    break;
+                    case DialogueEventType.SetAnimationBoolValue:
+                        bool val = (evt.intParameter == 1) ? true : false;
+                        talkingCharacter.animator.SetBool(evt.eventName, val);
+                        evt.invoked = 1;
+                        // Debug.Log("Set animation bool " + evt.eventName + " to " + val);
+                    break;
+                    case DialogueEventType.SetFacialPose:
+                        // StartCoroutine(DialogueEventFacialExpression(evt));
+                        SetFacialExpression(evt, evt.floatParameter);
+                        evt.invoked = 1;
+                        // Debug.Log("Set facial pose " + evt.intParameter);
+                    break;
+                    case DialogueEventType.KillNPC:
+                        foreach (CharacterInstance character in characters)
+                        {
+                            if (character.activeConversation.characterName == evt.eventName)
+                            {
+                                character.KillNPC();
+                            }
+                        }
+                        evt.invoked = 1;
+                    break;
+                    case DialogueEventType.DrawWeapon:
+                        foreach (CharacterInstance character in characters)
+                        {
+                            if (character.activeConversation.characterName == evt.eventName)
+                            {
+                                character.DrawWeapon();
+                            }
+                        }
+                        evt.invoked = 1;
+                    break;
+                    case DialogueEventType.HolsterWeapon:
+                        foreach (CharacterInstance character in characters)
+                        {
+                            if (character.activeConversation.characterName == evt.eventName)
+                            {
+                                character.HolsterWeapon();
+                            }
+                        }
+                        evt.invoked = 1;
+                    break;
+                    case DialogueEventType.UseWeapon:
+                        foreach (CharacterInstance character in characters)
+                        {
+                            if (character.activeConversation.characterName == evt.eventName)
+                            {
+                                character.UseWeapon();
+                            }
+                        }
+                        evt.invoked = 1;
+                    break;
+                    case DialogueEventType.StartTimeline:
+                        TimelinePlayer.PlayTimeline_Static(evt.intParameter);
+                        evt.invoked = 1;
+                    break;
+                    case DialogueEventType.ArrestSuspect:
+                        foreach (CharacterInstance character in characters)
+                        {
+                            if (character.activeConversation.characterName == evt.eventName)
+                            {
+                                character.transform.position = new Vector3(character.transform.position.x, -100, character.transform.position.z);
+                                InvestigationManager.ArrestMurderer();
+                            }
+                        }
+                        evt.invoked = 1;
+                    break;
                 }
             }
         }

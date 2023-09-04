@@ -1596,7 +1596,7 @@
       },
       "dialogueOptions": [
         {
-          "destinationNodeIndex": -1,
+          "destinationNodeIndex": 54,
           "dialogueOptionText": "Doubt",
           "optionRequirements": null,
           "optionEffects": null

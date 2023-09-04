@@ -242,7 +242,7 @@
       "dialogueText": "...",
       "characterSpeaking": "Hugh Mann",
       "dialogueAudioFileName": null,
-      "silenceLength": 2.0,
+      "silenceLength": 1.0,
       "graphPosition": {
         "x": 4178.0,
         "y": 200.0
