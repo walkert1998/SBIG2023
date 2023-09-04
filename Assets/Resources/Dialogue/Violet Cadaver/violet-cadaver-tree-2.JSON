@@ -360,6 +360,15 @@
           "invoked": 0
         },
         {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 1,
+          "floatParameter": 0.0,
+          "invoked": 0
+        },
+        {
           "eventType": 2,
           "invokeTime": 0.0,
           "eventName": "confused",
@@ -418,7 +427,17 @@
         "y": 457.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     },
     {
       "nodeIndex": 20,
@@ -513,6 +532,15 @@
           "stringParameter": null,
           "intParameter": 100,
           "floatParameter": 0.1,
+          "invoked": 0
+        },
+        {
+          "eventType": 1,
+          "invokeTime": 0.0,
+          "eventName": "YIIKScream",
+          "stringParameter": null,
+          "intParameter": 0,
+          "floatParameter": 0.0,
           "invoked": 0
         }
       ]
