@@ -639,7 +639,7 @@ public class DialogueScreen : MonoBehaviour
         if (newConversation.playerStandLocation != Vector3.zero)
         {
             playerController.transform.position = newConversation.playerStandLocation;
-            // playerController.transform.LookAt();
+            playerController.transform.LookAt(new Vector3(newConversation.transform.position.x, playerController.transform.position.y, newConversation.transform.position.z));
         }
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue/" + newConversation.characterName + "/" + newConversation.dialogueTreePath);
         Debug.Log(textAsset);
