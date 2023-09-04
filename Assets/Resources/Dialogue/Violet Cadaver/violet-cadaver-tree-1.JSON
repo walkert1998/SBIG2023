@@ -383,7 +383,17 @@
         "y": 910.0
       },
       "dialogueOptions": [],
-      "dialogueEvents": null
+      "dialogueEvents": [
+        {
+          "eventType": 8,
+          "invokeTime": 1.9,
+          "eventName": null,
+          "stringParameter": null,
+          "intParameter": 8,
+          "floatParameter": 0.0,
+          "invoked": 0
+        }
+      ]
     }
   ]
 }
